@@ -205,3 +205,9 @@ checknumeric <- function(col, method, values) {
 #-----------------------------------------------------#
 #Fonction finale presentant les résultats de tous les tests d'erreur
 
+# fonction printResults()
+# imprime une ligne contenant le résultat des tests d’erreur dans un fichier tests_bilan.txt
+# prend en argument ‘results’ qui contient la ligne à ajouter au fichier txt
+printResults <- function(results){
+}
+
