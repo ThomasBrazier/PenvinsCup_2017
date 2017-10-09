@@ -21,7 +21,7 @@
 checkPenvins <- function(mydata) {
 
 cat("Bienvenue dans le verificateur Penvins EFCE 2017.\n\nVotre fichier va etre analyse...\n")
-}
+
 
 #-----------------------------------------------------#
 #Etape 1 : Verifier si mydata est de classe data.frame
@@ -125,6 +125,52 @@ for (i in seq_along(mydata)) {
 }
 
 #=====================================================#
+# Etape 7 : Verification des ratios larg/haut et peri/larg dans biom.txt
+#-----------------------------------------------------#
+# verifier que les ratios larg/haut et peri/larg du fichier biometrique qui ne sont pas NA
+#sont situes respectivement dans des intervalles min-max realistes que vous choisirez.
+
+# Fonction checkRatio()
+# Vérifier le ratio entre deux valeurs
+# prend en arguments 5 valeurs :
+# valeur A, valeur B, ratio min attendu, ratio max attendu, numéro de la ligne, espece
+checkRatio <- function(varOne, varTwo, ratioMin, ratioMax, ligneNb, espece){
+# vérifie que les deux valeurs ne sont pas NA
+if (varOne!="NA" & varTwo!="NA"){
+  ratio = varOne/varTwo
+  if (ratio<ratioMin | ratio>ratioMax){
+    result = c("Ligne", ligneNb, "pour l'espece", espece, ": Le ratio", ratio, "sort de l'intervalle attendu")
+    cat(result)
+    printResults(result)
+  }
+} else{ #dans la cas ou l'une des valeurs est NA
+  result = c("Ligne", ligneNb, "pour l'espece", espece, ": valeur NA !")
+  cat(result)
+  printResults(result)
+}
+}
+
+# Initialisation de l'étape 7
+header7=c("Etape 7 : Verification des ratios larg/haut et peri/larg dans biom.txt\n")
+result=header7  # initialise la variable result avec l'entete de l'etape
+printResults(result)
+# Vérification du fichier : type ind
+
+
+# ratio larg/haut
+
+
+# ratio peri/larg
+
+# Fin de l'etape 7
+# si aucune valeur n'a rempli la condition, result n'a pas changé et vaut toujours header7
+if (result == header7){
+  result = c("Tous les ratios attendus sont corrects, aucune valeur n'a été modifiee.\n")
+  cat(result)
+  printResults(result)
+}
+
+#=====================================================#
 #Fonction checkfactor
 #-----------------------------------------------------#
 #Utilisee dans l'etape 5, elle verifie que les modalites
@@ -199,15 +245,20 @@ checknumeric <- function(col, method, values) {
 		cat("Les valeurs numeriques sont correctes.")
 	} 
 }
+}
 
 #=====================================================#
-#Fonction presentation
+# Fonction presentation
 #-----------------------------------------------------#
-#Fonction finale presentant les résultats de tous les tests d'erreur
+# Fonction finale presentant les résultats de tous les tests d'erreur
+# Chaque test imprime une ligne dans un fichier si le résultat retourne est negatif
 
 # fonction printResults()
-# imprime une ligne contenant le résultat des tests d’erreur dans un fichier tests_bilan.txt
+# imprime une ligne contenant le résultat des tests d’erreur dans un fichier tests_summary.txt
 # prend en argument ‘results’ qui contient la ligne à ajouter au fichier txt
 printResults <- function(results){
+  tests_summary <- file("tests_summary.txt", open = "w")
+  cat(results, file = tests_summary)
+  close(tests_summary)
 }
 
