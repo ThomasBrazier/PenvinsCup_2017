@@ -22,6 +22,16 @@ C’est le script préliminaire proposé par Geoffrey, qui peut servir de base e
 7. Ratios larg/haut et peri/larg réalistes : Thomas.Brazier
 8. Présenter les résultats en un seul fichier : Thomas.Brazier
 
+# Mode d’emploi de Github
+
+S’inscrire sur Github.
+Installer Github desktop et se connecter sur son compte.
+Ajouter le repository : https://github.com/ThomasBrazier/PenvinsCup_2017.git
+Avant chaque session de travail, « fetch origin » permet de récupérer le projet synchronisé sur le serveur.
+Quand vous avez fini vos modifications, il faut les enregistrer en faisant un « commit ».
+Quand vous avez fini de travailler sur le projet, il faut faire un « fetch origin » puis un « push » pour mettre à jour le projet sur le serveur.
+
+
 
 # Recommandation - Accents
 
