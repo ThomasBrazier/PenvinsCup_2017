@@ -1,16 +1,16 @@
-## Penvins-Cup-2017
+# Penvins-Cup-2017
 Université Rennes 1 - Master 1 EFCE
 
-# Script de départ
+## Script de départ
 
 C’est le script préliminaire proposé par Geoffrey, qui peut servir de base et d’ossature à l’ensemble du script, mais chacun est libre de le conserver en partie ou de tout changer pour obtenir la fonction qui lui semble judicieuse.
 
-# Règles
+## Règles
 
 1. Tout le monde peut collaborer à n’importe quelle partie
 2. Envoyez vos modifications au responsable de la fonction pour un dialogue afin de décider du/des code/améliorations à retenir
 
-# Responsables
+## Responsables
 
 0. Mise en forme et commentaires : Geoffrey.Ruaux
 1. Vérifier que l’objet est bien de la classe data.frame
@@ -22,22 +22,26 @@ C’est le script préliminaire proposé par Geoffrey, qui peut servir de base e
 7. Ratios larg/haut et peri/larg réalistes : Thomas.Brazier
 8. Présenter les résultats en un seul fichier : Thomas.Brazier
 
-# Mode d’emploi de Github
+## Mode d’emploi de Github
 
 S’inscrire sur Github.
 Installer Github desktop et se connecter sur son compte.
+
 Ajouter le repository : https://github.com/ThomasBrazier/PenvinsCup_2017.git
+
 Avant chaque session de travail, « fetch origin » permet de récupérer le projet synchronisé sur le serveur.
+
 Quand vous avez fini vos modifications, il faut les enregistrer en faisant un « commit ».
+
 Quand vous avez fini de travailler sur le projet, il faut faire un « fetch origin » puis un « push » pour mettre à jour le projet sur le serveur.
 
 
 
-# Recommandation - Accents
+## Recommandation - Accents
 
 Comme nous avons tous des systèmes d’exploitations différents, il est préférable de ne pas utiliser les accents dans le script.
 
-# Liste des fonctions
+## Liste des fonctions
 * printResults() -> imprime une ligne contenant le résultat des tests d’erreur dans un fichier tests_summary.txt
 * checkRatio() -> Vérifie le ratio attendu entre deux valeurs
 * checkInd() -> vérifie que le fichier est bien de type ind
