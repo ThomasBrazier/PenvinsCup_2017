@@ -21,7 +21,20 @@
 checkPenvins <- function(mydata) {
 
 cat("Bienvenue dans le verificateur Penvins EFCE 2017.\n\nVotre fichier va etre analyse...\n")
+}
 
+#-----------------------------------------------------#
+# Vérifie que le fichier file est bien de type Quad
+checkQuad <- function(file) {
+  
+}
+
+
+#-----------------------------------------------------#
+# Vérifie que le fichier file est bien de type Ind
+checkInd <- function(file) {
+  
+}
 
 #-----------------------------------------------------#
 #Etape 1 : Verifier si mydata est de classe data.frame
@@ -131,7 +144,7 @@ for (i in seq_along(mydata)) {
 #sont situes respectivement dans des intervalles min-max realistes que vous choisirez.
 
 # Fonction checkRatio()
-# Vérifier le ratio entre deux valeurs
+# Vérifie le ratio attendu entre deux valeurs
 # prend en arguments 5 valeurs :
 # valeur A, valeur B, ratio min attendu, ratio max attendu, numéro de la ligne, espece
 checkRatio <- function(varOne, varTwo, ratioMin, ratioMax, ligneNb, espece){
