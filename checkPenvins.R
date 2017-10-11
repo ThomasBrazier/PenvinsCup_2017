@@ -20,7 +20,7 @@
 
 checkPenvins <- function(mydata) {
 
-cat("Bienvenue dans le verificateur Penvins EFCE 2017.\n\nVotre fichier va etre analyse...\n")
+cat("Bienvenue dans le verificateur de fichiers Penvins 2017.")
 }
 
 #-----------------------------------------------------#
@@ -168,7 +168,7 @@ varTwo=as.numeric(varTwo)
 if (!is.na(varOne) & !is.na(varTwo)){
   ratio = varOne/varTwo
   if (ratio<ratioMin | ratio>ratioMax){
-    warning("Ligne", ligneNb, "pour l'espece", espece, ": Le ratio", ratio, "sort de l'intervalle attendu")
+    warning("Ligne", ligneNb, "pour l'espece", espece, ": Le ratio", ratio, "sort de l'intervalle attendu", ratioMin, ":",ratioMax)
   }
 } else{ #dans le cas ou l'une des valeurs est NA
   warning("Ligne", ligneNb, "pour l'espece", espece, ": valeur NA !")
@@ -177,7 +177,6 @@ if (!is.na(varOne) & !is.na(varTwo)){
 
 # Initialisation de l'étape 7 : uniquement si le fichier est reconnu de type Ind
 if (checkInd(mydata)){ # Vérification du fichier : type ind
-  
   
   # ratio larg/haut
   
@@ -269,4 +268,5 @@ checknumeric <- function(col, method, values) {
 # Fin du script
 #-----------------------------------------------------#
 sink() # stop sinking
-close(tests_summary) # Ferme le fichier
+cat("Fin de l'analyse.",file = testSummary)
+close(testSummary) # Ferme le fichier txt
