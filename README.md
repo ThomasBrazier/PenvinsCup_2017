@@ -42,7 +42,7 @@ Quand vous avez fini de travailler sur le projet, il faut faire un « fetch ori
 Comme nous avons tous des systèmes d’exploitations différents, il est préférable de ne pas utiliser les accents dans le script.
 
 ## Liste des fonctions
-* printResults() -> imprime une ligne contenant le résultat des tests d’erreur dans un fichier tests_summary.txt
+
 * checkRatio() -> Vérifie le ratio attendu entre deux valeurs
 * checkInd() -> vérifie que le fichier est bien de type ind
 * checkQuad() -> vérifie que le fichier est bien de type quad

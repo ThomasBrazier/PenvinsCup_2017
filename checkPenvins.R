@@ -24,16 +24,30 @@ cat("Bienvenue dans le verificateur Penvins EFCE 2017.\n\nVotre fichier va etre 
 }
 
 #-----------------------------------------------------#
-# Vérifie que le fichier file est bien de type Quad
-checkQuad <- function(file) {
-  
-}
-
+# Enregistre tous les messages dans un fichier txt "test_summary.txt"
+testSummary <- file("tests_summary.txt", open = "w")
+sink(file = testSummary, append = TRUE, type="message", split = TRUE)
 
 #-----------------------------------------------------#
-# Vérifie que le fichier file est bien de type Ind
+# Vérifie que le fichier file est bien de type Quad en vérifiant le nombre de colonnes attendues
+checkQuad <- function(file) {
+  nbColQuad = 29
+    if (ncol(file)==nbColQuad){
+      return(TRUE)
+    } else{
+      return(FALSE)
+    }
+}
+
+#-----------------------------------------------------#
+# Vérifie que le fichier file est bien de type Ind en vérifiant le nombre de colonnes attendues
 checkInd <- function(file) {
-  
+  nbColInd = 39
+  if (ncol(file)==nbColInd){
+    return(TRUE)
+  } else{
+    return(FALSE)
+  }
 }
 
 #-----------------------------------------------------#
@@ -148,39 +162,30 @@ for (i in seq_along(mydata)) {
 # prend en arguments 5 valeurs :
 # valeur A, valeur B, ratio min attendu, ratio max attendu, numéro de la ligne, espece
 checkRatio <- function(varOne, varTwo, ratioMin, ratioMax, ligneNb, espece){
-# vérifie que les deux valeurs ne sont pas NA
-if (varOne!="NA" & varTwo!="NA"){
+varOne=as.numeric(varOne)
+varTwo=as.numeric(varTwo)
+# vérifie que les deux valeurs sont des valeurs numériques et par conséquent ne sont pas des "NA"
+if (!is.na(varOne) & !is.na(varTwo)){
   ratio = varOne/varTwo
   if (ratio<ratioMin | ratio>ratioMax){
-    result = c("Ligne", ligneNb, "pour l'espece", espece, ": Le ratio", ratio, "sort de l'intervalle attendu")
-    cat(result)
-    printResults(result)
+    warning("Ligne", ligneNb, "pour l'espece", espece, ": Le ratio", ratio, "sort de l'intervalle attendu")
   }
-} else{ #dans la cas ou l'une des valeurs est NA
-  result = c("Ligne", ligneNb, "pour l'espece", espece, ": valeur NA !")
-  cat(result)
-  printResults(result)
+} else{ #dans le cas ou l'une des valeurs est NA
+  warning("Ligne", ligneNb, "pour l'espece", espece, ": valeur NA !")
 }
 }
 
-# Initialisation de l'étape 7
-header7=c("Etape 7 : Verification des ratios larg/haut et peri/larg dans biom.txt\n")
-result=header7  # initialise la variable result avec l'entete de l'etape
-printResults(result)
-# Vérification du fichier : type ind
-
-
-# ratio larg/haut
-
-
-# ratio peri/larg
-
-# Fin de l'etape 7
-# si aucune valeur n'a rempli la condition, result n'a pas changé et vaut toujours header7
-if (result == header7){
-  result = c("Tous les ratios attendus sont corrects, aucune valeur n'a été modifiee.\n")
-  cat(result)
-  printResults(result)
+# Initialisation de l'étape 7 : uniquement si le fichier est reconnu de type Ind
+if (checkInd(mydata)){ # Vérification du fichier : type ind
+  
+  
+  # ratio larg/haut
+  
+  
+  # ratio peri/larg
+  
+  # Fin de l'etape 7
+  
 }
 
 #=====================================================#
@@ -261,17 +266,7 @@ checknumeric <- function(col, method, values) {
 }
 
 #=====================================================#
-# Fonction presentation
+# Fin du script
 #-----------------------------------------------------#
-# Fonction finale presentant les résultats de tous les tests d'erreur
-# Chaque test imprime une ligne dans un fichier si le résultat retourne est negatif
-
-# fonction printResults()
-# imprime une ligne contenant le résultat des tests d’erreur dans un fichier tests_summary.txt
-# prend en argument ‘results’ qui contient la ligne à ajouter au fichier txt
-printResults <- function(results){
-  tests_summary <- file("tests_summary.txt", open = "w")
-  cat(results, file = tests_summary)
-  close(tests_summary)
-}
-
+sink() # stop sinking
+close(tests_summary) # Ferme le fichier
