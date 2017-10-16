@@ -35,6 +35,12 @@ Quand vous avez fini vos modifications, il faut les enregistrer en faisant un «
 
 Quand vous avez fini de travailler sur le projet, il faut faire un « fetch origin » puis un « push » pour mettre à jour le projet sur le serveur.
 
+## Recommandation - Messages utilisateur et erreurs
+
+La fonction sink() est initialisée au début de la fonction checkPenvins(). Par conséquent, tous les sorties des fonctions cat(), warnings() et stop() sont automatiquement écrites dans un fichier texte (tests_summary.txt) qui sera affiché à la fin de la fonction si tout se passe bien.
+
+Pour que stop s’affiche dans la console au lieu du fichier texte, il est donc impératif de mettre la ligne : sink(type = "message") avant la ligne contenant le stop().
+
 
 
 ## Recommandation - Accents

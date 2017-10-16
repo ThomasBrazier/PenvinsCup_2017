@@ -18,35 +18,19 @@
 #Fonction principale du script appelant toutes les autres
 #-----------------------------------------------------#
 
-# Enregistre tous les messages dans un fichier txt "test_summary.txt"
-checkPenvins <- function(dataset){
-  testSummary <- file("tests_summary.txt", open = "wt")
-  sink(file = testSummary, append = TRUE, type="output")
-  sink(file = testSummary, append = TRUE, type="message")
+checkPenvins <- function(mydata) {
+
+  # Enregistre tous les messages dans un fichier txt "test_summary.txt"
+  testSummary <- file("tests_summary.txt", open = "w")
+  sink(file = testSummary, append = TRUE, type="message", split = TRUE)
   
   # Message de bienvenue
-  cat("Bienvenue dans le verificateur de fichiers Penvins 2017.\n\n")
+  cat("Bienvenue dans le verificateur de fichiers Penvins 2017.")
   
-  #-----------------------------------------------------#
-  # Etape 3
-  #-----------------------------------------------------#
-  nomsRefQuad = c("transect","resp","date","coef","mode","d.chenal","d.mer","alt","surf","p.roc","p.moul","p.huit","p.bala","p.alg","p.enc","p.eau","s.flaq","d.flaq") #Noms et ordres des colonnes attendus pour le fichier quad
-  checkColNames(dataset, nomsRefQuad)
-  #nomsRefInd = c("transect","resp","date","coef","mode","d.chenal","d.mer","alt","surf","p.roc","p.moul","p.huit","p.bala","p.alg","p.enc","p.eau","s.flaq","d.flaq") #Noms et ordres des colonnes attendus pour le fichier quad
-  #checkColNames(dataset, nomsRefInd)
-  
-  #=====================================================#
-  # Fin du script
-  #-----------------------------------------------------#
-  cat("\nFin de l'analyse.", file = testSummary)
-  sink(type="output") # stop sinking
-  sink(type="message") # stop sinking
+
   # affichage du fichier texte des messages et erreurs
   file.show("tests_summary.txt")
-  close(testSummary) # Ferme le fichier txt
 }
-
-
 
 
 #-----------------------------------------------------#
@@ -77,6 +61,11 @@ checkInd <- function(file) {
 #Si non : arreter le script et indiquer la classe de mydata
 #-----------------------------------------------------#
 
+if (class(mydata) == "data.frame") {
+	cat("Tableau charge avec succes !\nL'objet est bien de classe ", class(mydata), ".\nAnalyse des donnees...\n\n")
+} else {
+	stop("L'objet charge est de classe ", class(mydata), " et ne peut etre lu par ce script.\n Verifiez que votre objet est un tableau.\n\n")
+}
 
 #-----------------------------------------------------#
 #Etape 2 : Verifier que le tableau possede bien 27 colonnes
@@ -84,6 +73,13 @@ checkInd <- function(file) {
 #Si non : arreter le script et indiquer le nombre incorrect de colonnes
 #-----------------------------------------------------#
 
+cat("Analyse du nombre de colonnes...\n\n")
+
+if (ncol(mydata) == 27) {
+	cat("Votre tableau comporte bien 27 colonnes.\n\n")
+} else {
+	stop("Votre tableau comporte ", ncol(mydata), " colonnes au lieu de 27.\nCorrigez votre fichier et recommencez.\n\n")
+}
 
 #-----------------------------------------------------#
 #Etape 3 : Verifier que les noms de colonnes sont corrects
@@ -91,25 +87,23 @@ checkInd <- function(file) {
 #Si non : arreter le script et indiquer les erreurs et les noms attendus
 #-----------------------------------------------------#
 
-# La fonction checkColNames() vérifie que les nomes des colonnes du fichier dataset en argument correspondent bien à la liste nomsRef en argument 2
-checkColNames <- function(dataset, nomsRef) {
-  cat("ETAPE 3 : Verification des noms des colonnes :\n")
-  col = names(dataset) # "col" stocke les noms des colonnes du fichier
-  verif=TRUE # si verif=TRUE à la fin du test, les noms des colonnes sont conformes
-  for (i in 1:length(dataset)){
-    if (col[i] != nomsRef[i]){
-      verif=FALSE # si il y a une erreur, ce n'est plus conforme, verif change d'etat
-      warning("Le nom de la colonne", i, "n'est pas correct.")
-      cat("Remplacer le nom de la colonne",i, "par",nomsRef[i],".\n")} # sinon on affiche un message permettant de remplacer les noms non conformes
-    }
-  cat("Fin de la verification du nom des colonnes\n")
-  if (verif==FALSE) {
-    cat("ERROR : La fonction checkPenvins s'est terminee prematurement.")
-    sink(type = "message")
-    stop("Il y a une/des erreur(s) dans les noms de colonnes.") # message d'erreur indiquant qu'il y a une ou des erreurs et stoppant la fonction
-  } else {cat("Toutes les colonnes sont correctes.\n")}
+cat("Analyse des noms de colonnes...\n\n")
+
+refname = c("cidre", "galette") #Liste des noms de colonnes attendus
+testok = TRUE #Variable egale a TRUE si les noms sont conformes ou FALSE sinon
+
+for (i in seq_along(mydata)) {
+	if (names(mydata)[i] != refname[i]) {
+		cat("Le nom de la colonne ", names(mydata)[i], " est incorrect. Remplacer par ", refname[i],".\n\n")
+		testok = FALSE
+	}
 }
 
+if (testok) {
+	cat("Les noms de colonnes sont corrects.")
+} else {
+	stop("Certains noms de colonnes ne sont pas conformes.\nVerifiez les references donnees ci-dessus.")
+}
 
 #-----------------------------------------------------#
 #Etape 4 : Verifier que les classes des colonnes sont correctes
@@ -117,6 +111,26 @@ checkColNames <- function(dataset, nomsRef) {
 #Si non : arreter le script et indiquer les erreurs et les classes attendues
 #-----------------------------------------------------#
 
+cat("Analyse des classes des colonnes...\n\n")
+
+refclass = c("cidre", "galette") #Liste des classes de colonnes attendues
+testok = TRUE #Variable egale a TRUE si les noms sont conformes ou FALSE sinon
+
+for (i in seq_along(mydata)) {
+	if (class(mydata[i]) != refclass[i]) {
+		cat("La classe de la colonne ", names(mydata)[i], " est incorrecte.\nLes donnees sont de classe ", (class(mydata[i]), "\net devraient etre de classe ", refclass[i],".\n\n")
+		testok = FALSE
+	}
+}
+
+if (testok) {
+	cat("Les classes des colonnes sont correctes.")
+} else {
+	stop("Certaines classes de colonnes ne sont pas conformes.\nVerifiez le format des donnees.")
+}
+
+cat("Le contenu des colonnes va etre analyse en detail.\n")
+readline("Appuyez sur Entree pour continuer.") #Permet a l'utilisateur de respirer entre les blocs de texte.
 
 #-----------------------------------------------------#
 #Etape 5 : Verifier dans les colonnes de classe "factor"
@@ -126,6 +140,21 @@ checkColNames <- function(dataset, nomsRef) {
 #et contenus des lignes qui ne sont pas conformes, ainsi que le contenu attendu
 #-----------------------------------------------------#
 
+cat("Analyse de la conformite des noms des facteurs...\n\n")
+
+for (i in seq_along(mydata)) {
+	if (mydata[i][1] == "group" | mydata[i][1] == "resp") { #Colonnes ne devant contenir qu'une modalite
+		checkfactor(mydata[i], mydata[i][2]) 		  #Appelle la fonction dediee a cet epineux probleme
+	}  
+	if (mydata[i][1] == "month") {
+		checkfactor(mydata[i], c("sept"))
+	}  	
+	if (mydata[i][1] == "mode") {
+		checkfactor(mydata[i], c("a", "b"))
+	}  
+}
+
+}
 
 #=====================================================#
 # Etape 7 : Verification des ratios larg/haut et peri/larg dans biom.txt
@@ -138,21 +167,21 @@ checkColNames <- function(dataset, nomsRef) {
 # prend en arguments 5 valeurs :
 # valeur A, valeur B, ratio min attendu, ratio max attendu, numéro de la ligne, espece
 checkRatio <- function(varOne, varTwo, ratioMin, ratioMax, ligneNb, espece){
-  varOne=as.numeric(varOne)
-  varTwo=as.numeric(varTwo)
-  # vérifie que les deux valeurs sont des valeurs numériques et par conséquent ne sont pas des "NA"
-  if (!is.na(varOne) & !is.na(varTwo)){
-    ratio = varOne/varTwo
-    if (ratio<ratioMin | ratio>ratioMax){
-      warning("Ligne", ligneNb, "pour l'espece", espece, ": Le ratio", ratio, "sort de l'intervalle attendu", ratioMin, ":",ratioMax)
-    }
-  } else{ #dans le cas ou l'une des valeurs est NA
-    warning("Ligne", ligneNb, "pour l'espece", espece, ": valeur NA !")
+varOne=as.numeric(varOne)
+varTwo=as.numeric(varTwo)
+# vérifie que les deux valeurs sont des valeurs numériques et par conséquent ne sont pas des "NA"
+if (!is.na(varOne) & !is.na(varTwo)){
+  ratio = varOne/varTwo
+  if (ratio<ratioMin | ratio>ratioMax){
+    warning("Ligne", ligneNb, "pour l'espece", espece, ": Le ratio", ratio, "sort de l'intervalle attendu", ratioMin, ":",ratioMax)
   }
+} else{ #dans le cas ou l'une des valeurs est NA
+  warning("Ligne", ligneNb, "pour l'espece", espece, ": valeur NA !")
+}
 }
 
 # Initialisation de l'étape 7 : uniquement si le fichier est reconnu de type Ind
-#if (checkInd(mydata)){ # Vérification du fichier : type ind
+if (checkInd(mydata)){ # Vérification du fichier : type ind
   
   # ratio larg/haut
   
@@ -161,7 +190,7 @@ checkRatio <- function(varOne, varTwo, ratioMin, ratioMax, ligneNb, espece){
   
   # Fin de l'etape 7
   
-#}
+}
 
 #=====================================================#
 #Fonction checkfactor
@@ -180,7 +209,7 @@ checkfactor <- function(col, ref) {
 	testok <- TRUE
 
 	for (i in 2:length(col)) { #La boucle commence en deuxieme ligne pour ne pas examiner le titre
-		if (!(col[i] %in% ref)) {
+		if !(col[i] %in% ref) {
 			testok <- FALSE
 			if (length(ref) == 1) #Le message d'erreur s'adapte au nombre de modalites
 				cat("Erreur dans la colonne ", col[1], " ? la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas a la modalite attendue : ", ref)
@@ -188,6 +217,7 @@ checkfactor <- function(col, ref) {
 				cat("Erreur dans la colonne ", col[1], " ? la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas aux modalites attendues : ", ref)
 			}
 		}
+	}
 	if (testok) {
 		cat("Les modalites des facteurs sont correctes.")
 	} 
@@ -209,3 +239,39 @@ checkfactor <- function(col, ref) {
 #  - si "cont" : les valeurs de la colonne devront etre comprises entre les valeurs donnees
 #values : valeurs attendues exactement (si "disc") ou bornes de l'intervalle attendu (si "cont")
 #-----------------------------------------------------#
+
+checknumeric <- function(col, method, values) {
+	testok <- TRUE
+
+	if method == "disc"	
+		for (i in 2:length(col)) { #La boucle commence en deuxieme ligne pour ne pas examiner le titre
+			if !(col[i] %in% values) {
+				testok <- FALSE
+				if (length(values) == 1) #Le message d'erreur s'adapte au nombre de valeurs
+					cat("Erreur dans la colonne ", col[1], " a la ligne ", i, ".\nLa valeur  ", col[i], " ne correspond pas a la valeur attendue : ", values)
+				} else {
+					cat("Erreur dans la colonne ", col[1], " a la ligne ", i, ".\nLa valeur ", col[i], " ne correspond pas aux valeurs attendues : ", values)
+				}
+			}
+		}
+
+	if method == "cont"	
+		for (i in 2:length(col)) { #La boucle commence en deuxieme ligne pour ne pas examiner le titre
+			if !(col[i]>=values[1] & col[i]<=values[2]) {
+				testok <- FALSE
+				cat("Erreur dans la colonne ", col[1], " a la ligne ", i, ".\nLa valeur  ", col[i], " est en dehors de l'intervalle attendu : ", values[1], "-", values[2])
+			}
+		}
+
+	if (testok) {
+		cat("Les valeurs numeriques sont correctes.")
+	} 
+}
+}
+
+#=====================================================#
+# Fin du script
+#-----------------------------------------------------#
+sink() # stop sinking
+cat("Fin de l'analyse.",file = testSummary)
+close(testSummary) # Ferme le fichier txt
