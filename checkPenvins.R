@@ -106,6 +106,7 @@ checkColNames <- function(dataset, nomsRef) {
   if (verif==FALSE) {
     cat("ERROR : La fonction checkPenvins s'est terminee prematurement.")
     sink(type = "message")
+    file.show("tests_summary.txt")
     stop("Il y a une/des erreur(s) dans les noms de colonnes.") # message d'erreur indiquant qu'il y a une ou des erreurs et stoppant la fonction
   } else {cat("Toutes les colonnes sont correctes.\n")}
 }
