@@ -47,10 +47,12 @@ stop() est un message d'erreur qui arrête le script à l'endroit où il est pla
 
 Pour que stop s’affiche dans la console au lieu du fichier texte, il est donc impératif de mettre la ligne : sink(type = "message") avant la ligne contenant le stop().
 
-Exemple :	cat("ERROR : Message d'erreur à afficher dans le fichier texte")
-    				sink(type = "message") # met fin à la redirection des messages vers le fichier tests summary.txt
-    				file.show("tests_summary.txt") # Affiche le fichier txt
-    				stop("Message d'erreur à afficher dans la console") # Le script s'arrête et affiche l'erreur dans la console
+Exemple :
+
+cat("ERROR : Message d'erreur à afficher dans le fichier texte")  
+sink(type = "message") # met fin à la redirection des messages vers le fichier tests summary.txt  
+file.show("tests_summary.txt") # Affiche le fichier txt  
+stop("Message d'erreur à afficher dans la console") # Le script s'arrête et affiche l'erreur dans la console  
 
 
 
