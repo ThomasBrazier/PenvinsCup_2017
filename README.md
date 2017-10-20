@@ -35,17 +35,28 @@ Quand vous avez fini vos modifications, il faut les enregistrer en faisant un «
 
 Quand vous avez fini de travailler sur le projet, il faut faire un « fetch origin » puis un « push » pour mettre à jour le projet sur le serveur.
 
-## Recommandation - Messages utilisateur et erreurs
+## Recommandation IMPORTANTE - Messages utilisateur et erreurs
 
-La fonction sink() est initialisée au début de la fonction checkPenvins(). Par conséquent, tous les sorties des fonctions cat(), warnings() et stop() sont automatiquement écrites dans un fichier texte (tests_summary.txt) qui sera affiché à la fin de la fonction si tout se passe bien.
+Afin qu'on soit tous sur la même base pour communiquer des informations à l'utilisateur...
+
+La fonction sink() est initialisée au début de la fonction checkPenvins(). Par conséquent, tous les sorties des fonctions cat(), warnings() et stop() sont automatiquement écrites dans un fichier texte (tests_summary.txt) qui sera affiché à la fin de la fonction checkPenvins.
+
+warnings() est un message d'erreur qui n'arrête pas le script
+
+stop() est un message d'erreur qui arrête le script à l'endroit où il est placé. Tout ce qui vient après ne sera pas éxécuté.
 
 Pour que stop s’affiche dans la console au lieu du fichier texte, il est donc impératif de mettre la ligne : sink(type = "message") avant la ligne contenant le stop().
+
+Exemple :	cat("ERROR : Message d'erreur à afficher dans le fichier texte")
+    				sink(type = "message") # met fin à la redirection des messages vers le fichier tests summary.txt
+    				file.show("tests_summary.txt") # Affiche le fichier txt
+    				stop("Message d'erreur à afficher dans la console") # Le script s'arrête et affiche l'erreur dans la console
 
 
 
 ## Recommandation - Accents
 
-Comme nous avons tous des systèmes d’exploitations différents, il est préférable de ne pas utiliser les accents dans le script.
+Comme nous avons tous des systèmes d’exploitations différents, il est préférable de ne pas utiliser les accents dans le script, y compris dans les chaînes de caractères.
 
 ## Liste des fonctions
 
