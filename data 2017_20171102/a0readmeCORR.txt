@@ -1,0 +1,4 @@
+- Manque de mesures sur certaines flaques, notamment la distance avec la flaque la plus proche et surface totales des flaques.
+- Manque 3 quadrats (7, 8 et 9) par manque de temps avec la marée montante.
+- Quadrat 18 : quadrat avec seulement des huîtres et balanes.
+- Quadrat 26 : disparition des mesures.
