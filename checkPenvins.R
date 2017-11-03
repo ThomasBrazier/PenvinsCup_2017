@@ -1,8 +1,8 @@
 #=====================================================#
 #Pour utiliser ce script, assurez-vous que le fichier 
-#"checkPenvins_EFCE_2017.R" se trouve dans votre repertoire 
+#"checkPenvins.R" se trouve dans votre repertoire 
 #courant, puis copiez-collez la commande ci-dessous dans R :
-#source("checkPenvins_EFCE_2017.R")
+#source("checkPenvins.R")
 #-----------------------------------------------------#
 #Vous pouvez egalement utiliser le menu Fichier > Sourcer du code R... > 
 #et selectionner le script
@@ -11,6 +11,8 @@
 #avec read.table() et a utiliser :
 #checkPenvins(nomdutableau)
 #-----------------------------------------------------#
+
+# "Juste pour la gloire !"
 
 #=====================================================#
 #Fonction checkPenvins
@@ -25,15 +27,32 @@ checkPenvins <- function(dataset){
   sink(file = testSummary, append = TRUE, type="message")
   
   # Message de bienvenue
-  cat("Bienvenue dans le verificateur de fichiers Penvins 2017.\n\n")
+  cat("#-----------------------------------------------------#\nBienvenue dans le verificateur de fichiers Penvins 2017.\n#-----------------------------------------------------#\n\n")
+ 
+  #-----------------------------------------------------#
+  # Etape 1
+  #-----------------------------------------------------#
+  checkDataFrame(dataset)
+  
+  #-----------------------------------------------------#
+  # Etape 2
+  #-----------------------------------------------------#
+  
   
   #-----------------------------------------------------#
   # Etape 3
   #-----------------------------------------------------#
   nomsRefQuad = c("transect","resp","date","coef","mode","d.chenal","d.mer","alt","surf","p.roc","p.moul","p.huit","p.bala","p.alg","p.enc","p.eau","s.flaq","d.flaq") #Noms et ordres des colonnes attendus pour le fichier quad
-  checkColNames(dataset, nomsRefQuad)
-  #nomsRefInd = c("transect","resp","date","coef","mode","d.chenal","d.mer","alt","surf","p.roc","p.moul","p.huit","p.bala","p.alg","p.enc","p.eau","s.flaq","d.flaq") #Noms et ordres des colonnes attendus pour le fichier quad
-  #checkColNames(dataset, nomsRefInd)
+  nomsRefInd = c("transect","resp","date","coef","mode","d.chenal","d.mer","alt","surf","p.roc","p.moul","p.huit","p.bala","p.alg","p.enc","p.eau","s.flaq","d.flaq") #Noms et ordres des colonnes attendus pour le fichier ind
+  
+  if (checkQuad(dataset)) {
+    checkColNames(dataset, nomsRefQuad)
+  } else {
+    if (checkInd(dataset)) {
+      checkColNames(dataset, nomsRefInd)
+    }
+  }
+
   
   #=====================================================#
   # Fin du script
@@ -46,25 +65,33 @@ checkPenvins <- function(dataset){
   close(testSummary) # Ferme le fichier txt
 }
 
-
-
-
 #-----------------------------------------------------#
-# Vérifie que le fichier file est bien de type Quad en vérifiant le nombre de colonnes attendues
-checkQuad <- function(file) {
-  nbColQuad = 29
-    if (ncol(file)==nbColQuad){
-      return(TRUE)
-    } else{
-      return(FALSE)
-    }
+#Etape 1 : Verifier si mydata est de classe data.frame
+#Si oui : message de confirmation 
+#Si non : arreter le script et indiquer la classe de mydata
+#-----------------------------------------------------#
+checkDataFrame <- function(mydata) {
+  if (is.data.frame(mydata)) {
+    cat("Le fichier", mydata, "est bien de type data.frame.")
+  } else {
+    cat("ERROR : Le fichier n'est pas de type data.frame :", mydata, "est un", class(mydata))
+    sink(type = "message")
+    file.show("tests_summary.txt")
+    stop("Le fichier n'est pas de type data.frame  :", mydata, "est un", class(mydata))
+  }
 }
 
 #-----------------------------------------------------#
-# Vérifie que le fichier file est bien de type Ind en vérifiant le nombre de colonnes attendues
-checkInd <- function(file) {
-  nbColInd = 39
-  if (ncol(file)==nbColInd){
+#Etape 2 : Verifier que le tableau possede bien 34 ou 43 colonnes
+#Si oui : message de confirmation 
+#Si non : arreter le script et indiquer le nombre incorrect de colonnes
+#-----------------------------------------------------#
+
+#-----------------------------------------------------#
+# Vérifie que le fichier mydata est bien de type Quad en vérifiant le nombre de colonnes attendues
+checkQuad <- function(mydata) {
+  nbColQuad = 34
+  if (ncol(mydata)==nbColQuad){
     return(TRUE)
   } else{
     return(FALSE)
@@ -72,18 +99,15 @@ checkInd <- function(file) {
 }
 
 #-----------------------------------------------------#
-#Etape 1 : Verifier si mydata est de classe data.frame
-#Si oui : message de confirmation 
-#Si non : arreter le script et indiquer la classe de mydata
-#-----------------------------------------------------#
-
-
-#-----------------------------------------------------#
-#Etape 2 : Verifier que le tableau possede bien 27 colonnes
-#Si oui : message de confirmation 
-#Si non : arreter le script et indiquer le nombre incorrect de colonnes
-#-----------------------------------------------------#
-
+# Vérifie que le fichier file est bien de type Ind en vérifiant le nombre de colonnes attendues
+checkInd <- function(mydata) {
+  nbColInd = 43
+  if (ncol(mydata)==nbColInd){
+    return(TRUE)
+  } else{
+    return(FALSE)
+  }
+}
 
 #-----------------------------------------------------#
 #Etape 3 : Verifier que les noms de colonnes sont corrects
@@ -180,7 +204,7 @@ checkRatio <- function(varOne, varTwo, ratioMin, ratioMax, ligneNb, espece){
 checkfactor <- function(col, ref) {
 	testok <- TRUE
 
-	for (i in 2:length(col)) { #La boucle commence en deuxieme ligne pour ne pas examiner le titre
+	for (i in 1:length(col)) {
 		if (!(col[i] %in% ref)) {
 			testok <- FALSE
 			if (length(ref) == 1) #Le message d'erreur s'adapte au nombre de modalites
@@ -191,7 +215,7 @@ checkfactor <- function(col, ref) {
 		}
 	if (testok) {
 		cat("Les modalites des facteurs sont correctes.")
-	} 
+	}
 }
 
 #=====================================================#

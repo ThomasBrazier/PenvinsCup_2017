@@ -1,6 +1,9 @@
-ind <- read.table("b30ind.txt", header = TRUE, sep=",")
-quad <- read.table("b30quad.txt", header = TRUE)
+ind <- read.table("data/b30indCORR.txt", header = TRUE)
+quad <- read.table("data/b30quadCORR.txt", header = TRUE)
 head(quad)
+head(ind)
+str(ind)
+str(quad)
 
 source("checkPenvins.R")
 
