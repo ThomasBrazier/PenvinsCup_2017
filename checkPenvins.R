@@ -42,6 +42,7 @@ checkPenvins <- function(dataset){
   #-----------------------------------------------------#
   # Etape 3
   #-----------------------------------------------------#
+  # Noms des colonnes pour les deux types de fichiers
   nomsRefQuad = c("transect","resp","date","coef","mode","d.chenal","d.mer","alt","surf","p.roc","p.moul","p.huit","p.bala","p.alg","p.enc","p.eau","s.flaq","d.flaq") #Noms et ordres des colonnes attendus pour le fichier quad
   nomsRefInd = c("transect","resp","date","coef","mode","d.chenal","d.mer","alt","surf","p.roc","p.moul","p.huit","p.bala","p.alg","p.enc","p.eau","s.flaq","d.flaq") #Noms et ordres des colonnes attendus pour le fichier ind
   
@@ -53,7 +54,20 @@ checkPenvins <- function(dataset){
     }
   }
 
+  #-----------------------------------------------------#
+  # Etape 7
+  #-----------------------------------------------------# 
+  # Initialisation de l'étape 7 : uniquement si le fichier est reconnu de type Ind
+  if (checkInd(dataset)){ # Vérification du type de fichier : type ind attendu
   
+  # ratio larg/haut
+  checkRatio(dataset, 1)
+  
+  # ratio peri/larg
+  checkRatio(dataset, 2)
+  
+  }
+
   #=====================================================#
   # Fin du script
   #-----------------------------------------------------#
@@ -116,11 +130,11 @@ checkInd <- function(mydata) {
 #-----------------------------------------------------#
 
 # La fonction checkColNames() vérifie que les nomes des colonnes du fichier dataset en argument correspondent bien à la liste nomsRef en argument 2
-checkColNames <- function(dataset, nomsRef) {
+checkColNames <- function(mydata, nomsRef) {
   cat("ETAPE 3 : Verification des noms des colonnes :\n")
-  col = names(dataset) # "col" stocke les noms des colonnes du fichier
+  col = names(mydata) # "col" stocke les noms des colonnes du fichier
   verif=TRUE # si verif=TRUE à la fin du test, les noms des colonnes sont conformes
-  for (i in 1:length(dataset)){
+  for (i in 1:length(mydata)){
     if (col[i] != nomsRef[i]){
       verif=FALSE # si il y a une erreur, ce n'est plus conforme, verif change d'etat
       warning("Le nom de la colonne", i, "n'est pas correct.")
@@ -152,41 +166,58 @@ checkColNames <- function(dataset, nomsRef) {
 #-----------------------------------------------------#
 
 
-#=====================================================#
+#-----------------------------------------------------#
 # Etape 7 : Verification des ratios larg/haut et peri/larg dans biom.txt
 #-----------------------------------------------------#
 # verifier que les ratios larg/haut et peri/larg du fichier biometrique qui ne sont pas NA
 #sont situes respectivement dans des intervalles min-max realistes que vous choisirez.
 
 # Fonction checkRatio()
-# Vérifie le ratio attendu entre deux valeurs
-# prend en arguments 5 valeurs :
-# valeur A, valeur B, ratio min attendu, ratio max attendu, numéro de la ligne, espece
-checkRatio <- function(varOne, varTwo, ratioMin, ratioMax, ligneNb, espece){
-  varOne=as.numeric(varOne)
-  varTwo=as.numeric(varTwo)
-  # vérifie que les deux valeurs sont des valeurs numériques et par conséquent ne sont pas des "NA"
-  if (!is.na(varOne) & !is.na(varTwo)){
-    ratio = varOne/varTwo
-    if (ratio<ratioMin | ratio>ratioMax){
-      warning("Ligne", ligneNb, "pour l'espece", espece, ": Le ratio", ratio, "sort de l'intervalle attendu", ratioMin, ":",ratioMax)
+# Vérifie le ratio attendu entre deux variables
+# prend 2 arguments :
+# un data frame de type ind et le type de test => larg/haut (1) ou peri/larg (2)
+checkRatio <- function(mydata, type = 1){
+  # success reste TRUE si aucun warning n'est releve
+  success = TRUE
+  
+  # recupere les colonnes des variables larg et haut ou peri
+  if (type == 1) {
+    v1 = 36
+    v2 = 37
+    ty = "largeur/hauteur"
+    # vecteur MinMax = ratio min et ratio max attendu
+    # entre 0 et 15
+    MinMax = c(0,15)
+  } else {
+    if (type == 2) {
+      v1 = 38
+      v2 = 36
+      ty = "peristome/largeur"
+      #vecteur MinMax = ratio min et ratio max attendu
+      # entre 0 et 5
+      MinMax = c(0,5)
     }
-  } else{ #dans le cas ou l'une des valeurs est NA
-    warning("Ligne", ligneNb, "pour l'espece", espece, ": valeur NA !")
+  }
+  
+  # comparaison des ratios ligne par ligne
+  for (i in 1:nrow(mydata)) { # parcourt chaque ligne des deux colonnes
+    if (!is.na(mydata[i,v1]) & !is.na(mydata[i,v2])){   # verifie que les deux valeurs ne sont pas des NA et ainsi sont comparables
+      ratio = mydata[i,v1]/mydata[i,v2] # calcule le ratio pour la ligne i
+      if (ratio<MinMax[1] | ratio>MinMax[2]){
+        success = FALSE
+        warning("Ligne", i, "pour l'espece", mydata[i,35], ": Le ratio", ty, "=", ratio, "sort de l'intervalle attendu", MinMax[1], ":", MinMax[2])
+      }
+    } else{ #dans le cas ou l'une des valeurs est NA
+      success = FALSE
+      warning("Ligne", i, "pour l'espece", mydata[i,35], ": valeur NA !")
+    }
+  }
+  
+  # si success = TRUE, message de confirmation
+  if (success == TRUE) {
+    cat("Tous les ratios", ty, "sont corrects.")
   }
 }
-
-# Initialisation de l'étape 7 : uniquement si le fichier est reconnu de type Ind
-#if (checkInd(mydata)){ # Vérification du fichier : type ind
-  
-  # ratio larg/haut
-  
-  
-  # ratio peri/larg
-  
-  # Fin de l'etape 7
-  
-#}
 
 #=====================================================#
 #Fonction checkfactor
