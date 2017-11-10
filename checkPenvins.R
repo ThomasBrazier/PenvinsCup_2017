@@ -32,12 +32,25 @@ checkPenvins <- function(dataset){
   #-----------------------------------------------------#
   # Etape 1
   #-----------------------------------------------------#
+  cat("\n\nETAPE 1 : Verification de la classe de l'objet :\n")
   checkDataFrame(dataset)
   
   #-----------------------------------------------------#
   # Etape 2
   #-----------------------------------------------------#
-  
+  cat("\n\nETAPE 2 : Verification du nombre de colonnes :\n")
+  if (checkInd(dataset)) {
+    cat("Le fichier a 43 colonnes est est de type Données biométriques sur les individus")
+  } else {
+    if (checkQuad(dataset)) {
+      cat("Le fichier a 34 colonnes et est de type Données de quadrat")
+    } else {
+      cat("ERROR : Le fichier n'a pas le nombre de colonnes attendu")
+      sink(type = "message")
+      file.show("tests_summary.txt")
+      stop("Le fichier n'a pas le nombre de colonnes attendu")
+    }
+  }
   
   #-----------------------------------------------------#
   # Etape 3
@@ -86,12 +99,12 @@ checkPenvins <- function(dataset){
 #-----------------------------------------------------#
 checkDataFrame <- function(mydata) {
   if (is.data.frame(mydata)) {
-    cat("Le fichier", mydata, "est bien de type data.frame.")
+    cat("Le fichier", deparse(substitute(mydata)), "est bien de type data.frame.")
   } else {
-    cat("ERROR : Le fichier n'est pas de type data.frame :", mydata, "est un", class(mydata))
+    cat("ERROR : Le fichier n'est pas de type data.frame :", deparse(substitute(mydata)), "est un", class(mydata))
     sink(type = "message")
     file.show("tests_summary.txt")
-    stop("Le fichier n'est pas de type data.frame  :", mydata, "est un", class(mydata))
+    stop("Le fichier n'est pas de type data.frame  :", deparse(substitute(mydata)), "est un", class(mydata))
   }
 }
 
@@ -113,7 +126,7 @@ checkQuad <- function(mydata) {
 }
 
 #-----------------------------------------------------#
-# Vérifie que le fichier file est bien de type Ind en vérifiant le nombre de colonnes attendues
+# Vérifie que le fichier mydata est bien de type Ind en vérifiant le nombre de colonnes attendues
 checkInd <- function(mydata) {
   nbColInd = 43
   if (ncol(mydata)==nbColInd){
@@ -130,8 +143,9 @@ checkInd <- function(mydata) {
 #-----------------------------------------------------#
 
 # La fonction checkColNames() vérifie que les nomes des colonnes du fichier dataset en argument correspondent bien à la liste nomsRef en argument 2
+
 checkColNames <- function(mydata, nomsRef) {
-  cat("ETAPE 3 : Verification des noms des colonnes :\n")
+  cat("\n\nETAPE 3 : Verification des noms des colonnes :\n")
   col = names(mydata) # "col" stocke les noms des colonnes du fichier
   verif=TRUE # si verif=TRUE à la fin du test, les noms des colonnes sont conformes
   for (i in 1:length(mydata)){

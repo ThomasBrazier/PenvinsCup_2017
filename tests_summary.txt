@@ -1,6 +1,11 @@
+#-----------------------------------------------------#
 Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
 
-ETAPE 3 : Verification des noms des colonnes :
-Remplacer le nom de la colonne 5 par mode .
-Fin de la verification du nom des colonnes
-ERROR : La fonction checkPenvins s'est terminee prematurement.
+Le fichier dataset est bien de type data.frame.ETAPE 3 : Verification des noms des colonnes :
+Remplacer le nom de la colonne 15 par p.enc .
+Error in if (col[i] != nomsRef[i]) { : 
+  valeur manquante là où TRUE / FALSE est requis
+De plus : Warning message:
+In checkColNames(dataset, nomsRefQuad) :
+  Le nom de la colonne15n'est pas correct.
