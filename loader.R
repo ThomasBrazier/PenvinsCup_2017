@@ -7,6 +7,10 @@ str(quad)
 
 source("checkPenvins.R")
 
+checkDataFrame(ind)
+
+checkRatio(ind)
+
 checkPenvins(quad)
 
 file.show("tests_summary.txt")

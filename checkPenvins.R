@@ -72,12 +72,12 @@ checkPenvins <- function(dataset){
 #-----------------------------------------------------#
 checkDataFrame <- function(mydata) {
   if (is.data.frame(mydata)) {
-    cat("Le fichier", mydata, "est bien de type data.frame.")
+    cat("Le fichier", deparse(substitute(mydata)), "est bien de type data.frame.")
   } else {
-    cat("ERROR : Le fichier n'est pas de type data.frame :", mydata, "est un", class(mydata))
+    cat("ERROR : Le fichier n'est pas de type data.frame :", deparse(substitute(mydata)), "est un", class(mydata))
     sink(type = "message")
     file.show("tests_summary.txt")
-    stop("Le fichier n'est pas de type data.frame  :", mydata, "est un", class(mydata))
+    stop("Le fichier n'est pas de type data.frame  :", deparse(substitute(mydata)), "est un", class(mydata))
   }
 }
 
@@ -117,7 +117,7 @@ checkInd <- function(mydata) {
 
 # La fonction checkColNames() vérifie que les nomes des colonnes du fichier dataset en argument correspondent bien à la liste nomsRef en argument 2
 checkColNames <- function(dataset, nomsRef) {
-  cat("ETAPE 3 : Verification des noms des colonnes :\n")
+  cat("\n\nETAPE 3 : Verification des noms des colonnes :\n")
   col = names(dataset) # "col" stocke les noms des colonnes du fichier
   verif=TRUE # si verif=TRUE à la fin du test, les noms des colonnes sont conformes
   for (i in 1:length(dataset)){
