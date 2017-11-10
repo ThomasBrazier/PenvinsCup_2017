@@ -193,7 +193,7 @@ checkRatio <- function(mydata, type = 1){
       v1 = 38
       v2 = 36
       ty = "peristome/largeur"
-      #vecteur MinMax = ratio min et ratio max attendu
+      # vecteur MinMax = ratio min et ratio max attendu
       # entre 0 et 5
       MinMax = c(0,5)
     }
@@ -213,7 +213,7 @@ checkRatio <- function(mydata, type = 1){
     }
   }
   
-  # si success = TRUE, message de confirmation
+  # si success est reste TRUE, message de reussite
   if (success == TRUE) {
     cat("Tous les ratios", ty, "sont corrects.")
   }
