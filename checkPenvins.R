@@ -40,7 +40,7 @@ checkPenvins <- function(dataset){
   #-----------------------------------------------------#
   cat("\n\nETAPE 2 : Verification du nombre de colonnes :\n")
   if (checkInd(dataset)) {
-    cat("Le fichier a 43 colonnes est est de type Données biométriques sur les individus")
+    cat("Le fichier a 43 colonnes et est de type Données biométriques sur les individus")
   } else {
     if (checkQuad(dataset)) {
       cat("Le fichier a 34 colonnes et est de type Données de quadrat")
@@ -71,14 +71,12 @@ checkPenvins <- function(dataset){
   # Etape 7
   #-----------------------------------------------------# 
   # Initialisation de l'étape 7 : uniquement si le fichier est reconnu de type Ind
+  cat("\n\nETAPE 7 : Verification des ratios des mesures biometriques :\n")
   if (checkInd(dataset)){ # Vérification du type de fichier : type ind attendu
-  
   # ratio larg/haut
   checkRatio(dataset, 1)
-  
   # ratio peri/larg
   checkRatio(dataset, 2)
-  
   }
 
   #=====================================================#
