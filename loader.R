@@ -19,6 +19,7 @@ close(testSummary)
 
 ### Fonctions individuelles
 
+
 # etape 1
 checkDataFrame(ind)
 checkDataFrame(quad)
@@ -26,8 +27,8 @@ checkDataFrame(quad)
 checkQuad(quad)
 checkInd(ind)
 # etape 3
-nomsRefQuad = c("transect","resp","date","coef","mode","d.chenal","d.mer","alt","surf","p.roc","p.moul","p.huit","p.bala","p.alg","p.enc","p.eau","s.flaq","d.flaq") #Noms et ordres des colonnes attendus pour le fichier quad
-nomsRefInd = c("transect","resp","date","coef","mode","d.chenal","d.mer","alt","surf","p.roc","p.moul","p.huit","p.bala","p.alg","p.enc","p.eau","s.flaq","d.flaq") #Noms et ordres des colonnes attendus pour le fichier ind
+nomsRefInd = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap", "sp", "haut", "larg", "peri", "pred", "coul", "text", "epizo", "masse")
+nomsRefQuad = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap")
 checkColNames(ind, nomsRefInd)
 checkColNames(quad, nomsRefQuad)
 
