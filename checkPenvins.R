@@ -223,12 +223,43 @@ checkColNames <- function(mydata, nomsRef) {
 #-----------------------------------------------------#
 
 
-#-----------------------------------------------------#
+#=====================================================#
 #Etape 5 : Verifier dans les colonnes de classe "factor"
 #que la ou les modalites du facteur correspondent a celles attendues
 #Si oui : message de confirmation 
 #Si non : arreter le script et indiquer la colonne, les numeros
 #et contenus des lignes qui ne sont pas conformes, ainsi que le contenu attendu
+#-----------------------------------------------------#
+
+#-----------------------------------------------------#
+#Fonction checkfactor()
+
+#Utilisee dans l'etape 5, elle verifie que les modalites
+#d'une colonne de classe factor correspondent a celles attendues
+#Si oui : message de confirmation 
+#Si non : arreter le script et indiquer la colonne, les numeros
+#et contenus des lignes qui ne sont pas conformes, ainsi que le contenu attendu
+#checkfactor(col, ref)
+#col : colonne de classe factor tiree du tableau de donn?es
+#ref : vecteur contenant les modalites de reference, toutes les lignes doivent comporter une de ces modalites
+
+
+checkfactor <- function(col, ref) {
+  testok <- TRUE
+  
+  for (i in 1:length(col)) {
+    if (!(col[i] %in% ref)) {
+      testok <- FALSE
+      if (length(ref) == 1) #Le message d'erreur s'adapte au nombre de modalites
+        cat("Erreur dans la colonne ", col[1], " ? la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas a la modalite attendue : ", ref)
+    } else {
+      cat("Erreur dans la colonne ", col[1], " ? la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas aux modalites attendues : ", ref)
+    }
+  }
+  if (testok) {
+    cat("Les modalites des facteurs sont correctes.")
+  }
+}
 #-----------------------------------------------------#
 
 #-----------------------------------------------------#
@@ -367,50 +398,3 @@ checkRatio <- function(mydata, type = 1){
     cat("Tous les ratios", ty, "sont corrects.")
   }
 }
-
-#=====================================================#
-#Fonction checkfactor
-#-----------------------------------------------------#
-#Utilisee dans l'etape 5, elle verifie que les modalites
-#d'une colonne de classe factor correspondent a celles attendues
-#Si oui : message de confirmation 
-#Si non : arreter le script et indiquer la colonne, les numeros
-#et contenus des lignes qui ne sont pas conformes, ainsi que le contenu attendu
-#checkfactor(col, ref)
-#col : colonne de classe factor tiree du tableau de donn?es
-#ref : vecteur contenant les modalites de reference, toutes les lignes doivent comporter une de ces modalites
-#-----------------------------------------------------#
-
-checkfactor <- function(col, ref) {
-	testok <- TRUE
-
-	for (i in 1:length(col)) {
-		if (!(col[i] %in% ref)) {
-			testok <- FALSE
-			if (length(ref) == 1) #Le message d'erreur s'adapte au nombre de modalites
-				cat("Erreur dans la colonne ", col[1], " ? la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas a la modalite attendue : ", ref)
-			} else {
-				cat("Erreur dans la colonne ", col[1], " ? la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas aux modalites attendues : ", ref)
-			}
-		}
-	if (testok) {
-		cat("Les modalites des facteurs sont correctes.")
-	}
-}
-
-#=====================================================#
-#Fonction checknumeric
-#-----------------------------------------------------#
-#Utilisee dans l'etape 6, elle verifie que les valeurs
-#d'une colonne de classe numeric ou integer correspondent a des valeurs
-#precises attendues ou sont comprises dans l'intervalle attendu
-#Si oui : message de confirmation 
-#Si non : arreter le script et indiquer la colonne, les numeros
-#et contenus des lignes qui ne sont pas conformes, ainsi que l'intervalle attendu
-#checknumeric(col, method, values)
-#col : colonne de classe numeric ou integer tiree du tableau de donnees
-#method : 
-#  - si "disc" : les valeurs de la colonne devront correspondre exactement a une des valeurs donnees
-#  - si "cont" : les valeurs de la colonne devront etre comprises entre les valeurs donnees
-#values : valeurs attendues exactement (si "disc") ou bornes de l'intervalle attendu (si "cont")
-#-----------------------------------------------------#
