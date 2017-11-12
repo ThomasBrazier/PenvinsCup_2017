@@ -40,15 +40,15 @@ checkPenvins <- function(dataset){
   #-----------------------------------------------------#
   cat("\n\nETAPE 2 : Verification du nombre de colonnes :\n")
   if (checkInd(dataset)) {
-    cat("Le fichier a 43 colonnes et est de type Données biométriques sur les individus")
+    cat("Le fichier a 43 colonnes et est de type Données biométriques sur les individus.\n")
   } else {
     if (checkQuad(dataset)) {
-      cat("Le fichier a 34 colonnes et est de type Données de quadrat")
+      cat("Le fichier a 34 colonnes et est de type Données de quadrat.\n")
     } else {
-      cat("ERROR : Le fichier n'a pas le nombre de colonnes attendu")
+      cat("ERROR : Le fichier n'a pas le nombre de colonnes attendu.\n")
       sink(type = "message")
       file.show("tests_summary.txt")
-      stop("Le fichier n'a pas le nombre de colonnes attendu")
+      stop("Le fichier n'a pas le nombre de colonnes attendu.\n")
     }
   }
   
@@ -56,8 +56,8 @@ checkPenvins <- function(dataset){
   # Etape 3
   #-----------------------------------------------------#
   # Noms des colonnes pour les deux types de fichiers
-  nomsRefQuad = c("transect","resp","date","coef","mode","d.chenal","d.mer","alt","surf","p.roc","p.moul","p.huit","p.bala","p.alg","p.enc","p.eau","s.flaq","d.flaq") #Noms et ordres des colonnes attendus pour le fichier quad
-  nomsRefInd = c("transect","resp","date","coef","mode","d.chenal","d.mer","alt","surf","p.roc","p.moul","p.huit","p.bala","p.alg","p.enc","p.eau","s.flaq","d.flaq") #Noms et ordres des colonnes attendus pour le fichier ind
+  nomsRefInd = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap", "sp", "haut", "larg", "peri", "pred", "coul", "text", "epizo", "masse") #Noms et ordres des colonnes attendus pour le fichier ind
+  nomsRefQuad = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap") #Noms et ordres des colonnes attendus pour le fichier quad
   
   if (checkQuad(dataset)) {
     checkColNames(dataset, nomsRefQuad)
@@ -151,12 +151,12 @@ checkPenvins <- function(dataset){
 #-----------------------------------------------------#
 checkDataFrame <- function(mydata) {
   if (is.data.frame(mydata)) {
-    cat("Le fichier", deparse(substitute(mydata)), "est bien de type data.frame.")
+    cat("Le fichier", deparse(substitute(mydata)), "est bien de type data.frame.\n")
   } else {
-    cat("ERROR : Le fichier n'est pas de type data.frame :", deparse(substitute(mydata)), "est un", class(mydata))
+    cat("ERROR : Le fichier n'est pas de type data.frame : ", deparse(substitute(mydata)), " est un ", class(mydata), ".\n")
     sink(type = "message")
     file.show("tests_summary.txt")
-    stop("Le fichier n'est pas de type data.frame  :", deparse(substitute(mydata)), "est un", class(mydata))
+    stop("Le fichier n'est pas de type data.frame  : ", deparse(substitute(mydata)), " est un ", class(mydata), ".\n")
   }
 }
 
@@ -294,14 +294,14 @@ checknumeric <- function(mydata, col, method, values, integer = FALSE, identical
       if (is.na(mydata[i,col])) {
         if (!possibleNA) {
           testok <- FALSE
-          cat("Erreur dans la colonne ", names(mydata)[col], " ? la ligne ", i, ".\nValeur NA inattendue.\n\n")
+          cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nValeur NA inattendue.\n\n")
         } else {
           if (!mydata[i,col] %in% values) {
             testok <- FALSE
             if (length(values) == 1) #Le message d'erreur s'adapte au nombre de valeurs
-              cat("Erreur dans la colonne ", names(mydata)[col], " ? la ligne ", i, ".\nLa valeur  ", mydata[i,col], " ne correspond pas ? la valeur attendue : ", values, ".\n\n")
+              cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur  ", mydata[i,col], " ne correspond pas a la valeur attendue : ", values, ".\n\n")
           } else {
-            cat("Erreur dans la colonne ", names(mydata)[col], " ? la ligne ", i, ".\nLa valeur ", mydata[i,col], " ne correspond pas aux valeurs attendues : ", values, ".\n\n")
+            cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur ", mydata[i,col], " ne correspond pas aux valeurs attendues : ", values, ".\n\n")
           }
         }
       }
@@ -313,16 +313,16 @@ checknumeric <- function(mydata, col, method, values, integer = FALSE, identical
       if (is.na(mydata[i,col])) {
         if (!possibleNA) {
           testok <- FALSE
-          cat("Erreur dans la colonne ", names(mydata)[col], " ? la ligne ", i, ".\nValeur NA inattendue.\n\n")
+          cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nValeur NA inattendue.\n\n")
         }
       } else {
         if (integer & (class(!mydata[i,col]) == "integer")) {
           testok <- FALSE
-          cat("Erreur dans la colonne ", names(mydata)[col], " ? la ligne ", i, ".\nLa valeur  ", mydata[i,col], " devrait ?tre un nombre entier.\n\n")
+          cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur  ", mydata[i,col], " devrait etre un nombre entier.\n\n")
         }
         if (!(mydata[i,col]>=values[1] & mydata[i,col]<=values[2])) {
           testok <- FALSE
-          cat("Erreur dans la colonne ", names(mydata)[col], " ? la ligne ", i, ".\nLa valeur  ", mydata[i,col], " est en dehors de l'intervalle attendu : ", values[1], "-", values[2], ".\n\n")
+          cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur  ", mydata[i,col], " est en dehors de l'intervalle attendu : ", values[1], "-", values[2], ".\n\n")
         }
       }
     }
@@ -334,12 +334,12 @@ checknumeric <- function(mydata, col, method, values, integer = FALSE, identical
     #S'il est de taille sup?rieure ? 1, toutes les valeurs ne sont pas identiques !
     if (sapply(mydata[col], function(x) length(unique(x))>1)) {
       testok <- FALSE
-      cat("Erreur dans la colonne ", names(mydata)[col], ".\nToutes les valeurs devraient ?tre identiques.\n\n")
+      cat("Erreur dans la colonne ", names(mydata)[col], ".\nToutes les valeurs devraient etre identiques.\n\n")
     }
   }		
   
   if (testok) {
-    cat("Aucune anomalie d?tect?e dans les colonnes num?riques.\n\n")
+    cat("Aucune anomalie detectee dans les colonnes numeriques.\n\n")
   }
 }
 #-----------------------------------------------------#
@@ -360,7 +360,7 @@ checkRatio <- function(mydata, type = 1){
   # success reste TRUE si aucun warning n'est releve
   success = TRUE
   
-  # recupere les colonnes des variables larg et haut ou peri
+  # recupere les numeros de colonne des variables larg et haut ou peri
   if (type == 1) {
     v1 = 36 # colonne largeur
     v2 = 37 # colonne hauteur
@@ -385,16 +385,16 @@ checkRatio <- function(mydata, type = 1){
       ratio = mydata[i,v1]/mydata[i,v2] # calcule le ratio pour la ligne i
       if (ratio<MinMax[1] | ratio>MinMax[2]){
         success = FALSE
-        warning("Ligne", i, "pour l'espece", mydata[i,35], ": Le ratio", ty, "=", ratio, "sort de l'intervalle attendu", MinMax[1], ":", MinMax[2])
+        warning("Ligne ", i, " pour l'espece ", mydata[i,35], " : Le ratio ", ty, "=", ratio, " sort de l'intervalle attendu ", MinMax[1], ":", MinMax[2])
       }
     } else{ #dans le cas ou l'une des valeurs est NA
       success = FALSE
-      warning("Ligne", i, "pour l'espece", mydata[i,35], ": valeur NA !")
+      warning("Ligne ", i, " pour l'espece ", mydata[i,35], " : valeur NA !")
     }
   }
   
   # si success est reste TRUE, message de reussite
   if (success == TRUE) {
-    cat("Tous les ratios", ty, "sont corrects.")
+    cat("Tous les ratios ", ty, " sont corrects.")
   }
 }
