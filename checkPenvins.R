@@ -262,9 +262,9 @@ checkColNames <- function(mydata, nomsRef) {
 checkClass <- function(mydata) {
   success = TRUE # si aucune erreur relevee, success restera TRUE jusqu'a la fin de la fonction
   if (checkInd(mydata)) {
-    ClassExpect = c("Factor", "Factor", "Factor", "int", "Factor", "int", "int", "num", "num", "int", "int", "int", "int", "int", "int", "int", "num", "num", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "Factor", "num", "num", "num", "Factor", "Factor", "Factor", "Factor", "num") # Liste des classes attendues pour le fichier Ind, classees selon numero de colonne
+    ClassExpect = c("factor", "factor", "factor", "integer", "factor", "integer", "integer", "numeric", "numeric", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "numeric", "numeric", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "factor", "numeric", "numeric", "numeric", "factor", "factor", "factor", "factor", "numeric") # Liste des classes attendues pour le fichier Ind, classees selon numero de colonne
   } else {
-    ClassExpect = c("Factor", "Factor", "Factor", "int", "Factor", "int", "int", "num", "num", "int", "int", "int", "int", "int", "int", "int", "num", "num", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int", "int") # Liste des classes attendues pour le fichier Quad, classees selon numero de colonne
+    ClassExpect = c("factor", "factor", "factor", "integer", "factor", "integer", "integer", "numeric", "numeric", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "numeric", "numeric", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer") # Liste des classes attendues pour le fichier Quad, classees selon numero de colonne
   }
   
   # parcourt les colonnes une par une pour verifier la classe
