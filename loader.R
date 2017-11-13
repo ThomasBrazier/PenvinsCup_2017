@@ -7,6 +7,8 @@ str(quad)
 
 source("checkPenvins.R")
 
+# Voir dans le readme la gestion du sink() !!!!
+# Cette fonction permet de recuperer tous les messages qui s'affichent normalement dans la console pour les ecrire dans un fichier texte
 # Lancer le sink()
 testSummary <- file("tests_summary.txt", open = "wt")
 sink(file = testSummary, append = TRUE, type="output")
