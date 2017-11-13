@@ -32,6 +32,11 @@ nomsRefQuad = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer",
 checkColNames(ind, nomsRefInd)
 checkColNames(quad, nomsRefQuad)
 
+# etape 4
+checkClass(ind)
+checkClass(quad)
+
+
 # etape 6
 checknumeric()
 

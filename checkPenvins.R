@@ -55,6 +55,7 @@ checkPenvins <- function(dataset){
   #-----------------------------------------------------#
   # Etape 3
   #-----------------------------------------------------#
+  cat("\n\nETAPE 3 : Verification du nom des colonnes :\n")
   # Noms des colonnes pour les deux types de fichiers
   nomsRefInd = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap", "sp", "haut", "larg", "peri", "pred", "coul", "text", "epizo", "masse") #Noms et ordres des colonnes attendus pour le fichier ind
   nomsRefQuad = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap") #Noms et ordres des colonnes attendus pour le fichier quad
@@ -66,6 +67,19 @@ checkPenvins <- function(dataset){
       checkColNames(dataset, nomsRefInd)
     }
   }
+  
+  #-----------------------------------------------------#
+  # Etape 4
+  #-----------------------------------------------------#
+  cat("\n\nETAPE 4 : Verification de la classe des colonnes :\n")
+  # fonction checkClass()
+  checkClass(dataset)
+  
+  #-----------------------------------------------------#
+  # Etape 5
+  #-----------------------------------------------------#
+  
+  
 
   #-----------------------------------------------------#
   # Etape 6
@@ -144,6 +158,12 @@ checkPenvins <- function(dataset){
   close(testSummary) # Ferme le fichier txt
 }
 
+
+
+#=====================================================#
+# FONCTIONS
+#=====================================================#
+
 #-----------------------------------------------------#
 #Etape 1 : Verifier si mydata est de classe data.frame
 #Si oui : message de confirmation 
@@ -188,6 +208,7 @@ checkInd <- function(mydata) {
   }
 }
 
+
 #-----------------------------------------------------#
 #Etape 3 : Verifier que les noms de colonnes sont corrects
 #Si oui : message de confirmation 
@@ -207,7 +228,7 @@ checkColNames <- function(mydata, nomsRef) {
       cat("Remplacer le nom de la colonne",i, "par",nomsRef[i],".\n")} # sinon on affiche un message permettant de remplacer les noms non conformes
     }
   cat("Fin de la verification du nom des colonnes\n")
-  if (verif==FALSE) {
+  if (!verif) {
     cat("ERROR : La fonction checkPenvins s'est terminee prematurement.")
     sink(type = "message")
     file.show("tests_summary.txt")
@@ -217,10 +238,43 @@ checkColNames <- function(mydata, nomsRef) {
 
 
 #-----------------------------------------------------#
-#Etape 4 : Verifier que les classes des colonnes sont correctes
-#Si oui : message de confirmation 
-#Si non : arreter le script et indiquer les erreurs et les classes attendues
+# Etape 4 :
+# Verifier que les colonnes sont bien de la classe attendue :
+# factor (des lettres), integer (nombres entiers) ou numeric (nombres décimaux)
+# selon le cas. Si non, afficher un message d'erreur signalant le nom et la classe des colonnes qui posent probleme
+# en citant a chaque fois la classe anormale detectee et la classe qui etait attendue,
+# puis stopper la fonction. S'il n'y a pas d'erreur,
+# afficher un message d'information indiquant que les classes des colonnes sont correctes.
 #-----------------------------------------------------#
+
+# Fonction checkClass()
+# prend en argument :
+# mydata : un fichier data.frame de type ind ou quad
+checkClass <- function(mydata) {
+  success = TRUE # si aucune erreur relevee, success restera TRUE jusqu'a la fin de la fonction
+  if (checkInd(mydata)) {
+    ClassExpect = c() # Liste des classes attendues pour le fichier Ind, classees selon numero de colonne
+  } else {
+    ClassExpect = c() # Liste des classes attendues pour le fichier Quad, classees selon numero de colonne
+  }
+  
+  # parcourt les colonnes une par une pour verifier la classe
+  for (i in 1:length(mydata)) {
+    if (class(mydata[,i]) != ClassExpect[i]) { # verifie si la classe de la colonne i est differente de la classe attendue
+      success = FALSE # bascule success en FALSE pour declencher un stop() a la fin de la fonction
+      warning("La classe de la colonne ", names(mydata)[i], " est ", class(mydata[,i]), "la ou ", ClassExpect[i], " etait attendu.\n")
+    }
+  }
+  
+  if (success) {
+    cat("Toutes les classes des colonnes sont correctes.\n")
+  } else {
+    cat("ERROR : Certaines colonnes ne sont pas de la classe attendue.\n")
+    sink(type = "message")
+    file.show("tests_summary.txt")
+    stop("Le fichier n'est pas conforme : Certaines colonnes ne sont pas de la classe attendue.\n")
+  }
+}
 
 
 #=====================================================#
@@ -251,16 +305,17 @@ checkfactor <- function(col, ref) {
     if (!(col[i] %in% ref)) {
       testok <- FALSE
       if (length(ref) == 1) #Le message d'erreur s'adapte au nombre de modalites
-        cat("Erreur dans la colonne ", col[1], " ? la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas a la modalite attendue : ", ref)
+        cat("Erreur dans la colonne ", col[1], " a la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas a la modalite attendue : ", ref)
     } else {
-      cat("Erreur dans la colonne ", col[1], " ? la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas aux modalites attendues : ", ref)
+      cat("Erreur dans la colonne ", col[1], " a la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas aux modalites attendues : ", ref)
     }
   }
   if (testok) {
     cat("Les modalites des facteurs sont correctes.")
   }
 }
-#-----------------------------------------------------#
+
+
 
 #-----------------------------------------------------#
 # Etape 6 : verification des intervalles attendus
