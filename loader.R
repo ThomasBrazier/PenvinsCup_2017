@@ -36,6 +36,16 @@ checkColNames(quad, nomsRefQuad)
 checkClass(ind)
 checkClass(quad)
 
+# etape 5
+checkFactor(dataset$transect, c())
+checkFactor(dataset$resp, c())
+checkFactor(dataset$date, c("20septembre2017", "21septembre2017"))
+checkFactor(dataset$mode, c("a", "b"))
+checkFactor(dataset$sp, c())
+checkFactor(dataset$pred, c(NA, "oui", "non"))
+checkFactor(dataset$coul, c(NA, "clair", "sombre", "rayures"))
+checkFactor(dataset$text, c(NA, "lisse", "rugueux", "bosses"))
+checkFactor(dataset$epizo, c(NA, "oui", "non"))
 
 # etape 6
 checknumeric()

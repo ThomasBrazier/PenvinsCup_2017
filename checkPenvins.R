@@ -78,8 +78,17 @@ checkPenvins <- function(dataset){
   #-----------------------------------------------------#
   # Etape 5
   #-----------------------------------------------------#
-  
-  
+  cat("\n\nETAPE 5 : Verification des modalites pour chaque colonne de type factor :\n")
+  # fonction checkFactor()
+  checkFactor(dataset$transect, c())
+  checkFactor(dataset$resp, c())
+  checkFactor(dataset$date, c("20septembre2017", "21septembre2017"))
+  checkFactor(dataset$mode, c("a", "b"))
+  checkFactor(dataset$sp, c())
+  checkFactor(dataset$pred, c(NA, "oui", "non"))
+  checkFactor(dataset$coul, c(NA, "clair", "sombre", "rayures"))
+  checkFactor(dataset$text, c(NA, "lisse", "rugueux", "bosses"))
+  checkFactor(dataset$epizo, c(NA, "oui", "non"))
 
   #-----------------------------------------------------#
   # Etape 6
@@ -286,35 +295,36 @@ checkClass <- function(mydata) {
 #-----------------------------------------------------#
 
 #-----------------------------------------------------#
-#Fonction checkfactor()
+# Fonction checkFactor()
 
-#Utilisee dans l'etape 5, elle verifie que les modalites
-#d'une colonne de classe factor correspondent a celles attendues
-#Si oui : message de confirmation 
-#Si non : arreter le script et indiquer la colonne, les numeros
-#et contenus des lignes qui ne sont pas conformes, ainsi que le contenu attendu
-#checkfactor(col, ref)
-#col : colonne de classe factor tiree du tableau de donn?es
-#ref : vecteur contenant les modalites de reference, toutes les lignes doivent comporter une de ces modalites
+# Utilisee dans l'etape 5, elle verifie que les modalites
+# d'une colonne de classe factor correspondent a celles attendues
+# Si oui : message de confirmation
+# Si non : arreter le script et indiquer la colonne, les numeros
+# et contenus des lignes qui ne sont pas conformes, ainsi que le contenu attendu
+# checkFactor(col, ref)
+# col : numero ou nom d'une colonne de classe factor tiree du tableau de donnees sous forme data[,i] ou data$name
+# ref : vecteur contenant les modalites de reference, toutes les lignes doivent comporter une de ces modalites
 
 
-checkfactor <- function(col, ref) {
-  testok <- TRUE
+checkFactor <- function(col, ref) {
+  # recupere toutes les modalites de la colonne
+  mods = levels(col)
   
-  for (i in 1:length(col)) {
-    if (!(col[i] %in% ref)) {
-      testok <- FALSE
-      if (length(ref) == 1) #Le message d'erreur s'adapte au nombre de modalites
-        cat("Erreur dans la colonne ", col[1], " a la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas a la modalite attendue : ", ref)
-    } else {
-      cat("Erreur dans la colonne ", col[1], " a la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas aux modalites attendues : ", ref)
+  if (min(mods %in% ref)) { # si la comparaison entre mods et ref ne renvoie que des TRUE -> fin la fonction
+    cat("Toutes les modalites de la colonne sont correctes.\n")
+  } else { # sinon, recherche de l'erreur
+    for (i in 1:length(col)) { # pour chaque ligne de la colonne
+      if (!(col[i] %in% ref)) {
+        if (length(ref) == 1) { # 1 seule modalite attendue
+          warning("Erreur dans la colonne ", names(col), " a la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas a la modalite attendue : ", ref, ".\n")
+        } else { # plusieurs modalites attendues
+          warning("Erreur dans la colonne ", names(col), " a la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas aux modalites attendues : ", ref, ".\n")
+        }
+      }
     }
   }
-  if (testok) {
-    cat("Les modalites des facteurs sont correctes.")
-  }
 }
-
 
 
 #-----------------------------------------------------#
