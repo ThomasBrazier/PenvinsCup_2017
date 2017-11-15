@@ -39,15 +39,20 @@ checkClass(ind)
 checkClass(quad)
 
 # etape 5
-checkFactor(dataset$transect, c())
-checkFactor(dataset$resp, c())
-checkFactor(dataset$date, c("20septembre2017", "21septembre2017"))
-checkFactor(dataset$mode, c("a", "b"))
-checkFactor(dataset$sp, c())
-checkFactor(dataset$pred, c(NA, "oui", "non"))
-checkFactor(dataset$coul, c(NA, "clair", "sombre", "rayures"))
-checkFactor(dataset$text, c(NA, "lisse", "rugueux", "bosses"))
-checkFactor(dataset$epizo, c(NA, "oui", "non"))
+# fonction checkFactor()
+checkFactor("transect", c()) # transect
+checkFactor("resp", c()) # resp
+checkFactor(date, c("20septembre2017", "21septembre2017")) # date
+checkFactor("mode", c("a", "b")) # mode
+
+# uniquement sur fichiers ind
+if (checkInd(dataset)) {
+  checkFactor("sp", c()) # sp
+  checkFactor("pred", c(NA, "oui", "non")) # pred
+  checkFactor("text", c(NA, "clair", "sombre", "rayures")) # text
+  checkFactor("coul", c(NA, "lisse", "rugueux", "bosses")) # coul
+  checkFactor("epizo", c(NA, "oui", "non")) # epizo
+}
 
 # etape 6
 checknumeric()
@@ -58,7 +63,11 @@ checkRatio(ind, 2)
 
 
 ### Fonction finale
-checkPenvins(quad)
+source("checkPenvins.R")
+
+checkPenvins(ind)
+warnings()
 
 ### Affichage du fichier d'erreur
 file.show("tests_summary.txt")
+

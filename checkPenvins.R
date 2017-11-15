@@ -21,10 +21,12 @@
 #-----------------------------------------------------#
 
 # Enregistre tous les messages dans un fichier txt "test_summary.txt"
-checkPenvins <- function(dataset){
-  testSummary <- file("tests_summary.txt", open = "wt")
-  sink(file = testSummary, append = TRUE, type="output")
-  sink(file = testSummary, append = TRUE, type="message")
+checkPenvins <- function(dataset, bilan = FALSE){
+  if (bilan == TRUE) {
+    testSummary <- file("tests_summary.txt", open = "wt")
+    sink(file = testSummary, append = TRUE, type="output")
+    sink(file = testSummary, append = TRUE, type="message")
+  }
   
   # Message de bienvenue
   cat("#-----------------------------------------------------#\nBienvenue dans le verificateur de fichiers Penvins 2017.\n#-----------------------------------------------------#\n\n")
@@ -45,9 +47,11 @@ checkPenvins <- function(dataset){
     if (checkQuad(dataset)) {
       cat("Le fichier a 34 colonnes et est de type Données de quadrat.\n")
     } else {
-      cat("ERROR : Le fichier n'a pas le nombre de colonnes attendu.\n")
-      sink(type = "message")
-      file.show("tests_summary.txt")
+      if (bilan) {
+        cat("ERROR : Le fichier n'a pas le nombre de colonnes attendu.\n")
+        sink(type = "message")
+        file.show("tests_summary.txt")
+      }
       stop("Le fichier n'a pas le nombre de colonnes attendu.\n")
     }
   }
@@ -80,15 +84,20 @@ checkPenvins <- function(dataset){
   #-----------------------------------------------------#
   cat("\n\nETAPE 5 : Verification des modalites pour chaque colonne de type factor :\n")
   # fonction checkFactor()
-  checkFactor(dataset$transect, c())
-  checkFactor(dataset$resp, c())
-  checkFactor(dataset$date, c("20septembre2017", "21septembre2017"))
-  checkFactor(dataset$mode, c("a", "b"))
-  checkFactor(dataset$sp, c())
-  checkFactor(dataset$pred, c(NA, "oui", "non"))
-  checkFactor(dataset$coul, c(NA, "clair", "sombre", "rayures"))
-  checkFactor(dataset$text, c(NA, "lisse", "rugueux", "bosses"))
-  checkFactor(dataset$epizo, c(NA, "oui", "non"))
+  #checkFactor(1, c()) # transect
+  #checkFactor(2, c()) # resp
+  checkFactor(3, c("20septembre2017", "21septembre2017")) # date
+  checkFactor(5, c("a", "b")) # mode
+  
+  # uniquement sur fichiers ind
+  if (checkInd(dataset)) {
+    #checkFactor(35, c()) # sp
+    checkFactor(39, c(NA, "oui", "non")) # pred
+    checkFactor(40, c(NA, "clair", "sombre", "rayures")) # text
+    checkFactor(41, c(NA, "lisse", "rugueux", "bosses")) # coul
+    checkFactor(42, c(NA, "oui", "non")) # epizo
+  }
+
 
   #-----------------------------------------------------#
   # Etape 6
@@ -159,12 +168,14 @@ checkPenvins <- function(dataset){
   #=====================================================#
   # Fin du script
   #-----------------------------------------------------#
-  cat("\nFin de l'analyse.", file = testSummary)
-  sink(type="output") # stop sinking
-  sink(type="message") # stop sinking
-  # affichage du fichier texte des messages et erreurs
-  file.show("tests_summary.txt")
-  close(testSummary) # Ferme le fichier txt
+  cat("\nFin de l'analyse.")
+  if (bilan) {
+    sink(type="output") # stop sinking
+    sink(type="message") # stop sinking
+    # affichage du fichier texte des messages et erreurs
+    file.show("tests_summary.txt")
+    close(testSummary) # Ferme le fichier txt
+  }
 }
 
 
@@ -182,9 +193,11 @@ checkDataFrame <- function(mydata) {
   if (is.data.frame(mydata)) {
     cat("Le fichier", deparse(substitute(mydata)), "est bien de type data.frame.\n")
   } else {
-    cat("ERROR : Le fichier n'est pas de type data.frame : ", deparse(substitute(mydata)), " est un ", class(mydata), ".\n")
-    sink(type = "message")
-    file.show("tests_summary.txt")
+    if (bilan) {
+      cat("ERROR : Le fichier n'est pas de type data.frame : ", deparse(substitute(mydata)), " est un ", class(mydata), ".\n")
+      sink(type = "message")
+      file.show("tests_summary.txt")
+    }
     stop("Le fichier n'est pas de type data.frame  : ", deparse(substitute(mydata)), " est un ", class(mydata), ".\n")
   }
 }
@@ -238,9 +251,11 @@ checkColNames <- function(mydata, nomsRef) {
     }
   cat("Fin de la verification du nom des colonnes\n")
   if (!verif) {
-    cat("ERROR : La fonction checkPenvins s'est terminee prematurement.")
-    sink(type = "message")
-    file.show("tests_summary.txt")
+    if (bilan) {
+      cat("ERROR : La fonction checkPenvins s'est terminee prematurement.")
+      sink(type = "message")
+      file.show("tests_summary.txt")
+    }
     stop("Il y a une/des erreur(s) dans les noms de colonnes.") # message d'erreur indiquant qu'il y a une ou des erreurs et stoppant la fonction
   } else {cat("Toutes les colonnes sont correctes.\n")}
 }
@@ -278,9 +293,11 @@ checkClass <- function(mydata) {
   if (success) {
     cat("Toutes les classes des colonnes sont correctes.\n")
   } else {
-    cat("ERROR : Certaines colonnes ne sont pas de la classe attendue.\n")
-    sink(type = "message")
-    file.show("tests_summary.txt")
+    if (bilan) {
+      cat("ERROR : Certaines colonnes ne sont pas de la classe attendue.\n")
+      sink(type = "message")
+      file.show("tests_summary.txt")
+    }
     stop("Le fichier n'est pas conforme : Certaines colonnes ne sont pas de la classe attendue.\n")
   }
 }
@@ -303,23 +320,28 @@ checkClass <- function(mydata) {
 # Si non : arreter le script et indiquer la colonne, les numeros
 # et contenus des lignes qui ne sont pas conformes, ainsi que le contenu attendu
 # checkFactor(col, ref)
-# col : numero ou nom d'une colonne de classe factor tiree du tableau de donnees sous forme data[,i] ou data$name
+# col : nom d'une colonne de classe factor tiree du tableau de donnees sous forme data[,i] ou data$name
 # ref : vecteur contenant les modalites de reference, toutes les lignes doivent comporter une de ces modalites
 
 
 checkFactor <- function(col, ref) {
-  # recupere toutes les modalites de la colonne
-  mods = levels(col)
-  
-  if (min(mods %in% ref)) { # si la comparaison entre mods et ref ne renvoie que des TRUE -> fin la fonction
-    cat("Toutes les modalites de la colonne sont correctes.\n")
+  # recupere toutes les modalites de la colonne, a partir du nom de la colonne
+  mods = unique(dataset[col])
+
+  for (j in 1:length(mods)) {
+    if (mods[j,1] %in% ref) {
+      compteur =+ 1
+    }
+  }
+  if (compteur == length(mods)) { # si la comparaison entre mods et ref ne renvoie que des TRUE -> fin la fonction
+    cat("Toutes les modalites de la colonne ",  colnames(dataset)[col]," sont correctes.\n")
   } else { # sinon, recherche de l'erreur
-    for (i in 1:length(col)) { # pour chaque ligne de la colonne
-      if (!(col[i] %in% ref)) {
+    for (i in 1:nrow(dataset[col])) { # pour chaque ligne de la colonne
+      if (!(dataset[i, col] %in% ref)) {
         if (length(ref) == 1) { # 1 seule modalite attendue
-          warning("Erreur dans la colonne ", names(col), " a la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas a la modalite attendue : ", ref, ".\n")
+          warning(c("Erreur dans la colonne ", colnames(dataset)[col], " a la ligne ", i, ".\nLa modalite ", dataset[i, col], " ne correspond pas a la modalite attendue : ", ref, ".\n"), immediate. = T)
         } else { # plusieurs modalites attendues
-          warning("Erreur dans la colonne ", names(col), " a la ligne ", i, ".\nLa modalite ", col[i], " ne correspond pas aux modalites attendues : ", ref, ".\n")
+          warning(c("Erreur dans la colonne ", colnames(dataset)[col], " a la ligne ", i, ".\nLa modalite ", dataset[i, col], " ne correspond pas aux modalites attendues : ", ref, ".\n"), immediate. = T)
         }
       }
     }
@@ -450,11 +472,11 @@ checkRatio <- function(mydata, type = 1){
       ratio = mydata[i,v1]/mydata[i,v2] # calcule le ratio pour la ligne i
       if (ratio<MinMax[1] | ratio>MinMax[2]){
         success = FALSE
-        warning("Ligne ", i, " pour l'espece ", mydata[i,35], " : Le ratio ", ty, "=", ratio, " sort de l'intervalle attendu ", MinMax[1], ":", MinMax[2])
+        warning(c("Ligne ", i, " pour l'espece ", mydata[i,35], " : Le ratio ", ty, "=", ratio, " sort de l'intervalle attendu ", MinMax[1], ":", MinMax[2]), immediate. = T)
       }
     } else{ #dans le cas ou l'une des valeurs est NA
       success = FALSE
-      warning("Ligne ", i, " pour l'espece ", mydata[i,35], " : valeur NA !")
+      warning(c("Ligne ", i, " pour l'espece ", mydata[i,35], " : valeur NA !"), immediate. = T)
     }
   }
   

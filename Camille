@@ -1,0 +1,8 @@
+-Quand j'applique le script, si il y a une erreur par exemple à l'étape 2 dans mon fichier, ça s'arrête d'un coup! est-ce que il ne faudrait pas qu'on ai le petit summary de checkPenvins en entier plutôt directement? (je me trompe peut être!).
+-Comment savoir quel type (quad ou ind) de fichier on peut analyser? (ça parait bête comme question désolé)
+-Etape 5 : dans le summary si c'est bon on a le message affiché sur 6 lignes, je ne sais pas si c'est grave ^^
+-Etape 6 : pareil sur plusieurs ligne on a le même message
+-Etape 7 j'ai juste affiché "Vérification de ratio"et pas de résultat avant "fin du script", c'est normal?
+-Etape 4 : j'ai corrigé une petite coquille pour que la phrase soit plus claire 
+-Etape 6 : Pourquoi est-ce que le seuil ne part pas de 0? (pardon si c'est bête)
+Finalement j'ai testé le script sur mon fichier ind et quelques autres fichiers ind, qui étaient bons et j'ai commencé à modifier certaines choses pour voir si le script détecte des erreurs et il trouve bien les erreurs pour l'étape 1, 3 et 4 (ce sont les seules que j'ai testées pour l'instant)
