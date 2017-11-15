@@ -68,6 +68,9 @@ source("checkPenvins.R")
 checkPenvins(ind)
 warnings()
 
+# AVEC fichier txt d'erreurs
+checkPenvins(ind, bilan = T)
+
 ### Affichage du fichier d'erreur
 file.show("tests_summary.txt")
 
