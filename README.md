@@ -39,7 +39,7 @@ Quand vous avez fini de travailler sur le projet, il faut faire un « fetch ori
 
 Afin qu'on soit tous sur la même base pour communiquer des informations à l'utilisateur...
 
-La fonction sink() est initialisée au début de la fonction checkPenvins(). Par conséquent, tous les sorties des fonctions cat(), warnings() et stop() sont automatiquement écrites dans un fichier texte (tests_summary.txt) qui sera affiché à la fin de la fonction checkPenvins.
+La fonction sink() est initialisée au début de la fonction checkPenvins() SEULEMENT si l'utilisateur tape l'argument bilan = T. par défaut, le sink() est désactivé et tout s'affiche dans la console. Par conséquent, tous les sorties des fonctions cat(), warnings() et stop() sont automatiquement écrites dans un fichier texte (tests_summary.txt) qui sera affiché à la fin de la fonction checkPenvins.
 
 warnings() est un message d'erreur qui n'arrête pas le script
 
