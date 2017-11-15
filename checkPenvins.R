@@ -42,10 +42,10 @@ checkPenvins <- function(dataset, bilan = FALSE){
   #-----------------------------------------------------#
   cat("\n\nETAPE 2 : Verification du nombre de colonnes :\n")
   if (checkInd(dataset)) {
-    cat("Le fichier a 43 colonnes et est de type Données biométriques sur les individus.\n")
+    cat("Le fichier a 43 colonnes et est de type données biométriques sur les individus.\n")
   } else {
     if (checkQuad(dataset)) {
-      cat("Le fichier a 34 colonnes et est de type Données de quadrat.\n")
+      cat("Le fichier a 34 colonnes et est de type données de quadrat.\n")
     } else {
       if (bilan) {
         cat("ERROR : Le fichier n'a pas le nombre de colonnes attendu.\n")
@@ -240,7 +240,6 @@ checkInd <- function(mydata) {
 # La fonction checkColNames() vérifie que les nomes des colonnes du fichier dataset en argument correspondent bien à la liste nomsRef en argument 2
 
 checkColNames <- function(mydata, nomsRef) {
-  cat("\n\nETAPE 3 : Verification des noms des colonnes :\n")
   col = names(mydata) # "col" stocke les noms des colonnes du fichier
   verif=TRUE # si verif=TRUE à la fin du test, les noms des colonnes sont conformes
   for (i in 1:length(mydata)){
@@ -249,8 +248,8 @@ checkColNames <- function(mydata, nomsRef) {
       warning("Le nom de la colonne", i, "n'est pas correct.")
       cat("Remplacer le nom de la colonne",i, "par",nomsRef[i],".\n")} # sinon on affiche un message permettant de remplacer les noms non conformes
     }
-  cat("Fin de la verification du nom des colonnes\n")
-  if (!verif) {
+
+    if (!verif) {
     if (bilan) {
       cat("ERROR : La fonction checkPenvins s'est terminee prematurement.")
       sink(type = "message")
