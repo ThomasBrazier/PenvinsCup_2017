@@ -31,6 +31,17 @@ checkPenvins <- function(dataset, bilan = FALSE){
   # Message de bienvenue
   cat("#-----------------------------------------------------#\nBienvenue dans le verificateur de fichiers Penvins 2017.\n#-----------------------------------------------------#\n\n")
  
+  
+  # Verifie que l'objet existe
+  if (!exists(dataset)) {
+    if (bilan) {
+      cat("ERROR : Le fichier n'existe pas !\n")
+      sink(type = "message")
+      file.show("tests_summary.txt")
+    }
+    stop("Le fichier n'existe pas !\n")
+  }
+  
   #-----------------------------------------------------#
   # Etape 1
   #-----------------------------------------------------#
@@ -380,14 +391,14 @@ checknumeric <- function(mydata, col, method, values, integer = FALSE, identical
       if (is.na(mydata[i,col])) {
         if (!possibleNA) {
           testok <- FALSE
-          cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nValeur NA inattendue.\n\n")
+          cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nValeur NA inattendue.\n")
         } else {
           if (!mydata[i,col] %in% values) {
             testok <- FALSE
             if (length(values) == 1) #Le message d'erreur s'adapte au nombre de valeurs
-              cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur  ", mydata[i,col], " ne correspond pas a la valeur attendue : ", values, ".\n\n")
+              cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur  ", mydata[i,col], " ne correspond pas a la valeur attendue : ", values, ".\n")
           } else {
-            cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur ", mydata[i,col], " ne correspond pas aux valeurs attendues : ", values, ".\n\n")
+            cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur ", mydata[i,col], " ne correspond pas aux valeurs attendues : ", values, ".\n")
           }
         }
       }
@@ -399,16 +410,16 @@ checknumeric <- function(mydata, col, method, values, integer = FALSE, identical
       if (is.na(mydata[i,col])) {
         if (!possibleNA) {
           testok <- FALSE
-          cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nValeur NA inattendue.\n\n")
+          cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nValeur NA inattendue.\n")
         }
       } else {
         if (integer & (class(!mydata[i,col]) == "integer")) {
           testok <- FALSE
-          cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur  ", mydata[i,col], " devrait etre un nombre entier.\n\n")
+          cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur  ", mydata[i,col], " devrait etre un nombre entier.\n")
         }
         if (!(mydata[i,col]>=values[1] & mydata[i,col]<=values[2])) {
           testok <- FALSE
-          cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur  ", mydata[i,col], " est en dehors de l'intervalle attendu : ", values[1], "-", values[2], ".\n\n")
+          cat("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur  ", mydata[i,col], " est en dehors de l'intervalle attendu : ", values[1], "-", values[2], ".\n")
         }
       }
     }
@@ -420,12 +431,12 @@ checknumeric <- function(mydata, col, method, values, integer = FALSE, identical
     #S'il est de taille sup?rieure ? 1, toutes les valeurs ne sont pas identiques !
     if (sapply(mydata[col], function(x) length(unique(x))>1)) {
       testok <- FALSE
-      cat("Erreur dans la colonne ", names(mydata)[col], ".\nToutes les valeurs devraient etre identiques.\n\n")
+      cat("Erreur dans la colonne ", names(mydata)[col], ".\nToutes les valeurs devraient etre identiques.\n")
     }
   }		
   
   if (testok) {
-    cat("Aucune anomalie detectee dans les colonnes numeriques.\n\n")
+    cat("Aucune anomalie detectee dans les colonnes numeriques.\n")
   }
 }
 #-----------------------------------------------------#
