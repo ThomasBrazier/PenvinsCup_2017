@@ -42,7 +42,7 @@ checkClass(quad)
 # fonction checkFactor()
 checkFactor("transect", c()) # transect
 checkFactor("resp", c()) # resp
-checkFactor(date, c("20septembre2017", "21septembre2017")) # date
+checkFactor(3, c("20septembre2017", "21septembre2017")) # date
 checkFactor("mode", c("a", "b")) # mode
 
 # uniquement sur fichiers ind

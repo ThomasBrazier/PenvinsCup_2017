@@ -84,7 +84,7 @@ checkPenvins <- function(dataset, bilan = FALSE){
   #-----------------------------------------------------#
   cat("\n\nETAPE 5 : Verification des modalites pour chaque colonne de type factor :\n")
   # fonction checkFactor()
-  #checkFactor(1, c()) # transect
+  checkFactor(1, c("b30")) # transect
   #checkFactor(2, c()) # resp
   checkFactor(3, c("20septembre2017", "21septembre2017")) # date
   checkFactor(5, c("a", "b")) # mode
@@ -325,22 +325,17 @@ checkClass <- function(mydata) {
 
 checkFactor <- function(col, ref) {
   # recupere toutes les modalites de la colonne, a partir du nom de la colonne
-  mods = unique(dataset[col])
-
-  for (j in 1:length(mods)) {
-    if (mods[j,1] %in% ref) {
-      compteur =+ 1
-    }
-  }
-  if (compteur == length(mods)) { # si la comparaison entre mods et ref ne renvoie que des TRUE -> fin la fonction
+  mods = levels(dataset[,col])
+  
+  if (all(mods %in% ref)) { # si la comparaison entre mods et ref ne renvoie que des TRUE -> fin la fonction
     cat("Toutes les modalites de la colonne ",  colnames(dataset)[col]," sont correctes.\n")
   } else { # sinon, recherche de l'erreur
     for (i in 1:nrow(dataset[col])) { # pour chaque ligne de la colonne
-      if (!(dataset[i, col] %in% ref)) {
+      if ((ref %in% as.character(dataset[i, col])) == FALSE) {
         if (length(ref) == 1) { # 1 seule modalite attendue
-          warning(c("Erreur dans la colonne ", colnames(dataset)[col], " a la ligne ", i, ".\nLa modalite ", dataset[i, col], " ne correspond pas a la modalite attendue : ", ref, ".\n"), immediate. = T)
+          warning(c("Erreur dans la colonne ", colnames(dataset)[col], " a la ligne ", i, ". La modalite ", as.character(dataset[i, col]), " ne correspond pas a la modalite attendue : ", paste(ref, collapse = ", "), ".\n"), immediate. = T)
         } else { # plusieurs modalites attendues
-          warning(c("Erreur dans la colonne ", colnames(dataset)[col], " a la ligne ", i, ".\nLa modalite ", dataset[i, col], " ne correspond pas aux modalites attendues : ", ref, ".\n"), immediate. = T)
+          warning(c("Erreur dans la colonne ", colnames(dataset)[col], " a la ligne ", i, ". La modalite ", as.character(dataset[i, col]), " ne correspond pas aux modalites attendues : ", paste(ref, collapse = ", "), ".\n"), immediate. = T)
         }
       }
     }
