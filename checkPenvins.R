@@ -32,18 +32,7 @@ checkPenvins <- function(dataset, bilan = FALSE){
   
   # Message de bienvenue
   cat("#-----------------------------------------------------#\nBienvenue dans le verificateur de fichiers Penvins 2017.\n#-----------------------------------------------------#\n\n")
- 
-  
-  # Verifie que l'objet existe
-  if (!(exists("dataset"))) {
-    if (bilan) {
-      cat("ERROR : Le fichier n'existe pas !\n")
-      sink(type = "message")
-      file.show("tests_summary.txt")
-    }
-    stop("Le fichier n'existe pas !\n")
-  }
-  
+
   #-----------------------------------------------------#
   # Etape 1
   #-----------------------------------------------------#
@@ -97,18 +86,18 @@ checkPenvins <- function(dataset, bilan = FALSE){
   #-----------------------------------------------------#
   cat("\n\nETAPE 5 : Verification des modalites pour chaque colonne de type factor :\n")
   # fonction checkFactor()
-  #checkFactor(1, c()) # transect
-  #checkFactor(2, c()) # resp
-  checkFactor(3, c("20septembre2017", "21septembre2017")) # date
-  checkFactor(5, c("a", "b")) # mode
+  #checkFactor(dataset, 1, c()) # transect
+  #checkFactor(dataset, 2, c()) # resp
+  checkFactor(dataset, 3, c("20septembre2017", "21septembre2017")) # date
+  checkFactor(dataset, 5, c("a", "b")) # mode
   
   # uniquement sur fichiers ind
   if (checkInd(dataset)) {
-    #checkFactor(35, c()) # sp
-    checkFactor(39, c(NA, "oui", "non")) # pred
-    checkFactor(40, c(NA, "clair", "sombre", "rayures")) # text
-    checkFactor(41, c(NA, "lisse", "rugueux", "bosses")) # coul
-    checkFactor(42, c(NA, "oui", "non")) # epizo
+    #checkFactor(dataset, 35, c()) # sp
+    checkFactor(dataset, 39, c(NA, "oui", "non")) # pred
+    checkFactor(dataset, 40, c(NA, "clair", "sombre", "rayures")) # text
+    checkFactor(dataset, 41, c(NA, "lisse", "rugueux", "bosses")) # coul
+    checkFactor(dataset, 42, c(NA, "oui", "non")) # epizo
   }
 
 
@@ -336,24 +325,19 @@ checkClass <- function(mydata) {
 # ref : vecteur contenant les modalites de reference, toutes les lignes doivent comporter une de ces modalites
 
 
-checkFactor <- function(col, ref) {
+checkFactor <- function(mydata, col, ref) {
   # recupere toutes les modalites de la colonne, a partir du nom de la colonne
-  mods = unique(dataset[col])
-
-  for (j in 1:length(mods)) {
-    if (mods[j,1] %in% ref) {
-      compteur =+ 1
-    }
-  }
-  if (compteur == length(mods)) { # si la comparaison entre mods et ref ne renvoie que des TRUE -> fin la fonction
-    cat("Toutes les modalites de la colonne ",  colnames(dataset)[col]," sont correctes.\n")
+  mods = levels(mydata[,col])
+  
+  if (all(mods %in% ref)) { # si la comparaison entre mods et ref ne renvoie que des TRUE -> fin la fonction
+    cat("Toutes les modalites de la colonne ",  colnames(mydata)[col]," sont correctes.\n")
   } else { # sinon, recherche de l'erreur
     for (i in 1:nrow(dataset[col])) { # pour chaque ligne de la colonne
-      if (!(dataset[i, col] %in% ref)) {
+      if ((ref %in% as.character(mydata[i, col])) == FALSE) {
         if (length(ref) == 1) { # 1 seule modalite attendue
-          warning(c("Erreur dans la colonne ", colnames(dataset)[col], " a la ligne ", i, ".\nLa modalite ", dataset[i, col], " ne correspond pas a la modalite attendue : ", ref, ".\n"), immediate. = T)
+          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas a la modalite attendue : ", paste(ref, collapse = ", "), ".\n"), immediate. = T)
         } else { # plusieurs modalites attendues
-          warning(c("Erreur dans la colonne ", colnames(dataset)[col], " a la ligne ", i, ".\nLa modalite ", dataset[i, col], " ne correspond pas aux modalites attendues : ", ref, ".\n"), immediate. = T)
+          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas aux modalites attendues : ", paste(ref, collapse = ", "), ".\n"), immediate. = T)
         }
       }
     }
