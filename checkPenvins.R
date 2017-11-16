@@ -242,22 +242,22 @@ checkInd <- function(mydata) {
 
 checkColNames <- function(mydata, nomsRef) {
   col = names(mydata) # "col" stocke les noms des colonnes du fichier
-  verif=TRUE # si verif=TRUE à la fin du test, les noms des colonnes sont conformes
+  verif = 0 # si verif = 0 à la fin du test, les noms des colonnes sont conformes
   for (i in 1:length(mydata)){
     if (col[i] != nomsRef[i]){
-      verif=FALSE # si il y a une erreur, ce n'est plus conforme, verif change d'etat
+      verif=+1 # si il y a une erreur, ce n'est plus conforme, verif change d'etat
       warning("Le nom de la colonne", i, "n'est pas correct.")
       cat("Remplacer le nom de la colonne",i, "par",nomsRef[i],".\n")} # sinon on affiche un message permettant de remplacer les noms non conformes
     }
 
-    if (!verif) {
+    if (verif != 0) {
     if (bilan) {
-      cat("ERROR : La fonction checkPenvins s'est terminee prematurement.")
+      cat("ERROR : La fonction checkPenvins s'est terminee prematurement, a cause d'", verif," erreur dans les noms de colonne.")
       sink(type = "message")
       file.show("tests_summary.txt")
     }
-    stop("Il y a une/des erreur(s) dans les noms de colonnes.") # message d'erreur indiquant qu'il y a une ou des erreurs et stoppant la fonction
-  } else {cat("Toutes les colonnes sont correctes.\n")}
+    stop("Il y a ", verif," erreur(s) dans les noms de colonnes.") # message d'erreur indiquant qu'il y a une ou des erreurs et stoppant la fonction
+  } else {cat("Tous les noms de colonne sont correctes.\n")}
 }
 
 
