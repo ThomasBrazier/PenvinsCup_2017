@@ -33,7 +33,7 @@ checkPenvins <- function(dataset, bilan = FALSE){
  
   
   # Verifie que l'objet existe
-  if (!exists(dataset)) {
+  if (!(exists("dataset"))) {
     if (bilan) {
       cat("ERROR : Le fichier n'existe pas !\n")
       sink(type = "message")
