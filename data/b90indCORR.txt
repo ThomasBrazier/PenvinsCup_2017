@@ -1,263 +1,1031 @@
-transect	resp	date	coef	mode	d.chenal	d.mer	alt	surf	p.roc	p.moul	p.huit	p.bala	p.alg	p.encr	p.eau	s.flaq	d.flaq	Bitret	Gibcin	Gibsp.	Gibtum	Litlit	Litobt	Litrud	Litsax	Monlin	Nasinc	Naspyg	Nasret	Oceeri	Patsp.	Rispar	Thalap	sp	haut	larg	peri	pred	coul	text	epizo	masse
-b90	camille.pilisi	21septembre2017	99	b	90	15	0.75	0.01533979	100	0	0	0	0	100	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	12.6	13.9	5.8	non	sombre	lisse	non	1.12
-b90	camille.pilisi	21septembre2017	99	b	90	15	0.75	0.01533979	100	0	0	0	0	100	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.1	13.2	5.8	non	rayures	lisse	non	0.99
-b90	camille.pilisi	21septembre2017	99	b	90	15	0.75	0.01533979	100	0	0	0	0	100	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.5	13.3	6.2	oui	sombre	lisse	non	0.95
-b90	camille.pilisi	21septembre2017	99	b	90	15	0.75	0.01533979	100	0	0	0	0	100	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.7	11.3	4.6	non	rayures	lisse	non	0.45
-b90	camille.pilisi	21septembre2017	99	b	90	15	0.75	0.01533979	100	0	0	0	0	100	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	13.7	14.6	7.0	non	rayures	lisse	non	1.3
-b90	camille.pilisi	21septembre2017	99	b	90	15	0.75	0.01227184	0	0	0	0	0	60	50	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.8	8.9	NA	non	sombre	lisse	NA	0.1882
-b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.01840775	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Gibsp.	10.3	13.2	6.2	oui	rayures	lisse	NA	0.9397
-b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.01840775	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Gibsp.	12.9	12.9	6.1	non	sombre	lisse	NA	1.3318
-b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.01840775	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Gibsp.	11.4	14.4	6.2	non	sombre	lisse	NA	1.1563
-b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.01840775	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Gibsp.	14.4	14.2	6.2	non	rayures	lisse	NA	1.4022
-b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.01840775	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Gibsp.	10.0	14.8	4.4	oui	clair	lisse	NA	1.3002
-b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.01840775	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Nasret	26.7	14.0	4.7	non	sombre	rugueux	NA	2.4072
-b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.01840775	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Nasret	24.9	12.9	3.3	non	sombre	rugueux	NA	2.0155
-b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.01840775	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Nasret	27.3	14.5	5.0	non	sombre	rugueux	NA	2.7902
-b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.02147571	100	0	0	0	0	100	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.6	11.1	3.3	non	clair	lisse	NA	0.4150
-b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.02147571	100	0	0	0	0	100	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.5	13.3	4.2	non	sombre	lisse	NA	1.0246
-b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.02147571	100	0	0	0	0	100	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.5	13.9	4.5	non	rayures	lisse	NA	1.1930
-b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.02147571	100	0	0	0	0	100	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	0	0	Litobt	7.5	8.8	2.7	non	sombre	lisse	NA	0.2637
-b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.01840775	30	0	0	0	0	100	10	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	Nasret	29.6	15.2	4.4	non	clair	rugueux	NA	3.3003
-b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.01840775	30	0	0	0	0	100	10	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	Gibsp.	11.4	13.0	4.7	oui	sombre	lisse	NA	1.0413
-b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.01533979	100	0	0	0	0	95	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.6	12.8	5.4	non	sombre	lisse	NA	1.0445
-b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.01533979	100	0	0	0	0	95	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.7	8.5	3.4	non	sombre	lisse	NA	0.4859
-b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.01533979	100	0	0	0	0	95	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.8	12.2	4.9	oui	sombre	lisse	NA	1.0598
-b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.01533979	100	0	0	0	0	95	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.5	9.4	3.4	non	sombre	lisse	NA	0.4358
-b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.01533979	100	0	0	0	0	95	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	5.9	8.3	3.2	non	sombre	lisse	NA	0.2848
-b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.01533979	100	0	0	0	0	95	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.1	7.7	5.3	oui	sombre	lisse	NA	1.1440
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.2	8.1	3.2	non	sombre	lisse	NA	0.1967
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	4.7	8.1	NA	oui	sombre	lisse	NA	0.1602
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.3	10.4	4.0	non	sombre	lisse	NA	0.5320
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.1	12.0	5.2	non	rayures	lisse	NA	0.8428
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.4	13.4	4.2	non	sombre	lisse	NA	1.0160
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	12.0	13.4	5.5	non	sombre	lisse	NA	1.0930
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.4	12.1	4.4	non	clair	lisse	NA	0.7194
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.1	11.1	5.2	non	clair	lisse	NA	0.6327
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.1	12.2	5.4	non	clair	lisse	NA	0.7792
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	15.6	11.4	5.1	non	clair	lisse	NA	0.7853
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	15	0	0	0	0	30	100	NA	NA	0	0	9	0	0	0	0	0	0	0	0	0	1	0	0	0	Oceeri	10.8	5.1	1.7	non	clair	bosses	NA	0.1246
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	15	0	0	0	0	30	100	NA	NA	0	0	9	0	0	0	0	0	0	0	0	0	1	0	0	0	Gibsp.	8.8	12.6	5.6	oui	sombre	lisse	NA	0.9801
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	15	0	0	0	0	30	100	NA	NA	0	0	9	0	0	0	0	0	0	0	0	0	1	0	0	0	Gibsp.	9.5	12.1	5.0	non	sombre	lisse	NA	1.0782
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	15	0	0	0	0	30	100	NA	NA	0	0	9	0	0	0	0	0	0	0	0	0	1	0	0	0	Gibsp.	5.0	7.8	2.8	non	sombre	lisse	NA	0.1895
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	15	0	0	0	0	30	100	NA	NA	0	0	9	0	0	0	0	0	0	0	0	0	1	0	0	0	Gibsp.	4.2	7.5	NA	non	sombre	lisse	NA	0.1399
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Nasret	25.3	13.8	4.7	non	clair	rugueux	non	2.2959
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Oceeri	18.9	11.5	NA	non	clair	rugueux	non	0.7450
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Litlit	19.5	11.5	5.8	non	sombre	lisse	non	2.6691
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Litlit	15.4	14.2	4.8	non	sombre	lisse	non	1.8820
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Litlit	17.8	14.0	5.4	non	sombre	lisse	non	2.0368
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Thalap	20.8	13.3	4.0	non	clair	lisse	non	1.3279
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Thalap	20.6	14.2	3.2	non	clair	lisse	oui	2.2016
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Thalap	19.0	14.5	2.0	non	clair	lisse	oui	2.1771
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Thalap	16.1	10.0	2.4	non	clair	lisse	oui	0.8109
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Thalap	22.6	13.8	3.6	non	clair	lisse	oui	2.3031
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Gibsp.	8.4	10.8	3.1	non	sombre	lisse	non	0.5200
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Gibsp.	10.7	13.0	4.0	non	rayures	lisse	non	NA
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Gibsp.	10.1	10.4	3.6	non	sombre	lisse	non	0.7543
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Gibsp.	11.3	12.5	4.1	non	rayures	lisse	non	1.0499
-b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.01227184	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Gibsp.	5.3	8.3	NA	non	sombre	lisse	non	0.1680
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Oceeri	29.5	16.5	4.0	non	sombre	bosses	NA	3.1959
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Litlit	20.3	17.8	8.3	oui	sombre	lisse	NA	2.9977
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.3	11.5	4.3	non	rayures	lisse	NA	0.5577
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.5	11.5	4.3	non	sombre	lisse	NA	0.6561
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.9	11.2	5.3	non	sombre	lisse	NA	0.5177
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.4	10.0	2.6	non	sombre	lisse	NA	0.3379
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.0	11.0	5.1	oui	sombre	lisse	NA	0.6080
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.7	11.2	4.0	oui	sombre	lisse	NA	0.6617
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.8	12.1	5.0	oui	rayures	lisse	NA	0.8152
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.0	10.0	4.8	non	clair	lisse	NA	0.5286
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.0	9.7	NA	non	clair	lisse	NA	0.2340
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Nasret	22.2	12.7	7.6	non	clair	rugueux	non	1.3300
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Litlit	20.5	15.7	5.6	non	sombre	lisse	non	2.7938
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Litlit	18.8	16.2	7.8	non	sombre	lisse	oui	2.3499
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Litlit	18.9	15.7	6.8	non	sombre	lisse	oui	2.7358
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Litlit	16.7	14.5	6.0	non	sombre	lisse	oui	1.9243
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Litlit	16.3	16.1	4.5	non	sombre	lisse	non	1.4627
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Thalap	21.4	13.6	3.1	non	clair	lisse	oui	2.2232
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Thalap	21.1	13.5	3.3	oui	clair	lisse	oui	1.9498
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Thalap	21.4	14.0	7.8	non	clair	lisse	oui	2.3494
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Thalap	22.2	12.7	7.4	non	clair	lisse	oui	2.0397
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Thalap	18.9	12.7	3.8	non	clair	lisse	oui	1.7921
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Gibsp.	9.0	11.3	3.0	oui	sombre	lisse	oui	0.7223
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Gibsp.	9.0	10.0	NA	non	sombre	lisse	non	0.5364
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Gibsp.	10.4	11.6	4.3	non	rayures	lisse	oui	0.8215
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Gibsp.	12.0	13.4	7.0	non	clair	lisse	non	0.9087
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01227184	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Gibsp.	9.4	10.6	5.8	non	rayures	lisse	non	0.6100
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01840775	100	0	0	50	0	70	0	0	0	0	0	25	0	1	0	0	0	0	0	0	0	0	0	0	0	Litlit	16.6	13.3	4.7	non	sombre	lisse	oui	1.8060
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01840775	100	0	0	50	0	70	0	0	0	0	0	25	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.1	9.0	3.2	non	sombre	lisse	non	0.4558
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01840775	100	0	0	50	0	70	0	0	0	0	0	25	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	12.3	12.9	5.1	non	rayures	lisse	non	1.0597
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01840775	100	0	0	50	0	70	0	0	0	0	0	25	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.0	13.0	3.9	non	rayures	lisse	non	1.0691
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01840775	100	0	0	50	0	70	0	0	0	0	0	25	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.0	13.7	4.9	non	rayures	lisse	non	0.9683
-b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.01840775	100	0	0	50	0	70	0	0	0	0	0	25	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.1	12.1	3.6	non	rayures	lisse	oui	0.8268
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Litlit	15.3	11.5	6.4	non	sombre	lisse	non	1.26
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Litlit	15.6	12.6	5.9	non	sombre	lisse	oui	1.23
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Litlit	13.2	13.0	6.0	non 	sombre	lisse	non	1.87
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Litlit	14.2	10.2	4.6	non	rayures	lisse	non	0.93
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Litlit	14.2	12.0	4.9	non	sombre	lisse	non	0.98
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	8.5	10.4	3.8	non	sombre	lisse	oui	0.71
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	6.7	11.5	3.9	non	sombre	lisse	non	0.66
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	6.6	10.4	4.3	non	sombre	lisse	non	0.65
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	7.8	11.0	4.1	non	sombre	lisse	non	0.62
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	7.0	11.0	4.4	non	rayures	lisse	non	0.63
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Litlit	18.7	16.8	9.7	non	sombre	lisse	non	2.23
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Litlit	12.9	11.0	7.1	non	sombre	lisse	non	0.83
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Litlit	17.9	14.2	8.5	non	sombre	lisse	non	1.48
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Litlit	14.0	11.6	7.1	non	sombre	lisse	non	0.9
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Litlit	13.6	11.5	7.8	non	sombre	lisse	non	0.81
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.1	10.6	6.1	non	sombre	lisse	non	0.64
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.0	9.2	3.6	non	rayures	lisse	non	0.35
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.0	11.0	4.1	non	sombre	lisse	non	0.5
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01227184	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.1	10.2	4.2	non	rayures	lisse	non	0.35
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01840775	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Thalap	20.5	12.0	9.3	non	sombre	rugueux	oui	1.56
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01840775	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Litlit	18.6	13.3	7.4	non	sombre	lisse	non	2.06
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01840775	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	10.0	12.1	4.8	non	rayures	lisse	non	0.78
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01840775	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	9.0	11.0	4.9	non	rayures	lisse	oui	0.6
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01840775	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	9.3	12.7	4.5	non	rayures	lisse	oui	0.61
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01840775	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	8.6	11.8	4.9	non	rayures	lisse	non	0.63
-b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.01840775	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	10.2	12.6	5.0	non	sombre	lisse	non	0.9
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Litlit	14.0	11.5	6.0	oui	sombre	lisse	non	1.0495
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Litlit	17.3	13.2	5.6	non	sombre	lisse	non	1.6215
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Litlit	14.1	11.7	6.0	oui	sombre	lisse	non	1.0241
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Litlit	15.7	12.5	5.1	oui	sombre	lisse	non	1.1432
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Litlit	18.2	14.6	7.0	non	sombre	lisse	oui	1.9503
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Gibsp.	11.9	12.6	4.7	non	rayures	lisse	non	0.9220
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Gibsp.	11.4	9.7	4.5	non	rayures	lisse	oui	0.5686
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Gibsp.	9.1	11.3	3.3	non	sombre	lisse	non	0.5689
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Gibsp.	6.8	10.0	NA	non	clair	lisse	non	0.3319
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Gibsp.	8.7	10.2	3.9	non	rayures	lisse	non	0.4722
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Thalap	24.4	14.7	8.6	non	clair	lisse	non	2.8583
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Thalap	18.9	12.4	4.3	non	clair	lisse	non	0.9490
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Thalap	22.3	15.3	4.5	non	clair	lisse	oui	2.4800
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Thalap	19.9	13.0	3.2	non	clair 	lisse	oui	1.4891
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Thalap	18.7	12.4	6.4	non	clair	lisse	oui	1.4087
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01533979	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Litlit	13.6	10.4	5.0	non	sombre	lisse	non	0.8370
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01533979	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Litlit	13.0	11.8	5.5	non	sombre	lisse	non	0.7439
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01533979	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Litlit	12.9	10.5	4.9	non	sombre	lisse	non	1.0435
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01533979	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Litlit	14.0	11.7	4.7	non	sombre	lisse	non	0.4169
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01533979	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Litlit	10.4	8.6	3.6	oui	sombre	lisse	non	0.6681
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01533979	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Gibsp.	9.4	12.8	4.4	non	sombre	lisse	non	0.5145
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01533979	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Gibsp.	9.0	10.3	3.5	non	sombre	lisse	non	0.7377
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01533979	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Gibsp.	9.7	11.1	5.2	non	sombre	lisse	non	0.3633
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01533979	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Gibsp.	7.7	9.5	NA	non	sombre	lisse	non	0.6456
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01533979	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Gibsp.	9.4	10.8	4.2	non	sombre	lisse	non	2.2959
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Litlit	15.3	11.1	5.2	non	sombre	lisse	non	1.15
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Litlit	14.3	10.1	4.8	oui	sombre	lisse	non	0.99
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Litlit	13.7	10.4	4.2	non	sombre	lisse	non	0.85
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Litlit	17.7	13.0	6.0	non	sombre	lisse	non	1.85
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Litlit	12.7	10.7	4.4	non	sombre	lisse	non	0.84
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.2	12.9	4.6	non	rayures	lisse	non	0.78
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.3	9.7	4.2	non	sombre	lisse	non	0.43
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.8	10.0	4.3	non	rayures	lisse	non	0.44
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	5.0	9.5	4.6	non	sombre	lisse	non	0.26
-b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.01227184	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.2	10.6	4.3	oui	sombre	lisse	non	0.72
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01533979	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.8	10.5	4.3	oui	clair	lisse	NA	0.63
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01533979	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.0	10.0	4.0	non	sombre	lisse	NA	0.478
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01533979	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.2	11.4	4.0	non	sombre	lisse	NA	0.588
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01533979	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	5.2	9.6	4.3	non	sombre	lisse	NA	0.357
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01533979	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Litlit	12.0	11.8	5.1	non	sombre	lisse	NA	1.0347
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01533979	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Litlit	14.3	12.1	5.7	non	sombre	lisse	NA	1.0575
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01533979	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Litlit	15.0	11.5	6.0	non	sombre	lisse	NA	1.2741
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01533979	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Litlit	15.2	12.3	6.3	non	sombre	lisse	NA	1.2828
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01533979	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Litlit	12.4	9.4	4.2	non	sombre	lisse	NA	0.6865
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01533979	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.6	11.4	4.7	oui	clair	lisse	NA	0.7759
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01227184	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Litlit	14.8	10.7	5.8	non	sombre	lisse	NA	1.1097
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01227184	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Litlit	7.5	6.0	2.3	non	sombre	lisse	NA	0.1546
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01227184	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Litlit	11.4	10.0	3.8	non	sombre	lisse	NA	0.5697
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01227184	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Litlit	13.0	10.7	4.5	non	sombre	lisse	NA	0.8418
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01227184	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	4.5	8.5	3.5	non	sombre	lisse	NA	0.2299
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01227184	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	4.4	9.1	3.2	non	sombre	lisse	NA	0.2653
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01227184	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	5.1	9.3	3.3	non	sombre	lisse	NA	0.2977
-b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.01227184	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.5	10.5	3.9	non	sombre	lisse	NA	0.4785
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Litlit	11.8	9.0	3.8	non	sombre	lisse	NA	0.5555
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Litlit	11.8	9.4	4.1	non	sombre	lisse	NA	0.5110
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Oceeri	22.2	14.0	4.3	oui	clair	bosses	NA	1.6653
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	6.0	9.3	4.2	non	sombre	lisse	NA	0.2341
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	9.3	9.7	3.8	oui	rayures	lisse	NA	0.4744
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	6.7	9.4	4.3	non	sombre	lisse	NA	0.3197
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	7.4	11.5	4.2	non	sombre	lisse	NA	0.4356
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	8.5	11.6	4.1	non	rayures	lisse	NA	0.3935
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	6.5	9.3	3.6	non	clair	lisse	NA	0.2646
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	8.2	10.1	4.1	non	clair	lisse	NA	0.4259
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	7.7	10.0	4.0	non	clair	lisse	NA	0.4027
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	8.4	9.3	4.2	non	clair	lisse	NA	0.3194
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Thalap	12.0	8.0	2.4	non	sombre	lisse	NA	0.3318
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01840775	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Litlit	13.7	11.1	5.1	non	sombre	lisse	non	0.9919
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01840775	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Litlit	16.6	13.6	6.1	non	sombre	lisse	oui	1.5750
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01840775	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Litlit	8.7	7.1	2.7	non	sombre	lisse	non	0.2505
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01840775	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.0	11.0	4.8	non	rayures	lisse	non	0.7546
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01840775	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.0	10.0	4.4	non	rayures	lisse	non	0.5676
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01840775	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.3	11.3	4.1	non	sombre	lisse	non	0.7451
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01840775	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.0	11.0	4.8	non	sombre	lisse	non	0.8273
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01840775	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.1	10.4	3.9	non	sombre	lisse	non	0.5438
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Litlit	15.1	12.4	8.4	non	sombre	lisse	non	1.21
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Litlit	14.0	13.2	8.3	oui	sombre	lisse	oui	1.07
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Litlit	12.2	10.8	8.5	non	sombre	lisse	non	0.62
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Litlit	9.6	8.1	5.0	non	clair	lisse	non	0.29
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Litlit	10.0	7.3	4.4	non	sombre	lisse	non	0.3
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.6	10.8	3.8	non	rayures	lisse	non	0.41
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.3	10.1	3.6	non	rayures	lisse	non	0.46
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.2	11.6	5.1	non	sombre	lisse	non	0.66
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.2	12.0	5.7	non	rayures	lisse	non	0.66
-b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.01227184	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.4	10.1	3.3	non	sombre	lisse	non	0.44
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.0	8.7	3.5	non	rayures	lisse	non	0.3917
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.7	10.0	5.0	non	sombre	lisse	non	0.4509
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	5.6	6.4	NA	non	sombre	lisse	non	0.1106
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.5	8.1	3.9	non	rayures	lisse	non	0.2459
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.6	10.0	4.9	non	rayures	lisse	non	0.3581
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Litlit	8.5	7.0	3.0	non	sombre	lisse	non	0.2406
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Litlit	8.5	6.7	2.7	non	sombre	lisse	non	0.2176
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Litlit	5.0	4.1	NA	non	sombre	lisse	non	0.0597
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Litlit	7.6	7.0	3.0	non	sombre	lisse	non	0.2240
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Litlit	5.7	4.3	NA	non	sombre	lisse	non	0.0862
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Litlit	8.1	6.1	NA	non	sombre	lisse	non	0.2129
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Litlit	12.2	10.6	3.6	non	sombre	lisse	oui	0.6813
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Litlit	10.0	8.4	3.9	non	sombre	lisse	non	0.3686
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Litlit	11.0	10.3	4.0	non	sombre	lisse	non	0.5632
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Litlit	8.4	7.0	NA	non	clair	lisse	non	0.2249
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.2	9.7	3.9	non	rayures	lisse	non	0.4720
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.7	10.0	NA	non	clair	lisse	non	0.3569
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	12.9	8.5	3.9	non	rayures	lisse	non	0.3115
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.5	8.5	NA	non	rayures	lisse	non	0.2400
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.7	9.4	NA	non	rayures	lisse	non	0.3032
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Litlit	11.3	10.3	4.9	non	sombre	lisse	non	0.6435
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Litlit	10.2	9.4	NA	non	clair	lisse	non	0.4656
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Litlit	8.0	6.9	NA	non	sombre	lisse	non	0.2000
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Litlit	8.0	6.8	NA	non	sombre	lisse	non	0.1854
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Litlit	9.7	8.0	2.3	non	sombre	lisse	non	0.3246
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Gibsp.	12.0	13.2	4.7	non	sombre	lisse	non	0.9185
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Gibsp.	9.5	10.0	5.1	non	rayures	lisse	non	0.5552
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Gibsp.	7.2	10.3	NA	non	rayures	lisse	non	0.3653
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Gibsp.	4.7	5.1	NA	non	sombre	lisse	non	0.0754
-b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.01227184	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Gibsp.	4.5	6.1	NA	non	rayures	lisse	non	0.1021
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01227184	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Gibsp.	11.0	12.7	4.4	non	rayures	lisse	non	1.1601
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01227184	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Gibsp.	13.9	14.3	5.0	non	rayures	lisse	non	0.9276
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01227184	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Gibsp.	7.9	10.8	NA	non	sombre	lisse	non	0.9633
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01227184	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Gibsp.	11.5	13.3	4.8	non	sombre	lisse	non	0.4704
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01227184	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Gibsp.	12.1	11.8	5.0	non	sombre	lisse	oui	0.5628
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01227184	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Litlit	10.8	9.7	3.6	non	sombre	lisse	non	0.2187
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01227184	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Litlit	8.2	7.8	4.0	non	sombre	lisse	non	0.4238
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01227184	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Litlit	10.2	8.1	4.1	non	sombre	lisse	non	0.4186
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01227184	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Litlit	10.2	8.5	3.9	non	sombre	lisse	non	0.2190
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01227184	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Litlit	8.4	6.8	2.2	non	sombre	lisse	non	0.6945
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Monlin	13.3	13.0	5.4	non	sombre	lisse	non	1.11
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Monlin	15.1	16.0	6.8	non	sombre	lisse	oui	1.60
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Monlin	13.0	12.6	5.3	non	sombre	lisse	non	0.99
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Monlin	8.6	8.6	5.8	non	sombre	lisse	oui	1.31
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Thalap	23.9	14.3	4.9	non	clair	rugueux	oui	2.21
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Litlit	10.3	8.4	3.4	non	sombre	lisse	non	0.46
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Litlit	10.1	8.7	3.8	non	sombre	lisse	non	0.47
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Litlit	9.8	7.8	3.0	non	sombre	lisse	non	0.35
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Litlit	10.3	8.8	3.4	non	sombre	lisse	non	0.42
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Gibsp.	8.1	11.0	4.4	oui	sombre	lisse	non	0.64
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Gibsp.	6.2	10.9	6.0	non	rayures	lisse	non	0.48
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Gibsp.	3.4	7.0	NA	non	rayures	lisse	non	0.1
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Gibsp.	3.7	6.0	NA	non	rayures	lisse	non	0.1
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Monlin	12.1	11.0	5.2	non	sombre	lisse	oui	0.89
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Monlin	12.6	13.7	6.5	non	sombre	lisse	oui	0.99
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Monlin	12.5	12.5	5.3	non	sombre	lisse	non	0.87
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Litlit	8.8	7.1	2.6	non	sombre	lisse	non	0.25
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Litlit	8.1	6.7	2.7	non	sombre	lisse	non	0.2
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Gibsp.	7.0	9.9	4.5	oui	rayures	lisse	non	0.46
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Gibsp.	7.0	10.2	4.4	oui	rayures	lisse	oui	0.51
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Gibsp.	6.2	8.8	4.3	non	rayures	lisse	non	0.31
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Gibsp.	5.0	5.0	NA	non	sombre	lisse	non	0.08
-b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.01533979	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Gibsp.	7.2	10.6	3.8	oui	sombre	lisse	non	0.56
+transect	resp	date	coef	mode	d.chenal	d.mer	alt	surf	p.roc	p.moul	p.huit	p.bala	p.encr	p.alg	p.eau	s.flaq	d.flaq	Bitret	Gibcin	Gibsp.	Gibtum	Litlit	Litobt	Litrud	Litsax	Monlin	Nasinc	Naspyg	Nasret	Oceeri	Patsp.	Rispar	Thalap	sp	haut	larg	peri	pred	coul	text	epizo	masse		
+b90	camille.pilisi	21septembre2017	99	b	90	15	0.75	0.24543664	100	0	0	0	0	100	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	12.6	13.9	5.8	non	sombre	lisse	non	1.12		
+b90	camille.pilisi	21septembre2017	99	b	90	15	0.75	0.24543664	100	0	0	0	0	100	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.1	13.2	5.8	non	rayures	lisse	non	0.99		
+b90	camille.pilisi	21septembre2017	99	b	90	15	0.75	0.24543664	100	0	0	0	0	100	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.5	13.3	6.2	oui	sombre	lisse	non	0.95		
+b90	camille.pilisi	21septembre2017	99	b	90	15	0.75	0.24543664	100	0	0	0	0	100	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.7	11.3	4.6	non	rayures	lisse	non	0.45		
+b90	camille.pilisi	21septembre2017	99	b	90	15	0.75	0.24543664	100	0	0	0	0	100	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	13.7	14.6	7.0	non	rayures	lisse	non	1.3		
+b90	camille.pilisi	21septembre2017	99	b	90	15	0.75	0.19634944	0	0	0	0	0	60	50	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.8	8.9	NA	non	sombre	lisse	NA	0.1882		
+b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.294524	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Gibsp.	10.3	13.2	6.2	oui	rayures	lisse	NA	0.9397		
+b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.294524	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Gibsp.	12.9	12.9	6.1	non	sombre	lisse	NA	1.3318		
+b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.294524	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Gibsp.	11.4	14.4	6.2	non	sombre	lisse	NA	1.1563		
+b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.294524	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Gibsp.	14.4	14.2	6.2	non	rayures	lisse	NA	1.4022		
+b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.294524	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Gibsp.	10.0	14.8	4.4	oui	clair	lisse	NA	1.3002		
+b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.294524	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Nasret	26.7	14.0	4.7	non	sombre	rugueux	NA	2.4072		
+b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.294524	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Nasret	24.9	12.9	3.3	non	sombre	rugueux	NA	2.0155		
+b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.294524	100	0	0	0	0	50	80	0	0	0	0	5	0	0	0	0	0	0	0	0	3	0	0	0	0	Nasret	27.3	14.5	5.0	non	sombre	rugueux	NA	2.7902		
+b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.34361136	100	0	0	0	0	100	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.6	11.1	3.3	non	clair	lisse	NA	0.4150		
+b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.34361136	100	0	0	0	0	100	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.5	13.3	4.2	non	sombre	lisse	NA	1.0246		
+b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.34361136	100	0	0	0	0	100	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.5	13.9	4.5	non	rayures	lisse	NA	1.1930		
+b90	camille.pilisi	21septembre2017	99	b	90	20	0.75	0.34361136	100	0	0	0	0	100	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	0	0	Litobt	7.5	8.8	2.7	non	sombre	lisse	NA	0.2637		
+b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.294524	30	0	0	0	0	100	10	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	Nasret	29.6	15.2	4.4	non	clair	rugueux	NA	3.3003		
+b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.294524	30	0	0	0	0	100	10	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	Gibsp.	11.4	13.0	4.7	oui	sombre	lisse	NA	1.0413		
+b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.24543664	100	0	0	0	0	95	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.6	12.8	5.4	non	sombre	lisse	NA	1.0445		
+b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.24543664	100	0	0	0	0	95	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.7	8.5	3.4	non	sombre	lisse	NA	0.4859		
+b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.24543664	100	0	0	0	0	95	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.8	12.2	4.9	oui	sombre	lisse	NA	1.0598		
+b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.24543664	100	0	0	0	0	95	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.5	9.4	3.4	non	sombre	lisse	NA	0.4358		
+b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.24543664	100	0	0	0	0	95	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	5.9	8.3	3.2	non	sombre	lisse	NA	0.2848		
+b90	camille.pilisi	21septembre2017	99	b	90	25	0.75	0.24543664	100	0	0	0	0	95	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.1	7.7	5.3	oui	sombre	lisse	NA	1.1440		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.2	8.1	3.2	non	sombre	lisse	NA	0.1967		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	4.7	8.1	NA	oui	sombre	lisse	NA	0.1602		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.3	10.4	4.0	non	sombre	lisse	NA	0.5320		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.1	12.0	5.2	non	rayures	lisse	NA	0.8428		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.4	13.4	4.2	non	sombre	lisse	NA	1.0160		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	12.0	13.4	5.5	non	sombre	lisse	NA	1.0930		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.4	12.1	4.4	non	clair	lisse	NA	0.7194		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.1	11.1	5.2	non	clair	lisse	NA	0.6327		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.1	12.2	5.4	non	clair	lisse	NA	0.7792		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	100	0	0	90	0	30	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	15.6	11.4	5.1	non	clair	lisse	NA	0.7853		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	15	0	0	0	0	30	100	NA	NA	0	0	9	0	0	0	0	0	0	0	0	0	1	0	0	0	Oceeri	10.8	5.1	1.7	non	clair	bosses	NA	0.1246		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	15	0	0	0	0	30	100	NA	NA	0	0	9	0	0	0	0	0	0	0	0	0	1	0	0	0	Gibsp.	8.8	12.6	5.6	oui	sombre	lisse	NA	0.9801		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	15	0	0	0	0	30	100	NA	NA	0	0	9	0	0	0	0	0	0	0	0	0	1	0	0	0	Gibsp.	9.5	12.1	5.0	non	sombre	lisse	NA	1.0782		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	15	0	0	0	0	30	100	NA	NA	0	0	9	0	0	0	0	0	0	0	0	0	1	0	0	0	Gibsp.	5.0	7.8	2.8	non	sombre	lisse	NA	0.1895		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	15	0	0	0	0	30	100	NA	NA	0	0	9	0	0	0	0	0	0	0	0	0	1	0	0	0	Gibsp.	4.2	7.5	NA	non	sombre	lisse	NA	0.1399		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Nasret	25.3	13.8	4.7	non	clair	rugueux	non	2.2959		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Oceeri	18.9	11.5	NA	non	clair	rugueux	non	0.7450		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Litlit	19.5	11.5	5.8	non	sombre	lisse	non	2.6691		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Litlit	15.4	14.2	4.8	non	sombre	lisse	non	1.8820		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Litlit	17.8	14.0	5.4	non	sombre	lisse	non	2.0368		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Thalap	20.8	13.3	4.0	non	clair	lisse	non	1.3279		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Thalap	20.6	14.2	3.2	non	clair	lisse	oui	2.2016		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Thalap	19.0	14.5	2.0	non	clair	lisse	oui	2.1771		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Thalap	16.1	10.0	2.4	non	clair	lisse	oui	0.8109		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Thalap	22.6	13.8	3.6	non	clair	lisse	oui	2.3031		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Gibsp.	8.4	10.8	3.1	non	sombre	lisse	non	0.5200		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Gibsp.	10.7	13.0	4.0	non	rayures	lisse	non	NA		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Gibsp.	10.1	10.4	3.6	non	sombre	lisse	non	0.7543		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Gibsp.	11.3	12.5	4.1	non	rayures	lisse	non	1.0499		
+b90	camille.pilisi	21septembre2017	99	b	90	30	0.8	0.19634944	90	0	0	50	0	50	100	NA	NA	0	0	39	0	4	0	0	0	1	0	0	13	10	0	0	13	Gibsp.	5.3	8.3	NA	non	sombre	lisse	non	0.1680		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Oceeri	29.5	16.5	4.0	non	sombre	bosses	NA	3.1959		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Litlit	20.3	17.8	8.3	oui	sombre	lisse	NA	2.9977		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.3	11.5	4.3	non	rayures	lisse	NA	0.5577		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.5	11.5	4.3	non	sombre	lisse	NA	0.6561		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.9	11.2	5.3	non	sombre	lisse	NA	0.5177		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.4	10.0	2.6	non	sombre	lisse	NA	0.3379		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.0	11.0	5.1	oui	sombre	lisse	NA	0.6080		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.7	11.2	4.0	oui	sombre	lisse	NA	0.6617		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.8	12.1	5.0	oui	rayures	lisse	NA	0.8152		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.0	10.0	4.8	non	clair	lisse	NA	0.5286		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	5	0	0	0	0	10	100	NA	NA	0	0	11	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.0	9.7	NA	non	clair	lisse	NA	0.2340		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Nasret	22.2	12.7	7.6	non	clair	rugueux	non	1.3300		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Litlit	20.5	15.7	5.6	non	sombre	lisse	non	2.7938		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Litlit	18.8	16.2	7.8	non	sombre	lisse	oui	2.3499		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Litlit	18.9	15.7	6.8	non	sombre	lisse	oui	2.7358		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Litlit	16.7	14.5	6.0	non	sombre	lisse	oui	1.9243		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Litlit	16.3	16.1	4.5	non	sombre	lisse	non	1.4627		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Thalap	21.4	13.6	3.1	non	clair	lisse	oui	2.2232		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Thalap	21.1	13.5	3.3	oui	clair	lisse	oui	1.9498		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Thalap	21.4	14.0	7.8	non	clair	lisse	oui	2.3494		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Thalap	22.2	12.7	7.4	non	clair	lisse	oui	2.0397		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Thalap	18.9	12.7	3.8	non	clair	lisse	oui	1.7921		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Gibsp.	9.0	11.3	3.0	oui	sombre	lisse	oui	0.7223		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Gibsp.	9.0	10.0	NA	non	sombre	lisse	non	0.5364		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Gibsp.	10.4	11.6	4.3	non	rayures	lisse	oui	0.8215		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Gibsp.	12.0	13.4	7.0	non	clair	lisse	non	0.9087		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.19634944	100	0	10	100	0	20	0	0	0	0	0	39	0	19	0	0	0	0	0	0	1	0	0	0	20	Gibsp.	9.4	10.6	5.8	non	rayures	lisse	non	0.6100		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.294524	100	0	0	50	0	70	0	0	0	0	0	25	0	1	0	0	0	0	0	0	0	0	0	0	0	Litlit	16.6	13.3	4.7	non	sombre	lisse	oui	1.8060		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.294524	100	0	0	50	0	70	0	0	0	0	0	25	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.1	9.0	3.2	non	sombre	lisse	non	0.4558		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.294524	100	0	0	50	0	70	0	0	0	0	0	25	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	12.3	12.9	5.1	non	rayures	lisse	non	1.0597		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.294524	100	0	0	50	0	70	0	0	0	0	0	25	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.0	13.0	3.9	non	rayures	lisse	non	1.0691		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.294524	100	0	0	50	0	70	0	0	0	0	0	25	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.0	13.7	4.9	non	rayures	lisse	non	0.9683		
+b90	camille.pilisi	21septembre2017	99	b	90	35	0.8	0.294524	100	0	0	50	0	70	0	0	0	0	0	25	0	1	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	10.1	12.1	3.6	non	rayures	lisse	oui	0.8268		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Litlit	15.3	11.5	6.4	non	sombre	lisse	non	1.26		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Litlit	15.6	12.6	5.9	non	sombre	lisse	oui	1.23		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Litlit	13.2	13.0	6.0	non 	sombre	lisse	non	1.87		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Litlit	14.2	10.2	4.6	non	rayures	lisse	non	0.93		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Litlit	14.2	12.0	4.9	non	sombre	lisse	non	0.98		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	8.5	10.4	3.8	non	sombre	lisse	oui	0.71		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	6.7	11.5	3.9	non	sombre	lisse	non	0.66		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	6.6	10.4	4.3	non	sombre	lisse	non	0.65		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	7.8	11.0	4.1	non	sombre	lisse	non	0.62		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	25	0	15	10	0	10	70	0	0	0	0	50	0	54	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	7.0	11.0	4.4	non	rayures	lisse	non	0.63		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Litlit	18.7	16.8	9.7	non	sombre	lisse	non	2.23		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Litlit	12.9	11.0	7.1	non	sombre	lisse	non	0.83		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Litlit	17.9	14.2	8.5	non	sombre	lisse	non	1.48		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Litlit	14.0	11.6	7.1	non	sombre	lisse	non	0.9		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Litlit	13.6	11.5	7.8	non	sombre	lisse	non	0.81		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.1	10.6	6.1	non	sombre	lisse	non	0.64		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.0	9.2	3.6	non	rayures	lisse	non	0.35		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.0	11.0	4.1	non	sombre	lisse	non	0.5		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.19634944	0	0	0	0	0	25	100	NA	NA	0	0	76	0	22	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.1	10.2	4.2	non	rayures	lisse	non	0.35		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.294524	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Thalap	20.5	12.0	9.3	non	sombre	rugueux	oui	1.56		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.294524	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Litlit	18.6	13.3	7.4	non	sombre	lisse	non	2.06		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.294524	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	10.0	12.1	4.8	non	rayures	lisse	non	0.78		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.294524	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	9.0	11.0	4.9	non	rayures	lisse	oui	0.6		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.294524	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	9.3	12.7	4.5	non	rayures	lisse	oui	0.61		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.294524	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	8.6	11.8	4.9	non	rayures	lisse	non	0.63		
+b90	camille.pilisi	21septembre2017	99	b	90	40	0.75	0.294524	20	0	10	10	0	10	80	0	0	0	0	18	0	1	0	0	0	0	0	0	0	0	0	0	1	Gibsp.	10.2	12.6	5.0	non	sombre	lisse	non	0.9		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Litlit	14.0	11.5	6.0	oui	sombre	lisse	non	1.0495		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Litlit	17.3	13.2	5.6	non	sombre	lisse	non	1.6215		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Litlit	14.1	11.7	6.0	oui	sombre	lisse	non	1.0241		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Litlit	15.7	12.5	5.1	oui	sombre	lisse	non	1.1432		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Litlit	18.2	14.6	7.0	non	sombre	lisse	oui	1.9503		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Gibsp.	11.9	12.6	4.7	non	rayures	lisse	non	0.9220		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Gibsp.	11.4	9.7	4.5	non	rayures	lisse	oui	0.5686		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Gibsp.	9.1	11.3	3.3	non	sombre	lisse	non	0.5689		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Gibsp.	6.8	10.0	NA	non	clair	lisse	non	0.3319		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Gibsp.	8.7	10.2	3.9	non	rayures	lisse	non	0.4722		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Thalap	24.4	14.7	8.6	non	clair	lisse	non	2.8583		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Thalap	18.9	12.4	4.3	non	clair	lisse	non	0.9490		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Thalap	22.3	15.3	4.5	non	clair	lisse	oui	2.4800		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Thalap	19.9	13.0	3.2	non	clair 	lisse	oui	1.4891		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	80	0	0	30	0	30	5	0	0	0	0	77	0	0	0	0	0	0	0	0	0	0	0	0	6	Thalap	18.7	12.4	6.4	non	clair	lisse	oui	1.4087		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.24543664	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Litlit	13.6	10.4	5.0	non	sombre	lisse	non	0.8370		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.24543664	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Litlit	13.0	11.8	5.5	non	sombre	lisse	non	0.7439		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.24543664	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Litlit	12.9	10.5	4.9	non	sombre	lisse	non	1.0435		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.24543664	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Litlit	14.0	11.7	4.7	non	sombre	lisse	non	0.4169		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.24543664	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Litlit	10.4	8.6	3.6	oui	sombre	lisse	non	0.6681		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.24543664	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Gibsp.	9.4	12.8	4.4	non	sombre	lisse	non	0.5145		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.24543664	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Gibsp.	9.0	10.3	3.5	non	sombre	lisse	non	0.7377		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.24543664	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Gibsp.	9.7	11.1	5.2	non	sombre	lisse	non	0.3633		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.24543664	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Gibsp.	7.7	9.5	NA	non	sombre	lisse	non	0.6456		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.24543664	100	0	10	40	0	10	10	0	0	0	0	55	0	11	0	0	0	0	0	0	1	0	0	0	3	Gibsp.	9.4	10.8	4.2	non	sombre	lisse	non	2.2959		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Litlit	15.3	11.1	5.2	non	sombre	lisse	non	1.15		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Litlit	14.3	10.1	4.8	oui	sombre	lisse	non	0.99		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Litlit	13.7	10.4	4.2	non	sombre	lisse	non	0.85		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Litlit	17.7	13.0	6.0	non	sombre	lisse	non	1.85		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Litlit	12.7	10.7	4.4	non	sombre	lisse	non	0.84		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.2	12.9	4.6	non	rayures	lisse	non	0.78		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.3	9.7	4.2	non	sombre	lisse	non	0.43		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.8	10.0	4.3	non	rayures	lisse	non	0.44		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	5.0	9.5	4.6	non	sombre	lisse	non	0.26		
+b90	camille.pilisi	21septembre2017	99	b	90	45	0.9	0.19634944	30	0	0	25	0	0	0	0	0	0	0	19	0	11	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.2	10.6	4.3	oui	sombre	lisse	non	0.72		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.24543664	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.8	10.5	4.3	oui	clair	lisse	NA	0.63		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.24543664	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.0	10.0	4.0	non	sombre	lisse	NA	0.478		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.24543664	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.2	11.4	4.0	non	sombre	lisse	NA	0.588		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.24543664	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	5.2	9.6	4.3	non	sombre	lisse	NA	0.357		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.24543664	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Litlit	12.0	11.8	5.1	non	sombre	lisse	NA	1.0347		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.24543664	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Litlit	14.3	12.1	5.7	non	sombre	lisse	NA	1.0575		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.24543664	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Litlit	15.0	11.5	6.0	non	sombre	lisse	NA	1.2741		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.24543664	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Litlit	15.2	12.3	6.3	non	sombre	lisse	NA	1.2828		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.24543664	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Litlit	12.4	9.4	4.2	non	sombre	lisse	NA	0.6865		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.24543664	5	0	0	10	0	5	5	0	0	0	0	38	0	19	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.6	11.4	4.7	oui	clair	lisse	NA	0.7759		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.19634944	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Litlit	14.8	10.7	5.8	non	sombre	lisse	NA	1.1097		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.19634944	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Litlit	7.5	6.0	2.3	non	sombre	lisse	NA	0.1546		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.19634944	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Litlit	11.4	10.0	3.8	non	sombre	lisse	NA	0.5697		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.19634944	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Litlit	13.0	10.7	4.5	non	sombre	lisse	NA	0.8418		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.19634944	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	4.5	8.5	3.5	non	sombre	lisse	NA	0.2299		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.19634944	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	4.4	9.1	3.2	non	sombre	lisse	NA	0.2653		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.19634944	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	5.1	9.3	3.3	non	sombre	lisse	NA	0.2977		
+b90	camille.pilisi	21septembre2017	99	b	90	50	0.85	0.19634944	0	0	0	0	0	0	0	0	0	0	0	19	0	9	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.5	10.5	3.9	non	sombre	lisse	NA	0.4785		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Litlit	11.8	9.0	3.8	non	sombre	lisse	NA	0.5555		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Litlit	11.8	9.4	4.1	non	sombre	lisse	NA	0.5110		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Oceeri	22.2	14.0	4.3	oui	clair	bosses	NA	1.6653		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	6.0	9.3	4.2	non	sombre	lisse	NA	0.2341		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	9.3	9.7	3.8	oui	rayures	lisse	NA	0.4744		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	6.7	9.4	4.3	non	sombre	lisse	NA	0.3197		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	7.4	11.5	4.2	non	sombre	lisse	NA	0.4356		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	8.5	11.6	4.1	non	rayures	lisse	NA	0.3935		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	6.5	9.3	3.6	non	clair	lisse	NA	0.2646		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	8.2	10.1	4.1	non	clair	lisse	NA	0.4259		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	7.7	10.0	4.0	non	clair	lisse	NA	0.4027		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Gibsp.	8.4	9.3	4.2	non	clair	lisse	NA	0.3194		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	50	20	0	40	0	5	0	0	0	0	0	20	0	2	0	0	0	0	0	0	0	1	0	0	1	Thalap	12.0	8.0	2.4	non	sombre	lisse	NA	0.3318		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.294524	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Litlit	13.7	11.1	5.1	non	sombre	lisse	non	0.9919		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.294524	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Litlit	16.6	13.6	6.1	non	sombre	lisse	oui	1.5750		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.294524	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Litlit	8.7	7.1	2.7	non	sombre	lisse	non	0.2505		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.294524	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.0	11.0	4.8	non	rayures	lisse	non	0.7546		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.294524	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	11.0	10.0	4.4	non	rayures	lisse	non	0.5676		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.294524	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.3	11.3	4.1	non	sombre	lisse	non	0.7451		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.294524	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.0	11.0	4.8	non	sombre	lisse	non	0.8273		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.294524	100	5	50	60	0	10	20	0	0	0	0	12	0	3	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.1	10.4	3.9	non	sombre	lisse	non	0.5438		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Litlit	15.1	12.4	8.4	non	sombre	lisse	non	1.21		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Litlit	14.0	13.2	8.3	oui	sombre	lisse	oui	1.07		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Litlit	12.2	10.8	8.5	non	sombre	lisse	non	0.62		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Litlit	9.6	8.1	5.0	non	clair	lisse	non	0.29		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Litlit	10.0	7.3	4.4	non	sombre	lisse	non	0.3		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.6	10.8	3.8	non	rayures	lisse	non	0.41		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.3	10.1	3.6	non	rayures	lisse	non	0.46		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.2	11.6	5.1	non	sombre	lisse	non	0.66		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.2	12.0	5.7	non	rayures	lisse	non	0.66		
+b90	camille.pilisi	21septembre2017	99	b	90	55	0.9	0.19634944	60	5	5	50	0	5	0	0	0	0	0	23	0	5	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.4	10.1	3.3	non	sombre	lisse	non	0.44		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	8.0	8.7	3.5	non	rayures	lisse	non	0.3917		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.7	10.0	5.0	non	sombre	lisse	non	0.4509		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	5.6	6.4	NA	non	sombre	lisse	non	0.1106		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.5	8.1	3.9	non	rayures	lisse	non	0.2459		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.6	10.0	4.9	non	rayures	lisse	non	0.3581		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Litlit	8.5	7.0	3.0	non	sombre	lisse	non	0.2406		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Litlit	8.5	6.7	2.7	non	sombre	lisse	non	0.2176		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Litlit	5.0	4.1	NA	non	sombre	lisse	non	0.0597		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Litlit	7.6	7.0	3.0	non	sombre	lisse	non	0.2240		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	20	5	80	0	0	0	0	0	0	0	10	0	17	0	0	0	0	0	0	0	0	0	0	0	Litlit	5.7	4.3	NA	non	sombre	lisse	non	0.0862		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Litlit	8.1	6.1	NA	non	sombre	lisse	non	0.2129		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Litlit	12.2	10.6	3.6	non	sombre	lisse	oui	0.6813		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Litlit	10.0	8.4	3.9	non	sombre	lisse	non	0.3686		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Litlit	11.0	10.3	4.0	non	sombre	lisse	non	0.5632		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Litlit	8.4	7.0	NA	non	clair	lisse	non	0.2249		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	9.2	9.7	3.9	non	rayures	lisse	non	0.4720		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	7.7	10.0	NA	non	clair	lisse	non	0.3569		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	12.9	8.5	3.9	non	rayures	lisse	non	0.3115		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.5	8.5	NA	non	rayures	lisse	non	0.2400		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	5	80	0	5	5	0	0	0	0	22	0	12	0	0	0	0	0	0	0	0	0	0	0	Gibsp.	6.7	9.4	NA	non	rayures	lisse	non	0.3032		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Litlit	11.3	10.3	4.9	non	sombre	lisse	non	0.6435		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Litlit	10.2	9.4	NA	non	clair	lisse	non	0.4656		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Litlit	8.0	6.9	NA	non	sombre	lisse	non	0.2000		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Litlit	8.0	6.8	NA	non	sombre	lisse	non	0.1854		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Litlit	9.7	8.0	2.3	non	sombre	lisse	non	0.3246		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Gibsp.	12.0	13.2	4.7	non	sombre	lisse	non	0.9185		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Gibsp.	9.5	10.0	5.1	non	rayures	lisse	non	0.5552		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Gibsp.	7.2	10.3	NA	non	rayures	lisse	non	0.3653		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Gibsp.	4.7	5.1	NA	non	sombre	lisse	non	0.0754		
+b90	camille.pilisi	21septembre2017	99	b	90	60	2	0.19634944	100	5	10	70	0	5	0	0	0	0	0	7	0	6	0	0	0	1	0	0	0	0	0	0	0	Gibsp.	4.5	6.1	NA	non	rayures	lisse	non	0.1021		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.19634944	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Gibsp.	11.0	12.7	4.4	non	rayures	lisse	non	1.1601		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.19634944	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Gibsp.	13.9	14.3	5.0	non	rayures	lisse	non	0.9276		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.19634944	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Gibsp.	7.9	10.8	NA	non	sombre	lisse	non	0.9633		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.19634944	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Gibsp.	11.5	13.3	4.8	non	sombre	lisse	non	0.4704		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.19634944	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Gibsp.	12.1	11.8	5.0	non	sombre	lisse	oui	0.5628		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.19634944	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Litlit	10.8	9.7	3.6	non	sombre	lisse	non	0.2187		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.19634944	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Litlit	8.2	7.8	4.0	non	sombre	lisse	non	0.4238		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.19634944	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Litlit	10.2	8.1	4.1	non	sombre	lisse	non	0.4186		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.19634944	100	15	0	80	0	0	0	0	0	0	0	16	0	19	0	0	0	9	0	0	0	0	0	0	0	Litlit	10.2	8.5	3.9	non	sombre	lisse	non	0.2190		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.19634944	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Litlit	8.4	6.8	2.2	non	sombre	lisse	non	0.6945		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Monlin	13.3	13.0	5.4	non	sombre	lisse	non	1.11		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Monlin	15.1	16.0	6.8	non	sombre	lisse	oui	1.60		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Monlin	13.0	12.6	5.3	non	sombre	lisse	non	0.99		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Monlin	8.6	8.6	5.8	non	sombre	lisse	oui	1.31		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Thalap	23.9	14.3	4.9	non	clair	rugueux	oui	2.21		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Litlit	10.3	8.4	3.4	non	sombre	lisse	non	0.46		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Litlit	10.1	8.7	3.8	non	sombre	lisse	non	0.47		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Litlit	9.8	7.8	3.0	non	sombre	lisse	non	0.35		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Litlit	10.3	8.8	3.4	non	sombre	lisse	non	0.42		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Gibsp.	8.1	11.0	4.4	oui	sombre	lisse	non	0.64		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Gibsp.	6.2	10.9	6.0	non	rayures	lisse	non	0.48		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Gibsp.	3.4	7.0	NA	non	rayures	lisse	non	0.1		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	5	0	40	0	0	0	0	0	0	0	9	0	5	0	0	0	16	0	0	0	0	0	0	1	Gibsp.	3.7	6.0	NA	non	rayures	lisse	non	0.1		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Monlin	12.1	11.0	5.2	non	sombre	lisse	oui	0.89		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Monlin	12.6	13.7	6.5	non	sombre	lisse	oui	0.99		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Monlin	12.5	12.5	5.3	non	sombre	lisse	non	0.87		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Litlit	8.8	7.1	2.6	non	sombre	lisse	non	0.25		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Litlit	8.1	6.7	2.7	non	sombre	lisse	non	0.2		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Gibsp.	7.0	9.9	4.5	oui	rayures	lisse	non	0.46		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Gibsp.	7.0	10.2	4.4	oui	rayures	lisse	oui	0.51		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Gibsp.	6.2	8.8	4.3	non	rayures	lisse	non	0.31		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Gibsp.	5.0	5.0	NA	non	sombre	lisse	non	0.08		
+b90	camille.pilisi	21septembre2017	99	b	90	65	2	0.24543664	100	40	10	50	0	0	0	0	0	0	0	11	0	4	0	0	0	3	0	0	0	0	0	0	0	Gibsp.	7.2	10.6	3.8	oui	sombre	lisse	non	0.56		
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
+																																												
