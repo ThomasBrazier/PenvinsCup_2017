@@ -30,17 +30,6 @@ checkPenvins <- function(dataset, bilan = FALSE){
   
   # Message de bienvenue
   cat("#-----------------------------------------------------#\nBienvenue dans le verificateur de fichiers Penvins 2017.\n#-----------------------------------------------------#\n\n")
- 
-  
-  # Verifie que l'objet existe
-  if (!exists(dataset)) {
-    if (bilan) {
-      cat("ERROR : Le fichier n'existe pas !\n")
-      sink(type = "message")
-      file.show("tests_summary.txt")
-    }
-    stop("Le fichier n'existe pas !\n")
-  }
   
   #-----------------------------------------------------#
   # Etape 1
