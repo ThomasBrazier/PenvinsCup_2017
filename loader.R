@@ -68,6 +68,8 @@ source("checkPenvins.R")
 checkPenvins(ind)
 warnings()
 
+
+
 # AVEC fichier txt d'erreurs
 checkPenvins(ind, bilan = T)
 
