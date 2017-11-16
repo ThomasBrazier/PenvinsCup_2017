@@ -13,10 +13,42 @@ Le fichier a 43 colonnes et est de type données biométriques sur les individus
 
 
 ETAPE 3 : Verification du nom des colonnes :
-Remplacer le nom de la colonne 27 par Monlin .
-Error in checkColNames(dataset, nomsRefInd) : objet 'bilan' introuvable
-De plus : Warning message:
-In checkColNames(dataset, nomsRefInd) :
-  Le nom de la colonne27n'est pas correct.
-Message d'avis :
-In checkColNames(dataset, nomsRefInd) : Le nom de la colonne27n'est pas correct.
+Toutes les colonnes sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Error in checkClass(dataset) : objet 'bilan' introuvable
+De plus : Warning messages:
+1: In checkClass(dataset) :
+  La classe de la colonne s.flaq est integerla ou numeric etait attendu.
+
+2: In checkClass(dataset) :
+  La classe de la colonne d.flaq est integerla ou numeric etait attendu.
+
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier dataset est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Toutes les colonnes sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Error in checkClass(dataset) : objet 'bilan' introuvable
+De plus : Warning messages:
+1: In checkClass(dataset) :
+  La classe de la colonne s.flaq est integerla ou numeric etait attendu.
+
+2: In checkClass(dataset) :
+  La classe de la colonne d.flaq est integerla ou numeric etait attendu.
+
