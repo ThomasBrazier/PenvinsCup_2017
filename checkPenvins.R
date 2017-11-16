@@ -28,6 +28,8 @@ checkPenvins <- function(dataset, bilan = FALSE){
     sink(file = testSummary, append = TRUE, type="message")
   }
   
+  exists("dataset")
+  
   # Message de bienvenue
   cat("#-----------------------------------------------------#\nBienvenue dans le verificateur de fichiers Penvins 2017.\n#-----------------------------------------------------#\n\n")
  
