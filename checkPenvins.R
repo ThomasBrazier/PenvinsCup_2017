@@ -22,13 +22,12 @@
 
 # Enregistre tous les messages dans un fichier txt "test_summary.txt"
 checkPenvins <- function(dataset, bilan = FALSE){
+
   if (bilan == TRUE) {
     testSummary <- file("tests_summary.txt", open = "wt")
     sink(file = testSummary, append = TRUE, type="output")
     sink(file = testSummary, append = TRUE, type="message")
   }
-  
-  exists("dataset")
   
   # Message de bienvenue
   cat("#-----------------------------------------------------#\nBienvenue dans le verificateur de fichiers Penvins 2017.\n#-----------------------------------------------------#\n\n")
