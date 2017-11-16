@@ -1,4 +1,4 @@
-ind <- read.table("data/b90indCORR.txt", header = TRUE)
+ind <- read.table("data/b30indCORR.txt", header = TRUE)
 quad <- read.table("data/b30quadCORR.txt", header = TRUE)
 head(quad)
 head(ind)
