@@ -252,7 +252,7 @@ checkColNames <- function(mydata, nomsRef) {
 
     if (verif != 0) {
     if (bilan) {
-      cat("ERROR : La fonction checkPenvins s'est terminee prematurement, a cause d'", verif," erreur dans les noms de colonne.")
+      cat("ERROR : La fonction checkPenvins s'est terminee prematurement. Il y a ", verif," erreur(s) dans les noms de colonne.")
       sink(type = "message")
       file.show("tests_summary.txt")
     }
