@@ -249,7 +249,7 @@ checkColNames <- function(mydata, nomsRef) {
   for (i in 1:length(mydata)){
     if (col[i] != nomsRef[i]){
       verif=+1 # si il y a une erreur, ce n'est plus conforme, verif change d'etat
-      warning("Le nom de la colonne", i, "n'est pas correct.")
+      warning("Le nom de la colonne", i, "n'est pas correct.", call. = FALSE, noBreaks. = TRUE, immediate. = TRUE)
       cat("Remplacer le nom de la colonne",i, "par",nomsRef[i],".\n")} # sinon on affiche un message permettant de remplacer les noms non conformes
     }
 
@@ -289,7 +289,7 @@ checkClass <- function(mydata) {
   for (i in 1:length(mydata)) {
     if (class(mydata[,i]) != ClassExpect[i]) { # verifie si la classe de la colonne i est differente de la classe attendue
       success = FALSE # bascule success en FALSE pour declencher un stop() a la fin de la fonction
-      warning("La classe de la colonne ", names(mydata)[i], " est ", class(mydata[,i]), "la ou ", ClassExpect[i], " etait attendu.\n")
+      warning("La classe de la colonne ", names(mydata)[i], " est ", class(mydata[,i]), "la ou ", ClassExpect[i], " etait attendu.\n", call. = FALSE, noBreaks. = TRUE, immediate. = TRUE)
     }
   }
   
@@ -337,9 +337,9 @@ checkFactor <- function(mydata, col, ref) {
     for (i in 1:nrow(dataset[col])) { # pour chaque ligne de la colonne
       if ((ref %in% as.character(mydata[i, col])) == FALSE) {
         if (length(ref) == 1) { # 1 seule modalite attendue
-          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas a la modalite attendue : ", paste(ref, collapse = ", "), ".\n"), immediate. = T)
+          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas a la modalite attendue : ", paste(ref, collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
         } else { # plusieurs modalites attendues
-          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas aux modalites attendues : ", paste(ref, collapse = ", "), ".\n"), immediate. = T)
+          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas aux modalites attendues : ", paste(ref, collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
         }
       }
     }
@@ -470,11 +470,11 @@ checkRatio <- function(mydata, type = 1){
       ratio = mydata[i,v1]/mydata[i,v2] # calcule le ratio pour la ligne i
       if (ratio<MinMax[1] | ratio>MinMax[2]){
         success = FALSE
-        warning(c("Ligne ", i, " pour l'espece ", mydata[i,35], " : Le ratio ", ty, "=", ratio, " sort de l'intervalle attendu ", MinMax[1], ":", MinMax[2]), immediate. = T)
+        warning(c("Ligne ", i, " pour l'espece ", mydata[i,35], " : Le ratio ", ty, "=", ratio, " sort de l'intervalle attendu ", MinMax[1], ":", MinMax[2]), call. = FALSE, noBreaks. = TRUE, immediate. = T)
       }
     } else{ #dans le cas ou l'une des valeurs est NA
       success = FALSE
-      warning(c("Ligne ", i, " pour l'espece ", mydata[i,35], " : valeur NA !"), immediate. = T)
+      warning(c("Ligne ", i, " pour l'espece ", mydata[i,35], " : valeur NA !"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
     }
   }
   
