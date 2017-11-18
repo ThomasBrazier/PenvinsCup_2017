@@ -22,12 +22,15 @@
 
 # Enregistre tous les messages dans un fichier txt "test_summary.txt"
 checkPenvins <- function(dataset, bilan = FALSE){
-
+  # affichage d'un fichier txt d'erreur (optionnel)
+  bilan <<- bilan
   if (bilan == TRUE) {
     testSummary <- file("tests_summary.txt", open = "wt")
     sink(file = testSummary, append = TRUE, type="output")
     sink(file = testSummary, append = TRUE, type="message")
   }
+  # recupere le nom de l'objet
+  nm <<- deparse(substitute(dataset))
   
   # Message de bienvenue
   cat("#-----------------------------------------------------#\nBienvenue dans le verificateur de fichiers Penvins 2017.\n#-----------------------------------------------------#\n\n")
@@ -43,17 +46,17 @@ checkPenvins <- function(dataset, bilan = FALSE){
   #-----------------------------------------------------#
   cat("\n\nETAPE 2 : Verification du nombre de colonnes :\n")
   if (checkInd(dataset)) {
-    cat("Le fichier a 43 colonnes et est de type données biométriques sur les individus.\n")
+    cat("Le fichier",  nm,"a 43 colonnes et est de type données biométriques sur les individus.\n")
   } else {
     if (checkQuad(dataset)) {
-      cat("Le fichier a 34 colonnes et est de type données de quadrat.\n")
+      cat("Le fichier", nm,"a 34 colonnes et est de type données de quadrat.\n")
     } else {
       if (bilan) {
-        cat("ERROR : Le fichier n'a pas le nombre de colonnes attendu.\n")
+        cat("ERROR : Le fichier", nm,"n'a pas le nombre de colonnes attendu. ", ncol(dataset)," colonnes comptees.\n")
         sink(type = "message")
         file.show("tests_summary.txt")
       }
-      stop("Le fichier n'a pas le nombre de colonnes attendu.\n")
+      stop("Le fichier ", nm," n'a pas le nombre de colonnes attendu. ", ncol(dataset)," colonnes comptees.\n")
     }
   }
   
@@ -192,14 +195,14 @@ checkPenvins <- function(dataset, bilan = FALSE){
 #-----------------------------------------------------#
 checkDataFrame <- function(mydata) {
   if (is.data.frame(mydata)) {
-    cat("Le fichier", deparse(substitute(mydata)), "est bien de type data.frame.\n")
+    cat("Le fichier", nm, "est bien de type data.frame.\n")
   } else {
     if (bilan) {
-      cat("ERROR : Le fichier n'est pas de type data.frame : ", deparse(substitute(mydata)), " est un ", class(mydata), ".\n")
+      cat("ERROR : Le fichier n'est pas de type data.frame : ", nm, " est un ", class(mydata), ".\n")
       sink(type = "message")
       file.show("tests_summary.txt")
     }
-    stop("Le fichier n'est pas de type data.frame  : ", deparse(substitute(mydata)), " est un ", class(mydata), ".\n")
+    stop("Le fichier n'est pas de type data.frame  : ", nm, " est un ", class(mydata), ".\n")
   }
 }
 
