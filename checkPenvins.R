@@ -66,14 +66,7 @@ checkPenvins <- function(dataset, bilan = FALSE){
   cat("\n\nETAPE 3 : Verification du nom des colonnes :\n")
   # Noms des colonnes pour les deux types de fichiers
   nomsRef = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap", "sp", "haut", "larg", "peri", "pred", "coul", "text", "epizo", "masse") #Noms et ordres des colonnes attendus pour le fichier
-
-  if (checkQuad(dataset)) {
-    checkColNames(dataset, nomsRef)
-  } else {
-    if (checkInd(dataset)) {
-      checkColNames(dataset, nomsRef)
-    }
-  }
+  checkColNames(dataset, nomsRef)
   
   #-----------------------------------------------------#
   # Etape 4
@@ -248,7 +241,7 @@ checkColNames <- function(mydata, nomsRef) {
   for (i in 1:length(mydata)) {
     if (col[i] != nomsRef[i]) {
       verif=+1 # si il y a une erreur, ce n'est plus conforme, verif change d'etat
-      warning("Le nom de la colonne", i, "n'est pas correct.", call. = FALSE, noBreaks. = TRUE, immediate. = TRUE)
+      warning("Le nom de la colonne ", i, " n'est pas correct.", call. = FALSE, noBreaks. = TRUE, immediate. = TRUE)
       cat("Remplacer le nom de la colonne",i, "par",nomsRef[i],".\n")} # sinon on affiche un message permettant de remplacer les noms non conformes
     }
 
@@ -258,7 +251,7 @@ checkColNames <- function(mydata, nomsRef) {
       sink(type = "message")
       file.show("tests_summary.txt")
     }
-    stop("Il y a ", verif," erreur(s) dans les noms de colonnes.") # message d'erreur indiquant qu'il y a une ou des erreurs et stoppant la fonction
+    stop("Il y a ", verif," erreur(s) dans les noms de colonnes.", call. = FALSE) # message d'erreur indiquant qu'il y a une ou des erreurs et stoppant la fonction
   } else {cat("Tous les noms de colonne sont correctes.\n")}
 }
 
