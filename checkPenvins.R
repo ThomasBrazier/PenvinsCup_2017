@@ -65,14 +65,13 @@ checkPenvins <- function(dataset, bilan = FALSE){
   #-----------------------------------------------------#
   cat("\n\nETAPE 3 : Verification du nom des colonnes :\n")
   # Noms des colonnes pour les deux types de fichiers
-  nomsRefInd = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap", "sp", "haut", "larg", "peri", "pred", "coul", "text", "epizo", "masse") #Noms et ordres des colonnes attendus pour le fichier ind
-  nomsRefQuad = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap") #Noms et ordres des colonnes attendus pour le fichier quad
-  
+  nomsRef = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap", "sp", "haut", "larg", "peri", "pred", "coul", "text", "epizo", "masse") #Noms et ordres des colonnes attendus pour le fichier
+
   if (checkQuad(dataset)) {
-    checkColNames(dataset, nomsRefQuad)
+    checkColNames(dataset, nomsRef)
   } else {
     if (checkInd(dataset)) {
-      checkColNames(dataset, nomsRefInd)
+      checkColNames(dataset, nomsRef)
     }
   }
   
@@ -246,8 +245,8 @@ checkInd <- function(mydata) {
 checkColNames <- function(mydata, nomsRef) {
   col = names(mydata) # "col" stocke les noms des colonnes du fichier
   verif = 0 # si verif = 0 à la fin du test, les noms des colonnes sont conformes
-  for (i in 1:length(mydata)){
-    if (col[i] != nomsRef[i]){
+  for (i in 1:length(mydata)) {
+    if (col[i] != nomsRef[i]) {
       verif=+1 # si il y a une erreur, ce n'est plus conforme, verif change d'etat
       warning("Le nom de la colonne", i, "n'est pas correct.", call. = FALSE, noBreaks. = TRUE, immediate. = TRUE)
       cat("Remplacer le nom de la colonne",i, "par",nomsRef[i],".\n")} # sinon on affiche un message permettant de remplacer les noms non conformes
