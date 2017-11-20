@@ -430,3 +430,9 @@ checkRatio <- function(mydata, type = 1){
     cat("Tous les ratios ", ty, " sont corrects.")
   }
 }
+
+# ratios :
+# liste de tous les ratios
+# sort
+# on elimine (coupe) quand les ratios décollent d'un coup vers valeur extreme (plot ?)
+# quantile ?
