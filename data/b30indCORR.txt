@@ -1,6 +1,6 @@
 transect	resp	date	coef	mode	d.chenal	d.mer	alt	surf	p.roc	p.moul	p.huit	p.bala	p.alg	p.encr	p.eau	s.flaq	d.flaq	Bitret	Gibcin	Gibsp.	Gibtum	Litlit	Litobt	Litrud	Litsax	Monlin	Nasinc	Naspyg	Nasret	Oceeri	Patsp.	Rispar	Thalap	sp	haut	larg	peri	pred	coul	text	epizo	masse
 b30	thomas.brazier	21septembre2017	99	b	30	53	1.85	0.2	100	25	0	90	0	5	5	NA	NA	0	0	16	0	10	0	0	0	0	0	0	0	0	8	0	0	Litlit	15	7.6	5	oui	sombre	lisse	non	0.54
-b30	thomas.brazier	21septembre2017	99	b	30	53	1.85	0.2	100	25	0	90	0	5	5	NA	NA	0	0	16	0	10	0	0	0	0	0	0	0	0	8	0	0	Litlit	12	9.7	6.4	non	sombre	tordu	non	1.2
+b30	thomas.brazier	21septembre2017	99	b	30	53	1.85	0.2	100	25	0	90	0	5	5	NA	NA	0	0	16	0	10	0	0	0	0	0	0	0	0	8	0	0	Litlit	12	9.7	6.4	non	sombre	lisse	non	1.2
 b30	thomas.brazier	21septembre2017	99	b	30	53	1.85	0.2	100	25	0	90	0	5	5	NA	NA	0	0	16	0	10	0	0	0	0	0	0	0	0	8	0	0	Litlit	9.7	7.1	4.8	oui	sombre	lisse	non	0.54
 b30	thomas.brazier	21septembre2017	99	b	30	53	1.85	0.2	100	25	0	90	0	5	5	NA	NA	0	0	16	0	10	0	0	0	0	0	0	0	0	8	0	0	Litlit	9.1	8.1	5.7	non	sombre	lisse	non	0.44
 b30	thomas.brazier	21septembre2017	99	b	30	53	1.85	0.2	100	25	0	90	0	5	5	NA	NA	0	0	16	0	10	0	0	0	0	0	0	0	0	8	0	0	Litlit	12.8	9.1	4.3	non	sombre	lisse	non	0.78
