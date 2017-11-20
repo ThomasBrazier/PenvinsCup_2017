@@ -6,32 +6,23 @@
 
 # "Juste pour la gloire !"
 
-# Enregistre tous les messages dans un fichier txt "test_summary.txt"
 checkPenvins <- function(dataset, bilan = FALSE){
   
-  bilan <<- bilan # affichage d'un fichier txt d'erreur (optionnel), FALSE par defaut
+  bilan <<- bilan # creation d'un fichier txt d'erreur (optionnel), FALSE par defaut
   if (bilan == TRUE) {
-    testSummary <- file("tests_summary.txt", open = "wt")
-    sink(file = testSummary, append = TRUE, type="output")
-    sink(file = testSummary, append = TRUE, type="message")
+    testSummary <- file("tests_summary.txt", open = "wt") # ouvre un fichier txt qui recueillera tous les messages, au lieu d'un affichage en consoles
+    sink(file = testSummary, append = TRUE, type="output") # lance la recuperation des warnings dans un fichier txt
+    sink(file = testSummary, append = TRUE, type="message") # lance la recuperation des messages dans un fichier txt
   }
-
+  
   nm <<- deparse(substitute(dataset))  # recupere le nom de l'objet teste en variable globale (accessible meme dans les fonctions)
-
   count_warn <<- 0 # variable globale, init a 0, qui compte sur l'ensemble du script le nombre d'erreurs
 
-  # Message de bienvenue
   cat("#-----------------------------------------------------#\nBienvenue dans le verificateur de fichiers Penvins 2017.\n#-----------------------------------------------------#\n\n")
 
-  #-----------------------------------------------------#
-  # Etape 1
-  #-----------------------------------------------------#
   cat("\n\nETAPE 1 : Verification de la classe de l'objet :\n")
   checkDataFrame(dataset)
-  
-  #-----------------------------------------------------#
-  # Etape 2
-  #-----------------------------------------------------#
+
   cat("\n\nETAPE 2 : Verification du nombre de colonnes :\n")
   if (checkInd(dataset)) {
     cat("Le fichier",  nm,"a 43 colonnes et est de type données biométriques sur les individus.\n")
@@ -47,47 +38,29 @@ checkPenvins <- function(dataset, bilan = FALSE){
       stop("Le fichier ", nm," n'a pas le nombre de colonnes attendu. ", ncol(dataset)," colonnes comptees.\n")
     }
   }
-  
-  #-----------------------------------------------------#
-  # Etape 3
-  #-----------------------------------------------------#
+
   cat("\n\nETAPE 3 : Verification du nom des colonnes :\n")
   checkColNames(dataset)
   
-  #-----------------------------------------------------#
-  # Etape 4
-  #-----------------------------------------------------#
   cat("\n\nETAPE 4 : Verification de la classe des colonnes :\n")
-  # fonction checkClass()
   checkClass(dataset)
-  
-  #-----------------------------------------------------#
-  # Etape 5
-  #-----------------------------------------------------#
+
   cat("\n\nETAPE 5 : Verification des modalites pour chaque colonne de type factor :\n")
-  
-  for (p in c("transect", "resp", "date", "mode")) {  # fonction checkFactor() pour le colonnes communes aux fichiers Ind et Quad
+  for (p in c("transect", "resp", "date", "mode")) {  # fonction checkFactor() pour les colonnes communes aux fichiers Ind et Quad
     checkFactor(dataset, p)
     if (length(levels(dataset[[p]])) != 1) { # ces 4 colonnes ne doivent comporter qu'une unique modalite
       count_warn <<- count_warn + 1
       warning("La colonne ne doit posseder qu'une seule modalite. Veuillez verifier et choisir une modalite unique pour l'ensemble de la colonne", p, ".\n", call. = FALSE, noBreaks. = TRUE, immediate. = T)
     }
   }
-
   if (checkInd(dataset)) {  # uniquement sur fichiers Ind, 5 colonnes biometrie supplementaires
     for (p in c("sp", "pred", "text", "coul", "epizo")) {
       checkFactor(dataset, p)
     }
   }
 
-
-  #-----------------------------------------------------#
-  # Etape 6
-  #-----------------------------------------------------#
-  # Initialisation de l'étape 6
   cat("\n\nETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :\n")  
   # Tests en serie avec la fonction checknumeric() decrite plus bas
-  
   error_count <- 0 #variable comptant le nombre de colonnes numeriques contenant des erreurs
   
   # colonne 4 : coefficient de maree
@@ -153,37 +126,29 @@ checkPenvins <- function(dataset, bilan = FALSE){
     }
   }
   
-  
-  #-----------------------------------------------------#
-  # Etape 7
-  #-----------------------------------------------------# 
-  if (checkInd(dataset)){ # Vérification du type de fichier : type Ind attendu
+  if (checkInd(dataset)){ # Vérification du type de fichier : type Ind attendu uniquement
     cat("\n\nETAPE 7 : Verification des ratios des mesures biometriques :\n")
     checkRatio(dataset, 1)    # ratio larg/haut, option 1
     checkRatio(dataset, 2)    # ratio peri/larg, option 2
   }
 
-  #=====================================================#
-  # Fin du script
-  #-----------------------------------------------------#
-  if (count_warn == 0) { # Message de conclusion, en fonction de la conformite ou du nombre d'erreurs relevees
-    cat("Ce fichier est conforme a ce qui etait attendu. Il est prêt a etre utilise pour le projet.\n")
+  if (count_warn == 0) { # Message de conclusion, en fonction de la conformite du fichier ou bien du nombre d'erreurs relevees
+    cat("\nCe fichier est conforme a ce qui etait attendu. Il est prêt a etre utilise pour le projet.\n")
   } else {
     if (count_warn == 1) {
-      cat("Une erreur a ete relevee pendant l'analyse. Veuillez proceder a sa correction...\n")
+      cat("\nUne erreur a ete relevee pendant l'analyse. Veuillez proceder a sa correction...\n")
     } else {
-    cat(count_warn, " erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...\n")
+    cat("\n", count_warn, " erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...\n")
     }
   }
   cat("\nFin de l'analyse.\n")
-  if (bilan) { #fin du sink et affichage du bilan si l'option est activee
-    sink(type="output") # stop sinking
-    sink(type="message") # stop sinking
-    # affichage du fichier texte des messages et erreurs
-    file.show("tests_summary.txt")
-    close(testSummary) # Ferme le fichier txt
+  if (bilan) { # fin du sink et affichage du bilan si l'option est activee
+    sink(type="output") # stop sinking des warnings
+    sink(type="message") # stop sinking des messages
+    file.show("tests_summary.txt") # affichage du fichier texte des messages et erreurs
+    close(testSummary) # ferme le fichier txt
   }
-  return(count_warn) # la fonction renvoie le nombre d'erreurs quand elle se termine
+  #return(count_warn) # la fonction renvoie le nombre d'erreurs quand elle se termine
 }
 
 
@@ -197,10 +162,10 @@ checkPenvins <- function(dataset, bilan = FALSE){
 #Si oui : message de confirmation 
 #Si non : arreter le script et indiquer la classe de mydata
 #-----------------------------------------------------#
-checkDataFrame <- function(mydata) {
-  if (is.data.frame(mydata)) {
+checkDataFrame <- function(mydata) { # Etape 1 : Verifier si mydata est de classe data.frame
+  if (is.data.frame(mydata)) { # teste si le fichier est bien un data.frame
     cat("Le fichier", nm, "est bien de type data.frame.\n")
-  } else {
+  } else { # sinon affiche une erreur et stoppe la fonction
     if (bilan) {
       cat("ERROR : Le fichier n'est pas de type data.frame : ", nm, " est un ", class(mydata), ".\n")
       sink(type = "message")
@@ -217,26 +182,14 @@ checkDataFrame <- function(mydata) {
 #-----------------------------------------------------#
 
 #-----------------------------------------------------#
-# Vérifie que le fichier mydata est bien de type Quad en vérifiant le nombre de colonnes attendues
-checkQuad <- function(mydata) {
-  nbColQuad = 34
-  if (ncol(mydata)==nbColQuad){
-    return(TRUE)
-  } else{
-    return(FALSE)
-  }
-}
+
+checkQuad <- function(mydata) { # Vérifie que le fichier mydata est bien de type Quad en comptant le nombre de colonnes
+  if (ncol(mydata) == 34){ return(TRUE) } else{ return(FALSE) }} # un fichier quad doit contenir 34 colonnes
 
 #-----------------------------------------------------#
-# Vérifie que le fichier mydata est bien de type Ind en vérifiant le nombre de colonnes attendues
-checkInd <- function(mydata) {
-  nbColInd = 43
-  if (ncol(mydata)==nbColInd){
-    return(TRUE)
-  } else{
-    return(FALSE)
-  }
-}
+
+checkInd <- function(mydata) { # Vérifie que le fichier mydata est bien de type Ind en comptant le nombre de colonnes
+  if (ncol(mydata) == 43){ return(TRUE) } else{ return(FALSE) }} # un fichier ind doit contenir 43 colonnes
 
 
 #-----------------------------------------------------#
@@ -248,24 +201,21 @@ checkInd <- function(mydata) {
 # La fonction checkColNames() vérifie que les nomes des colonnes du fichier dataset en argument correspondent bien à la liste nomsRef en argument 2
 
 checkColNames <- function(mydata) {
-  # Noms des colonnes pour les deux types de fichiers
   nomsRef = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap", "sp", "haut", "larg", "peri", "pred", "coul", "text", "epizo", "masse") #Noms et ordres des colonnes attendus pour le fichier
-  
-  col = names(mydata) # "col" stocke les noms des colonnes du fichier
-  verif = 0 # si verif = 0 à la fin du test, les noms des colonnes sont conformes
+  col = names(mydata) # "col" stocke les noms des colonnes du fichier observes
+  verif = 0 # si verif toujours egal a 0 a la fin du test, les noms des colonnes sont conformes
   for (i in 1:length(mydata)) {
     if (col[i] != nomsRef[i]) {
-      verif=+1 # si il y a une erreur, ce n'est plus conforme, verif change d'etat
+      verif=+1 # si il y a une erreur, ce n'est plus conforme, verif change d'etat -> FALSE
       warning("Le nom de la colonne ", i, " n'est pas correct.", call. = FALSE, noBreaks. = TRUE, immediate. = TRUE)
-      cat("Remplacer le nom de la colonne",i, "par",nomsRef[i],".\n")} # sinon on affiche un message permettant de remplacer les noms non conformes
+      cat("Remplacer le nom de la colonne",i, "par",nomsRef[i],".\n")} # affiche un message donnant la solution pour remplacer les noms non conformes
     }
-
-    if (verif != 0) {
-    if (bilan) {
-      cat("ERROR : La fonction checkPenvins s'est terminee prematurement. Il y a ", verif," erreur(s) dans les noms de colonne.")
-      sink(type = "message")
-      file.show("tests_summary.txt")
-    }
+    if (verif != 0) { # en fin de test, s'assure de la conformite du data frame, stoppe la fonction en cas de non conformite
+      if (bilan) {
+        cat("ERROR : La fonction checkPenvins s'est terminee prematurement. Il y a ", verif," erreur(s) dans les noms de colonne.")
+        sink(type = "message")
+        file.show("tests_summary.txt")
+      }
     stop("Il y a ", verif," erreur(s) dans les noms de colonnes.", call. = FALSE) # message d'erreur indiquant qu'il y a une ou des erreurs et stoppant la fonction
   } else {cat("Tous les noms de colonne sont correctes.\n")}
 }
@@ -449,30 +399,26 @@ checknumeric <- function(mydata, col, method, values, integer = FALSE, identical
 # un data frame de type ind et le type de test => larg/haut (1) ou peri/larg (2)
 checkRatio <- function(mydata, type = 1){
   success = TRUE  # success restera TRUE uniquement si aucun warning n'est releve
-  
-  # recupere les numeros de colonne des variables larg et haut ou peri
-  if (type == 1) {
+  if (type == 1) { # recupere les numeros de colonne des variables larg et haut ou peri, ici pour une verification de larg/haut
     v1 = 36 # colonne largeur
     v2 = 37 # colonne hauteur
     ty = "largeur/hauteur"
-    MinMax = c(0,15)    # vecteur MinMax = ratio min et ratio max attendu
+    MinMax = c(0.35,3)    # vecteur MinMax = ratio min et ratio max attendu
   } else {
-    if (type == 2) {
+    if (type == 2) { # pour une verification de peri/larg
       v1 = 38 # colonne peristome
       v2 = 36 # colonne largeur
       ty = "peristome/largeur"
-      MinMax = c(0,5) # vecteur MinMax = ratio min et ratio max attendu
+      MinMax = c(0.1,0.8) # vecteur MinMax = ratio min et ratio max attendu
     }
   }
-  
-  # comparaison des ratios ligne par ligne
-  for (i in 1:nrow(mydata)) { # parcourt chaque ligne des deux colonnes
+  for (i in 1:nrow(mydata)) { # comparaison des ratios ligne par ligne : parcourt chaque ligne des deux colonnes
     if (!is.na(mydata[i,v1]) & !is.na(mydata[i,v2])){   # verifie que les deux valeurs ne sont pas des NA et sont ainsi comparables
       ratio = mydata[i,v1]/mydata[i,v2] # calcule le ratio pour la ligne i
       if (ratio<MinMax[1] | ratio>MinMax[2]){
-        success = FALSE
+        success = FALSE # echec du test : la valeur sort de l'intervalle attendu
         count_warn <<- count_warn + 1
-        warning(c("Ligne ", i, " pour l'espece ", mydata[i,35], " : Le ratio ", ty, "=", ratio, " sort de l'intervalle attendu ", MinMax[1], ":", MinMax[2]), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+        warning(c("Ligne ", i, " pour l'espece ", mydata[i,35], " : Le ratio ", ty, " = ", ratio, " sort de l'intervalle attendu ", MinMax[1], ":", MinMax[2]), call. = FALSE, noBreaks. = TRUE, immediate. = T)
       }
     } else{ #dans le cas ou l'une des valeurs est NA
       success = FALSE
@@ -480,9 +426,7 @@ checkRatio <- function(mydata, type = 1){
       warning(c("Ligne ", i, " pour l'espece ", mydata[i,35], " : valeur NA !"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
     }
   }
-  
-  # si success est reste TRUE, message de reussite
-  if (success == TRUE) {
+  if (success == TRUE) { # si success est reste TRUE, message de reussite
     cat("Tous les ratios ", ty, " sont corrects.")
   }
 }

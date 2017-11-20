@@ -5,15 +5,15 @@ Bienvenue dans le verificateur de fichiers Penvins 2017.
 
 
 ETAPE 1 : Verification de la classe de l'objet :
-Le fichier dataset est bien de type data.frame.
+Le fichier ind est bien de type data.frame.
 
 
 ETAPE 2 : Verification du nombre de colonnes :
-Le fichier a 43 colonnes et est de type données biométriques sur les individus.
+Le fichier ind a 43 colonnes et est de type données biométriques sur les individus.
 
 
 ETAPE 3 : Verification du nom des colonnes :
-Toutes les colonnes sont correctes.
+Tous les noms de colonne sont correctes.
 
 
 ETAPE 4 : Verification de la classe des colonnes :
@@ -21,125 +21,47 @@ Toutes les classes des colonnes sont correctes.
 
 
 ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
 Toutes les modalites de la colonne  date  sont correctes.
 Toutes les modalites de la colonne  mode  sont correctes.
+Toutes les modalites de la colonne  sp  sont correctes.
 Toutes les modalites de la colonne  pred  sont correctes.
-Toutes les modalites de la colonne  coul  sont correctes.
 Toutes les modalites de la colonne  text  sont correctes.
+Toutes les modalites de la colonne  coul  sont correctes.
 Toutes les modalites de la colonne  epizo  sont correctes.
 
 
 ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
 Aucune anomalie detectee dans les colonnes numeriques.
 
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
-Aucune anomalie detectee dans les colonnes numeriques.
-
 
 
 ETAPE 7 : Verification des ratios des mesures biometriques :
-Warning in checkRatio(dataset, 1) :
-  Ligne 226 pour l'espece 3 : valeur NA !
-Warning in checkRatio(dataset, 1) :
-  Ligne 262 pour l'espece 1 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 9 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 15 pour l'espece 3 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 16 pour l'espece 3 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 26 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 28 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 29 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 45 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 46 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 47 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 48 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 49 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 50 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 51 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 61 pour l'espece 3 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 101 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 102 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 103 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 104 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 105 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 164 pour l'espece 4 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 226 pour l'espece 3 : valeur NA !
-Warning in checkRatio(dataset, 2) :
-  Ligne 262 pour l'espece 1 : valeur NA !
+Warning: Ligne 226 pour l'espece 3 : valeur NA !
+Warning: Ligne 262 pour l'espece 1 : valeur NA !
+Warning: Ligne 9 pour l'espece 4 : valeur NA !
+Warning: Ligne 15 pour l'espece 3 : valeur NA !
+Warning: Ligne 16 pour l'espece 3 : valeur NA !
+Warning: Ligne 26 pour l'espece 4 : valeur NA !
+Warning: Ligne 28 pour l'espece 4 : valeur NA !
+Warning: Ligne 29 pour l'espece 4 : valeur NA !
+Warning: Ligne 45 pour l'espece 4 : valeur NA !
+Warning: Ligne 46 pour l'espece 4 : valeur NA !
+Warning: Ligne 47 pour l'espece 4 : valeur NA !
+Warning: Ligne 48 pour l'espece 4 : valeur NA !
+Warning: Ligne 49 pour l'espece 4 : valeur NA !
+Warning: Ligne 50 pour l'espece 4 : valeur NA !
+Warning: Ligne 51 pour l'espece 4 : valeur NA !
+Warning: Ligne 61 pour l'espece 3 : valeur NA !
+Warning: Ligne 101 pour l'espece 4 : valeur NA !
+Warning: Ligne 102 pour l'espece 4 : valeur NA !
+Warning: Ligne 103 pour l'espece 4 : valeur NA !
+Warning: Ligne 104 pour l'espece 4 : valeur NA !
+Warning: Ligne 105 pour l'espece 4 : valeur NA !
+Warning: Ligne 164 pour l'espece 4 : valeur NA !
+Warning: Ligne 226 pour l'espece 3 : valeur NA !
+Warning: Ligne 262 pour l'espece 1 : valeur NA !
+24  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
 
 Fin de l'analyse.
