@@ -317,23 +317,27 @@ checkFactor <- function(mydata, nameCol) {
           resp = c("raphael.leprince", "nicolas.leroux.1", "audrey.fabarez", "morgane.milin", "vincent.carre", "justine.charlet-de-sauvage", "capucine.hemonnet-dal", "sasha.donnier", "heloise.villesseche", "julien.curassier", "laura.bellec", "nathan.viel", "thomas.brazier", "loic.menut", "eloise.couthouis", "thibaud.tournadre", "camille.pilisi"),
           date = c("20septembre2017", "21septembre2017"), mode = c("a", "b"),
           sp = c("Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap"),
-          pred = c(NA, "oui", "non"), coul = c(NA, "clair", "sombre", "rugueux"), text = c(NA, "lisse", "rugueux", "bosses"))
+          pred = c(NA, "oui", "non"), coul = c(NA, "clair", "sombre", "rayures"), text = c(NA, "lisse", "rugueux", "bosses"), epizo = c(NA, "oui", "non"))
   col = which(colnames(mydata) == nameCol)
   mods = levels(mydata[,col])
-  
-  if (min(mods %in% ref$nameCol) == 0) { # si la comparaison entre mods et ref ne renvoie que des TRUE -> fin la fonction
+  if (NA %in% mydata[,col]) { # ajoute les NA a la liste des modalites
+    mods =c(mods, NA)
+  }
+  if (min(mods %in% ref[[nameCol]]) == 1) { # si la comparaison entre mods et ref ne renvoie que des TRUE -> fin de la fonction
     cat("Toutes les modalites de la colonne ",  colnames(mydata)[col]," sont correctes.\n")
   } else { # sinon, recherche de l'erreur
     for (i in 1:nrow(mydata[col])) { # pour chaque ligne de la colonne
-      if (max(ref$nameCol %in% as.character(mydata[i, col])) == 0) {
+      if (!(mydata[i, col] %in% ref[[nameCol]])) {
         if (length(ref) == 1) { # 1 seule modalite attendue
-          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas a la modalite attendue : ", paste(ref$nameCol, collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas a la modalite attendue : ", paste(ref[[nameCol]], collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
         } else { # plusieurs modalites attendues
-          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas aux modalites attendues : ", paste(ref$nameCol, collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas aux modalites attendues : ", paste(ref[[nameCol]], collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
         }
       }
     }
+    warning(c("Erreur dans la colonne ", colnames(mydata)[col], ", des modalites sont fausses.\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
   }
+
 }
 
 
