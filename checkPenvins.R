@@ -1,24 +1,10 @@
 #=====================================================#
-#Pour utiliser ce script, assurez-vous que le fichier 
-#"checkPenvins.R" se trouve dans votre repertoire 
-#courant, puis copiez-collez la commande ci-dessous dans R :
-#source("checkPenvins.R")
-#-----------------------------------------------------#
-#Vous pouvez egalement utiliser le menu Fichier > Sourcer du code R... > 
-#et selectionner le script
-#-----------------------------------------------------#
-#Il ne vous reste plus qu'a lire votre fichier de donnees 
-#avec read.table() et a utiliser :
-#checkPenvins(nomdutableau)
-#-----------------------------------------------------#
-
-# "Juste pour la gloire !"
-
-#=====================================================#
 #Fonction checkPenvins
 #-----------------------------------------------------#
 #Fonction principale du script appelant toutes les autres
 #-----------------------------------------------------#
+
+# "Juste pour la gloire !"
 
 # Enregistre tous les messages dans un fichier txt "test_summary.txt"
 checkPenvins <- function(dataset, bilan = FALSE){
@@ -30,7 +16,7 @@ checkPenvins <- function(dataset, bilan = FALSE){
     sink(file = testSummary, append = TRUE, type="message")
   }
 
-  nm <<- deparse(substitute(dataset))  # recupere le nom de l'objet teste
+  nm <<- deparse(substitute(dataset))  # recupere le nom de l'objet teste en variable globale (accessible meme dans les fonctions)
 
   count_warn <<- 0 # variable globale, init a 0, qui compte sur l'ensemble du script le nombre d'erreurs
 
@@ -184,9 +170,9 @@ checkPenvins <- function(dataset, bilan = FALSE){
     cat("Ce fichier est conforme a ce qui etait attendu. Il est prêt a etre utilise pour le projet.\n")
   } else {
     if (count_warn == 1) {
-      cat("Une erreur a ete soulevee pendant l'analyse. Veuillez proceder a sa correction...\n")
+      cat("Une erreur a ete relevee pendant l'analyse. Veuillez proceder a sa correction...\n")
     } else {
-    cat(count_warn, " erreurs ont ete soulevees pendant l'analyse. Veuillez proceder a leur correction...\n")
+    cat(count_warn, " erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...\n")
     }
   }
   cat("\nFin de l'analyse.\n")
