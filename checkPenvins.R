@@ -80,18 +80,14 @@ checkPenvins <- function(dataset, bilan = FALSE){
   #-----------------------------------------------------#
   cat("\n\nETAPE 5 : Verification des modalites pour chaque colonne de type factor :\n")
   # fonction checkFactor()
-  #checkFactor(dataset, 1, c()) # transect
-  #checkFactor(dataset, 2, c()) # resp
-  checkFactor(dataset, 3, c("20septembre2017", "21septembre2017")) # date
-  checkFactor(dataset, 5, c("a", "b")) # mode
-  
-  # uniquement sur fichiers ind
-  if (checkInd(dataset)) {
-    #checkFactor(dataset, 35, c()) # sp
-    checkFactor(dataset, 39, c(NA, "oui", "non")) # pred
-    checkFactor(dataset, 40, c(NA, "clair", "sombre", "rayures")) # text
-    checkFactor(dataset, 41, c(NA, "lisse", "rugueux", "bosses")) # coul
-    checkFactor(dataset, 42, c(NA, "oui", "non")) # epizo
+  for (p in c("transect", "resp", "date", "mode")) {
+    checkFactor(dataset, p)
+  }
+
+  if (checkInd(dataset)) {  # uniquement sur fichiers ind
+    for (p in c("sp", "pred", "text", "coul", "epizo")) {
+      checkFactor(dataset, p)
+    }
   }
 
 
@@ -153,12 +149,12 @@ checkPenvins <- function(dataset, bilan = FALSE){
   # Etape 7
   #-----------------------------------------------------# 
   # Initialisation de l'étape 7 : uniquement si le fichier est reconnu de type Ind
-  cat("\n\nETAPE 7 : Verification des ratios des mesures biometriques :\n")
   if (checkInd(dataset)){ # Vérification du type de fichier : type ind attendu
-  # ratio larg/haut
-  checkRatio(dataset, 1)
-  # ratio peri/larg
-  checkRatio(dataset, 2)
+    cat("\n\nETAPE 7 : Verification des ratios des mesures biometriques :\n")
+    # ratio larg/haut
+    checkRatio(dataset, 1)
+    # ratio peri/larg
+    checkRatio(dataset, 2)
   }
 
   #=====================================================#
@@ -271,17 +267,13 @@ checkColNames <- function(mydata, nomsRef) {
 # mydata : un fichier data.frame de type ind ou quad
 checkClass <- function(mydata) {
   success = TRUE # si aucune erreur relevee, success restera TRUE jusqu'a la fin de la fonction
-  if (checkInd(mydata)) {
-    ClassExpect = c("factor", "factor", "factor", "integer", "factor", "integer", "integer", "numeric", "numeric", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "numeric", "numeric", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "factor", "numeric", "numeric", "numeric", "factor", "factor", "factor", "factor", "numeric") # Liste des classes attendues pour le fichier Ind, classees selon numero de colonne
-  } else {
-    ClassExpect = c("factor", "factor", "factor", "integer", "factor", "integer", "integer", "numeric", "numeric", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "numeric", "numeric", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer") # Liste des classes attendues pour le fichier Quad, classees selon numero de colonne
-  }
+  ClassExpect = c("factor", "factor", "factor", "integer", "factor", "integer", "integer", "numeric", "numeric", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "numeric", "numeric", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "integer", "factor", "numeric", "numeric", "numeric", "factor", "factor", "factor", "factor", "numeric") # Liste des classes attendues pour le fichier Ind ou quad, classees selon numero de colonne
   
   # parcourt les colonnes une par une pour verifier la classe
   for (i in 1:length(mydata)) {
     if (class(mydata[,i]) != ClassExpect[i]) { # verifie si la classe de la colonne i est differente de la classe attendue
       success = FALSE # bascule success en FALSE pour declencher un stop() a la fin de la fonction
-      warning("La classe de la colonne ", names(mydata)[i], " est ", class(mydata[,i]), "la ou ", ClassExpect[i], " etait attendu.\n", call. = FALSE, noBreaks. = TRUE, immediate. = TRUE)
+      warning("La classe de la colonne ", i, " (", names(mydata)[i], ") est ", class(mydata[,i]), " la ou ", ClassExpect[i], " etait attendu.\n", call. = FALSE, noBreaks. = TRUE, immediate. = TRUE)
     }
   }
   
@@ -293,7 +285,7 @@ checkClass <- function(mydata) {
       sink(type = "message")
       file.show("tests_summary.txt")
     }
-    stop("Le fichier n'est pas conforme : Certaines colonnes ne sont pas de la classe attendue.\n")
+    stop("Le fichier n'est pas conforme : Certaines colonnes ne sont pas de la classe attendue.\n", call. = FALSE)
   }
 }
 
@@ -319,19 +311,25 @@ checkClass <- function(mydata) {
 # ref : vecteur contenant les modalites de reference, toutes les lignes doivent comporter une de ces modalites
 
 
-checkFactor <- function(mydata, col, ref) {
+checkFactor <- function(mydata, nameCol) {
   # recupere toutes les modalites de la colonne, a partir du nom de la colonne
+  ref = list(transect = c(paste("a", seq(0, 110, by = 10), sep = ""), paste("b", seq(0, 110, by = 10), sep = "")),
+          resp = c("raphael.leprince", "nicolas.leroux.1", "audrey.fabarez", "morgane.milin", "vincent.carre", "justine.charlet-de-sauvage", "capucine.hemonnet-dal", "sasha.donnier", "heloise.villesseche", "julien.curassier", "laura.bellec", "nathan.viel", "thomas.brazier", "loic.menut", "eloise.couthouis", "thibaud.tournadre", "camille.pilisi"),
+          date = c("20septembre2017", "21septembre2017"), mode = c("a", "b"),
+          sp = c("Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap"),
+          pred = c(NA, "oui", "non"), coul = c(NA, "clair", "sombre", "rugueux"), text = c(NA, "lisse", "rugueux", "bosses"))
+  col = which(colnames(mydata) == nameCol)
   mods = levels(mydata[,col])
   
-  if (all(mods %in% ref)) { # si la comparaison entre mods et ref ne renvoie que des TRUE -> fin la fonction
+  if (min(mods %in% ref$nameCol) == 0) { # si la comparaison entre mods et ref ne renvoie que des TRUE -> fin la fonction
     cat("Toutes les modalites de la colonne ",  colnames(mydata)[col]," sont correctes.\n")
   } else { # sinon, recherche de l'erreur
-    for (i in 1:nrow(dataset[col])) { # pour chaque ligne de la colonne
-      if ((ref %in% as.character(mydata[i, col])) == FALSE) {
+    for (i in 1:nrow(mydata[col])) { # pour chaque ligne de la colonne
+      if (max(ref$nameCol %in% as.character(mydata[i, col])) == 0) {
         if (length(ref) == 1) { # 1 seule modalite attendue
-          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas a la modalite attendue : ", paste(ref, collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas a la modalite attendue : ", paste(ref$nameCol, collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
         } else { # plusieurs modalites attendues
-          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas aux modalites attendues : ", paste(ref, collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas aux modalites attendues : ", paste(ref$nameCol, collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
         }
       }
     }
