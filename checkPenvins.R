@@ -82,6 +82,9 @@ checkPenvins <- function(dataset, bilan = FALSE){
   # fonction checkFactor()
   for (p in c("transect", "resp", "date", "mode")) {
     checkFactor(dataset, p)
+    if (length(levels(dataset[[p]])) != 1) {
+      warning("La colonne ne doit posseder qu'une seule modalite. Veuillez verifier et choisir une modalite unique pour l'ensemble de la colonne", p, ".\n", call. = FALSE, noBreaks. = TRUE, immediate. = T)
+    }
   }
 
   if (checkInd(dataset)) {  # uniquement sur fichiers ind
@@ -357,16 +360,11 @@ checkFactor <- function(mydata, nameCol) {
   } else { # sinon, recherche de l'erreur
     for (i in 1:nrow(mydata[col])) { # pour chaque ligne de la colonne
       if (!(mydata[i, col] %in% ref[[nameCol]])) {
-        if (length(ref) == 1) { # 1 seule modalite attendue
-          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas a la modalite attendue : ", paste(ref[[nameCol]], collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
-        } else { # plusieurs modalites attendues
-          warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas aux modalites attendues : ", paste(ref[[nameCol]], collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
-        }
+        warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas aux modalites attendues : ", paste(ref[[nameCol]], collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
       }
     }
-    warning(c("Erreur dans la colonne ", colnames(mydata)[col], ", des modalites sont fausses.\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+    warning(c("Erreur dans la colonne ", colnames(mydata)[col], ", une ou des modalites sont fausses.\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
   }
-
 }
 
 
