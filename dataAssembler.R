@@ -17,7 +17,7 @@ for (f in 1:length(list.files(path = "~/Documents/Github/PenvinsCup_2017/data"))
 }
 
 # Running only one checkPenvins at once
-f = 33 # index of file
+f = 34 # index of file
 print(list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f])
 tmp = read.table(paste("data/",list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f], sep = ""), header = TRUE)
 checkPenvins(tmp, bilan = FALSE)
@@ -51,10 +51,10 @@ quad = data.frame() # empty table for quadrats
 # Compile all .txt quad files into one data.frame
 for (f in 1:length(list.files(path = "~/Documents/Github/PenvinsCup_2017/data"))) {
   cat("Proceeding to next file...\n")
-  if (grepl("ind", list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f])) { # only if this is an ind file
+  if (grepl("quad", list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f])) { # only if this is an ind file
     tmp = read.table(paste("data/",list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f], sep = ""), header = TRUE)
-    cat("Processing", as.character(tmp[2,1]), "ind by", as.character(tmp[2,2]),".\n")
-    if (ncol(tmp) == 43) { # verifying compatibility of the file by number of col
+    cat("Processing", as.character(tmp[2,1]), "quad by", as.character(tmp[2,2]),".\n")
+    if (ncol(tmp) == 34) { # verifying compatibility of the file by number of col
       colnames(tmp) = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap") # remove any name of column with correct name
       quad = rbind(quad, tmp) # add temp data.frame to global data.frame
     } else {
@@ -71,13 +71,14 @@ cat("All Quad files in One")
 # Necessary verifications
 str(ind)
 str(quad)
-quad = quad[-35:-43] # remove any column of type Ind from the Quad file
 
 # checkPenvins
 checkPenvins(ind)
 checkPenvins(quad)
 
 
+
+#############################
 # ratios :
 # liste de tous les ratios
 # sort
