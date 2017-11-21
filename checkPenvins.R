@@ -417,21 +417,15 @@ checkRatio <- function(mydata, type = 1){
       if (ratio<MinMax[1] | ratio>MinMax[2]){
         success = FALSE # echec du test : la valeur sort de l'intervalle attendu
         count_warn <<- count_warn + 1
-        warning(c("Ligne ", i, " pour l'espece ", mydata[i,35], " : Le ratio ", ty, " = ", ratio, " sort de l'intervalle attendu ", MinMax[1], ":", MinMax[2]), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+        warning(c("Ligne ", i, " pour l'espece ", as.character(mydata[i,35]), " : Le ratio ", ty, " = ", ratio, " sort de l'intervalle attendu ", MinMax[1], ":", MinMax[2]), call. = FALSE, noBreaks. = TRUE, immediate. = T)
       }
     } else{ #dans le cas ou l'une des valeurs est NA
       success = FALSE
       count_warn <<- count_warn + 1
-      warning(c("Ligne ", i, " pour l'espece ", mydata[i,35], " : valeur NA !"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+      warning(c("Ligne ", i, " pour l'espece ", as.character(mydata[i,35]), " : valeur NA !"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
     }
   }
   if (success == TRUE) { # si success est reste TRUE, message de reussite
     cat("Tous les ratios ", ty, " sont corrects.")
   }
 }
-
-# ratios :
-# liste de tous les ratios
-# sort
-# on elimine (coupe) quand les ratios décollent d'un coup vers valeur extreme (plot ?)
-# quantile ?

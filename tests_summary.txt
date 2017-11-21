@@ -5,11 +5,41 @@ Bienvenue dans le verificateur de fichiers Penvins 2017.
 
 
 ETAPE 1 : Verification de la classe de l'objet :
-Le fichier ind est bien de type data.frame.
+Le fichier tmp est bien de type data.frame.
 
 
 ETAPE 2 : Verification du nombre de colonnes :
-Le fichier ind a 43 colonnes et est de type données biométriques sur les individus.
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour c[1] Gibsp.
+Levels: Gibcin Gibsp. Litlit Litobt Litrud Monlin Nasret Oceeri Thalap
+[1] Litlit
+Levels: Gibcin Gibsp. Litlit Litobt Litrud Monlin Nasret Oceeri Thalap
+[1] Litlit
+Levels: Gibcin Gibsp. Litlit Litobt Litrud Monlin Nasret Oceeri Thalap
+[1] Litlit
+Levels: Gibcin Gibsp. Litlit Litobt Litrud Monlin Nasret Oceeri Thalap
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
 
 
 ETAPE 3 : Verification du nom des colonnes :
@@ -25,6 +55,369 @@ Toutes les modalites de la colonne  transect  sont correctes.
 Toutes les modalites de la colonne  resp  sont correctes.
 Toutes les modalites de la colonne  date  sont correctes.
 Toutes les modalites de la colonne  mode  sont correctes.
+Toutes les modalites de la colonne  pred  sont correctes.
+Toutes les modalites de la colonne  text  sont correctes.
+Toutes les modalites de la colonne  coul  sont correctes.
+Toutes les modalites de la colonne  epizo  sont correctes.
+
+
+ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
+9  colonnes numeriques contiennent des erreurs.
+Verifiez les avertissements ci-dessus.
+
+
+
+ETAPE 7 : Verification des ratios des mesures biometriques :
+
+ 23  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
+
+Fin de l'analyse.
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
+Toutes les modalites de la colonne  date  sont correctes.
+Toutes les modalites de la colonne  mode  sont correctes.
+Toutes les modalites de la colonne  pred  sont correctes.
+Toutes les modalites de la colonne  text  sont correctes.
+Toutes les modalites de la colonne  coul  sont correctes.
+Toutes les modalites de la colonne  epizo  sont correctes.
+
+
+ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
+9  colonnes numeriques contiennent des erreurs.
+Verifiez les avertissements ci-dessus.
+
+
+
+ETAPE 7 : Verification des ratios des mesures biometriques :
+
+ 23  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
+
+Fin de l'analyse.
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
+Toutes les modalites de la colonne  date  sont correctes.
+Toutes les modalites de la colonne  mode  sont correctes.
+Toutes les modalites de la colonne  pred  sont correctes.
+Toutes les modalites de la colonne  text  sont correctes.
+Toutes les modalites de la colonne  coul  sont correctes.
+Toutes les modalites de la colonne  epizo  sont correctes.
+
+
+ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
+9  colonnes numeriques contiennent des erreurs.
+Verifiez les avertissements ci-dessus.
+
+
+
+ETAPE 7 : Verification des ratios des mesures biometriques :
+
+ 23  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
+
+Fin de l'analyse.
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
+Toutes les modalites de la colonne  date  sont correctes.
+Toutes les modalites de la colonne  mode  sont correctes.
+Toutes les modalites de la colonne  pred  sont correctes.
+Toutes les modalites de la colonne  text  sont correctes.
+Toutes les modalites de la colonne  coul  sont correctes.
+Toutes les modalites de la colonne  epizo  sont correctes.
+
+
+ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
+9  colonnes numeriques contiennent des erreurs.
+Verifiez les avertissements ci-dessus.
+
+
+
+ETAPE 7 : Verification des ratios des mesures biometriques :
+
+ 23  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
+
+Fin de l'analyse.
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 34 colonnes et est de type données de quadrat.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Remplacer le nom de la colonne 27 par Monlin .
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
+Toutes les modalites de la colonne  date  sont correctes.
+Toutes les modalites de la colonne  mode  sont correctes.
+Toutes les modalites de la colonne  pred  sont correctes.
+Toutes les modalites de la colonne  text  sont correctes.
+Toutes les modalites de la colonne  coul  sont correctes.
+Toutes les modalites de la colonne  epizo  sont correctes.
+
+
+ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
+9  colonnes numeriques contiennent des erreurs.
+Verifiez les avertissements ci-dessus.
+
+
+
+ETAPE 7 : Verification des ratios des mesures biometriques :
+
+ 23  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
+
+Fin de l'analyse.
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 34 colonnes et est de type données de quadrat.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Remplacer le nom de la colonne 27 par Monlin .
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 34 colonnes et est de type données de quadrat.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
+Toutes les modalites de la colonne  date  sont correctes.
+Toutes les modalites de la colonne  mode  sont correctes.
+
+
+ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
+10  colonnes numeriques contiennent des erreurs.
+Verifiez les avertissements ci-dessus.
+
+
+Ce fichier est conforme a ce qui etait attendu. Il est prêt a etre utilise pour le projet.
+
+Fin de l'analyse.
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 34 colonnes et est de type données de quadrat.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
+Toutes les modalites de la colonne  date  sont correctes.
+Toutes les modalites de la colonne  mode  sont correctes.
+
+
+ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
+9  colonnes numeriques contiennent des erreurs.
+Verifiez les avertissements ci-dessus.
+
+
+Ce fichier est conforme a ce qui etait attendu. Il est prêt a etre utilise pour le projet.
+
+Fin de l'analyse.
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 34 colonnes et est de type données de quadrat.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
+Toutes les modalites de la colonne  mode  sont correctes.
 Toutes les modalites de la colonne  sp  sont correctes.
 Toutes les modalites de la colonne  pred  sont correctes.
 Toutes les modalites de la colonne  text  sont correctes.
@@ -33,35 +426,279 @@ Toutes les modalites de la colonne  epizo  sont correctes.
 
 
 ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
-Aucune anomalie detectee dans les colonnes numeriques.
+Une colonne numerique contient des erreurs.
+Verifiez les avertissements ci-dessus.
 
 
 
 ETAPE 7 : Verification des ratios des mesures biometriques :
-Warning: Ligne 226 pour l'espece 3 : valeur NA !
-Warning: Ligne 262 pour l'espece 1 : valeur NA !
-Warning: Ligne 9 pour l'espece 4 : valeur NA !
-Warning: Ligne 15 pour l'espece 3 : valeur NA !
-Warning: Ligne 16 pour l'espece 3 : valeur NA !
-Warning: Ligne 26 pour l'espece 4 : valeur NA !
-Warning: Ligne 28 pour l'espece 4 : valeur NA !
-Warning: Ligne 29 pour l'espece 4 : valeur NA !
-Warning: Ligne 45 pour l'espece 4 : valeur NA !
-Warning: Ligne 46 pour l'espece 4 : valeur NA !
-Warning: Ligne 47 pour l'espece 4 : valeur NA !
-Warning: Ligne 48 pour l'espece 4 : valeur NA !
-Warning: Ligne 49 pour l'espece 4 : valeur NA !
-Warning: Ligne 50 pour l'espece 4 : valeur NA !
-Warning: Ligne 51 pour l'espece 4 : valeur NA !
-Warning: Ligne 61 pour l'espece 3 : valeur NA !
-Warning: Ligne 101 pour l'espece 4 : valeur NA !
-Warning: Ligne 102 pour l'espece 4 : valeur NA !
-Warning: Ligne 103 pour l'espece 4 : valeur NA !
-Warning: Ligne 104 pour l'espece 4 : valeur NA !
-Warning: Ligne 105 pour l'espece 4 : valeur NA !
-Warning: Ligne 164 pour l'espece 4 : valeur NA !
-Warning: Ligne 226 pour l'espece 3 : valeur NA !
-Warning: Ligne 262 pour l'espece 1 : valeur NA !
-24  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
+Tous les ratios  largeur/hauteur  sont corrects.
+ 308  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
 
 Fin de l'analyse.
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
+Toutes les modalites de la colonne  mode  sont correctes.
+Toutes les modalites de la colonne  sp  sont correctes.
+Toutes les modalites de la colonne  pred  sont correctes.
+Toutes les modalites de la colonne  text  sont correctes.
+Toutes les modalites de la colonne  coul  sont correctes.
+Toutes les modalites de la colonne  epizo  sont correctes.
+
+
+ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
+Une colonne numerique contient des erreurs.
+Verifiez les avertissements ci-dessus.
+
+
+
+ETAPE 7 : Verification des ratios des mesures biometriques :
+Tous les ratios  largeur/hauteur  sont corrects.
+ 308  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
+
+Fin de l'analyse.
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
+Toutes les modalites de la colonne  mode  sont correctes.
+Toutes les modalites de la colonne  sp  sont correctes.
+Toutes les modalites de la colonne  pred  sont correctes.
+Toutes les modalites de la colonne  text  sont correctes.
+Toutes les modalites de la colonne  coul  sont correctes.
+Toutes les modalites de la colonne  epizo  sont correctes.
+
+
+ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
+Une colonne numerique contient des erreurs.
+Verifiez les avertissements ci-dessus.
+
+
+
+ETAPE 7 : Verification des ratios des mesures biometriques :
+Tous les ratios  largeur/hauteur  sont corrects.
+ 308  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
+
+Fin de l'analyse.
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
+Toutes les modalites de la colonne  mode  sont correctes.
+Toutes les modalites de la colonne  sp  sont correctes.
+Toutes les modalites de la colonne  pred  sont correctes.
+Toutes les modalites de la colonne  text  sont correctes.
+Toutes les modalites de la colonne  coul  sont correctes.
+Toutes les modalites de la colonne  epizo  sont correctes.
+
+
+ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
+Une colonne numerique contient des erreurs.
+Verifiez les avertissements ci-dessus.
+
+
+
+ETAPE 7 : Verification des ratios des mesures biometriques :
+Tous les ratios  largeur/hauteur  sont corrects.
+ 308  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
+
+Fin de l'analyse.
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
+Toutes les modalites de la colonne  mode  sont correctes.
+Toutes les modalites de la colonne  sp  sont correctes.
+Toutes les modalites de la colonne  pred  sont correctes.
+Toutes les modalites de la colonne  text  sont correctes.
+Toutes les modalites de la colonne  coul  sont correctes.
+Toutes les modalites de la colonne  epizo  sont correctes.
+
+
+ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
+Une colonne numerique contient des erreurs.
+Verifiez les avertissements ci-dessus.
+
+
+
+ETAPE 7 : Verification des ratios des mesures biometriques :
+Tous les ratios  largeur/hauteur  sont corrects.
+ 308  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
+
+Fin de l'analyse.
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
+Toutes les modalites de la colonne  mode  sont correctes.
+Toutes les modalites de la colonne  sp  sont correctes.
+Toutes les modalites de la colonne  pred  sont correctes.
+Toutes les modalites de la colonne  text  sont correctes.
+Toutes les modalites de la colonne  coul  sont correctes.
+Toutes les modalites de la colonne  epizo  sont correctes.
+
+
+ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
+Une colonne numerique contient des erreurs.
+Verifiez les avertissements ci-dessus.
+
+
+
+ETAPE 7 : Verification des ratios des mesures biometriques :
+Tous les ratios  largeur/hauteur  sont corrects.
+ 308  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
+
+Fin de l'analyse.
+#-----------------------------------------------------#
+Bienvenue dans le verificateur de fichiers Penvins 2017.
+#-----------------------------------------------------#
+
+
+
+ETAPE 1 : Verification de la classe de l'objet :
+Le fichier tmp est bien de type data.frame.
+
+
+ETAPE 2 : Verification du nombre de colonnes :
+Le fichier tmp a 43 colonnes et est de type données biométriques sur les individus.
+
+
+ETAPE 3 : Verification du nom des colonnes :
+Tous les noms de colonne sont correctes.
+
+
+ETAPE 4 : Verification de la classe des colonnes :
+Toutes les classes des colonnes sont correctes.
+
+
+ETAPE 5 : Verification des modalites pour chaque colonne de type factor :
+Toutes les modalites de la colonne  transect  sont correctes.
+Toutes les modalites de la colonne  resp  sont correctes.
+Toutes les modalites de la colonne  mode  sont correctes.
+Toutes les modalites de la colonne  sp  sont correctes.
+Toutes les modalites de la colonne  pred  sont correctes.
+Toutes les modalites de la colonne  text  sont correctes.
+Toutes les modalites de la colonne  coul  sont correctes.
+Toutes les modalites de la colonne  epizo  sont correctes.
+
+
+ETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :
+Une colonne numerique contient des erreurs.
+Verifiez les avertissements ci-dessus.
+
+
+
+ETAPE 7 : Verification des ratios des mesures biometriques :
+Tous les ratios  largeur/hauteur  sont corrects.
+ 308  erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...
+
+Fin de l'analyse.
+[1] "a110indCORR.txt"
+[1] "a110indCORR.txt"

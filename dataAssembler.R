@@ -9,8 +9,19 @@ source("checkPenvins.R")
 #####################
 # Running a serie of checkPenvins over each file
 for (f in 1:length(list.files(path = "~/Documents/Github/PenvinsCup_2017/data"))) {
-  #checkPenvins(list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f])
+  tmp = read.table(paste("data/",list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f], sep = ""), header = TRUE)
+  checkPenvins(tmp, bilan = FALSE)
+  readline(prompt="Press [enter] to continue")
 }
+
+# Running only one checkPenvins at once
+f = 6 # index of file
+print(list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f])
+tmp = read.table(paste("data/",list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f], sep = ""), header = TRUE)
+checkPenvins(tmp, bilan = FALSE)
+
+# Not working
+# 3, 4
 
 ######################
 # Assembling Ind file
