@@ -58,49 +58,51 @@ checkPenvins <- function(dataset, bilan = FALSE){
     }
   }
 
-  cat("\n\nETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :\n")  
-  # Tests en serie avec la fonction checknumeric() decrite plus bas
-  error_count <- 0 #variable comptant le nombre de colonnes numeriques contenant des erreurs
+  #-----------------------------------------------------#
+  # Etape 6
+  #-----------------------------------------------------# 
+  
+  numeric_error_count <- 0 #variable GLOBALE comptant le nombre de colonnes numeriques contenant des erreurs
   
   # colonne 4 : coefficient de maree
-  error_count <- error_count + checknumeric(dataset, 4, "disc", c(97, 99), identical = TRUE)
+  checknumeric(dataset, 4, "disc", c(97, 99), identical = TRUE)
   
   # colonne 6 : distance au chenal
-  error_count <- error_count + checknumeric(dataset, 6, "disc", c(0, 10, 20, 30, 40, 50, 70, 90, 110), identical = TRUE)
+  checknumeric(dataset, 6, "disc", c(0, 10, 20, 30, 40, 50, 70, 90, 110), identical = TRUE)
   
   # colonne 7 : distance a la mer
   dmermax = 100 #Distance maximale a la mer, a definir
-  error_count <- error_count + checknumeric(dataset, 7, "cont", c(0, dmermax), integer = TRUE)
+  checknumeric(dataset, 7, "cont", c(0, dmermax), integer = TRUE)
   
   # colonne 8 : altitude en m
   altmax = 40 # Altitude maximale, a definir
-  error_count <- error_count + checknumeric(dataset, 8, "cont", c(0, altmax))
+  checknumeric(dataset, 8, "cont", c(0, altmax))
   
   # colonne 9 : surface en m2
   surfmin <- 0.1#Surface de quadrat minimale, a definir
   surfmax <- 1  #Surface de quadrat maximale, a definir (1 = 5*0.2 = 5*quadrat)
-  error_count <- error_count + checknumeric(dataset, 9, "cont", c(surfmin, surfmax))
+  checknumeric(dataset, 9, "cont", c(surfmin, surfmax))
   
   # colonnes 10:16 : nombre entier entre 0 et 100 (pourcentage)
   for(i in 10:16) {
-    error_count <- error_count + checknumeric(dataset, i, "cont", c(0, 100), integer = TRUE)
+    checknumeric(dataset, i, "cont", c(0, 100), integer = TRUE)
   }
   
   # colonne 17 : surface de la flaque
   sflaqmin <- 0.1#Surface de flaque minimale, a definir
   sflaqmax <- 40 #Surface de flaque maximale, a definir
-  error_count <-error_count + checknumeric(dataset, 17, "cont", c(sflaqmin, sflaqmax), possibleNA = TRUE)
+  checknumeric(dataset, 17, "cont", c(sflaqmin, sflaqmax), possibleNA = TRUE)
   
   # colonne 18 : distance a la flaque la plus proche
   dflaqmin <- 0.1 #Distance a la flaque minimale, a definir
   dflaqmax <- 40 #Distance a la flaque maximale, a definir
-  error_count <- error_count + checknumeric(dataset, 18, "cont", c(dflaqmin, dflaqmax), possibleNA = TRUE)
+  checknumeric(dataset, 18, "cont", c(dflaqmin, dflaqmax), possibleNA = TRUE)
   
   # colonnes 19:34 : nombre maximu d'individus
   nbindmax <- 200 #Nombre maximum d'individus d'une espece releves sur un quadrat, a definir
   # Les NAs sont acceptes : donnees manquantes/non relevees
   for(i in 19:34) {
-    error_count <- error_count + checknumeric(dataset, i, "cont", c(0, nbindmax), integer = TRUE, possibleNA = TRUE)
+    checknumeric(dataset, i, "cont", c(0, nbindmax), integer = TRUE, possibleNA = TRUE)
   }
   
   if (checkInd(dataset)) {
@@ -115,40 +117,15 @@ checkPenvins <- function(dataset, bilan = FALSE){
     
   }
   
-  if (error_count == 0) {
+  if (numeric_error_count == 0) {
     cat("Aucune anomalie detectee dans les colonnes numeriques.\n\n")
   } else {
-    if (error_count == 1) {
+    if (numeric_error_count == 1) {
       cat("Une colonne numerique contient des erreurs.\nVerifiez les avertissements ci-dessus.\n\n")
     } else {
-      cat(error_count, " colonnes numeriques contiennent des erreurs.\nVerifiez les avertissements ci-dessus.\n\n")
+      cat(numeric_error_count, " colonnes numeriques contiennent des erreurs.\nVerifiez les avertissements ci-dessus.\n\n")
     }
   }
-  
-  if (checkInd(dataset)){ # Vérification du type de fichier : type Ind attendu uniquement
-    cat("\n\nETAPE 7 : Verification des ratios des mesures biometriques :\n")
-    checkRatio(dataset, 1)    # ratio larg/haut, option 1
-    checkRatio(dataset, 2)    # ratio peri/larg, option 2
-  }
-
-  if (count_warn == 0) { # Message de conclusion, en fonction de la conformite du fichier ou bien du nombre d'erreurs relevees
-    cat("\nCe fichier est conforme a ce qui etait attendu. Il est prêt a etre utilise pour le projet.\n")
-  } else {
-    if (count_warn == 1) {
-      cat("\nUne erreur a ete relevee pendant l'analyse. Veuillez proceder a sa correction...\n")
-    } else {
-    cat("\n", count_warn, " erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...\n")
-    }
-  }
-  cat("\nFin de l'analyse.\n")
-  if (bilan) { # fin du sink et affichage du bilan si l'option est activee
-    sink(type="output") # stop sinking des warnings
-    sink(type="message") # stop sinking des messages
-    file.show("tests_summary.txt") # affichage du fichier texte des messages et erreurs
-    close(testSummary) # ferme le fichier txt
-  }
-  #return(count_warn) # la fonction renvoie le nombre d'erreurs quand elle se termine
-}
 
 
 
@@ -182,12 +159,12 @@ checkDataFrame <- function(mydata) { # Etape 1 : Verifier si mydata est de class
 
 #-----------------------------------------------------#
 
-checkQuad <- function(mydata) { # Vérifie que le fichier mydata est bien de type Quad en comptant le nombre de colonnes
+checkQuad <- function(mydata) { # Verifie que le fichier mydata est bien de type Quad en comptant le nombre de colonnes
   if (ncol(mydata) == 34){ return(TRUE) } else{ return(FALSE) }} # un fichier quad doit contenir 34 colonnes
 
 #-----------------------------------------------------#
 
-checkInd <- function(mydata) { # Vérifie que le fichier mydata est bien de type Ind en comptant le nombre de colonnes
+checkInd <- function(mydata) { # Verifie que le fichier mydata est bien de type Ind en comptant le nombre de colonnes
   if (ncol(mydata) == 43){ return(TRUE) } else{ return(FALSE) }} # un fichier ind doit contenir 43 colonnes
 
 
@@ -197,7 +174,7 @@ checkInd <- function(mydata) { # Vérifie que le fichier mydata est bien de type
 #Si non : arreter le script et indiquer les erreurs et les noms attendus
 #-----------------------------------------------------#
 
-# La fonction checkColNames() vérifie que les nomes des colonnes du fichier dataset en argument correspondent bien à la liste nomsRef en argument 2
+# La fonction checkColNames() verifie que les nomes des colonnes du fichier dataset en argument correspondent bien à la liste nomsRef en argument 2
 
 checkColNames <- function(mydata) {
   nomsRef = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap", "sp", "haut", "larg", "peri", "pred", "coul", "text", "epizo", "masse") #Noms et ordres des colonnes attendus pour le fichier
@@ -378,11 +355,11 @@ checknumeric <- function(mydata, col, method, values, integer = FALSE, identical
     }
   }		
   
-  return(!testok) 
+  numeric_error_count <<- numeric_error_count + !testok 
   #Si testok == TRUE, renvoie FALSE donc 0 : pas d'erreur supplementaire detectee
   #Si testok == FALSE, renvoie TRUE donc 1 : 1 colonne supplementaire contient une erreur
+  #<<- permet de modifier la variable globale
 }
-#-----------------------------------------------------#
 
 
 
