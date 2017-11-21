@@ -19,7 +19,6 @@ checkPenvins <- function(dataset, bilan = FALSE){
   count_warn <<- 0 # variable globale, init a 0, qui compte sur l'ensemble du script le nombre d'erreurs
 
   cat("#-----------------------------------------------------#\nBienvenue dans le verificateur de fichiers Penvins 2017.\n#-----------------------------------------------------#\n\n")
-
   cat("\n\nETAPE 1 : Verification de la classe de l'objet :\n")
   checkDataFrame(dataset)
 
@@ -409,7 +408,7 @@ checkRatio <- function(mydata, type = 1){
       v1 = 38 # colonne peristome
       v2 = 36 # colonne largeur
       ty = "peristome/largeur"
-      MinMax = c(0.1,0.8) # vecteur MinMax = ratio min et ratio max attendu
+      MinMax = c(0.1,1.5) # vecteur MinMax = ratio min et ratio max attendu
     }
   }
   for (i in 1:nrow(mydata)) { # comparaison des ratios ligne par ligne : parcourt chaque ligne des deux colonnes
