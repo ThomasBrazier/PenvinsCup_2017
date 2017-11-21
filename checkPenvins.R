@@ -71,17 +71,13 @@ checkPenvins <- function(dataset, bilan = FALSE){
   checknumeric(dataset, 6, "disc", c(0, 10, 20, 30, 40, 50, 70, 90, 110), identical = TRUE)
   
   # colonne 7 : distance a la mer
-  dmermax = 100 #Distance maximale a la mer, a definir
-  checknumeric(dataset, 7, "cont", c(0, dmermax), integer = TRUE)
+  checknumeric(dataset, 7, "cont", c(0, 96), integer = TRUE)
   
   # colonne 8 : altitude en m
-  altmax = 40 # Altitude maximale, a definir
-  checknumeric(dataset, 8, "cont", c(0, altmax))
+  checknumeric(dataset, 8, "cont", c(0, 7))
   
   # colonne 9 : surface en m2
-  surfmin <- 0.1#Surface de quadrat minimale, a definir
-  surfmax <- 1  #Surface de quadrat maximale, a definir (1 = 5*0.2 = 5*quadrat)
-  checknumeric(dataset, 9, "cont", c(surfmin, surfmax))
+  checknumeric(dataset, 9, "cont", c(0.2, 0.6))
   
   # colonnes 10:16 : nombre entier entre 0 et 100 (pourcentage)
   for(i in 10:16) {
@@ -89,32 +85,26 @@ checkPenvins <- function(dataset, bilan = FALSE){
   }
   
   # colonne 17 : surface de la flaque
-  sflaqmin <- 0.1#Surface de flaque minimale, a definir
-  sflaqmax <- 40 #Surface de flaque maximale, a definir
-  checknumeric(dataset, 17, "cont", c(sflaqmin, sflaqmax), possibleNA = TRUE)
+  checknumeric(dataset, 17, "cont", c(0.1, 45), possibleNA = TRUE)
   
   # colonne 18 : distance a la flaque la plus proche
-  dflaqmin <- 0.1 #Distance a la flaque minimale, a definir
-  dflaqmax <- 40 #Distance a la flaque maximale, a definir
-  checknumeric(dataset, 18, "cont", c(dflaqmin, dflaqmax), possibleNA = TRUE)
+  checknumeric(dataset, 18, "cont", c(0.1, 20), possibleNA = TRUE)
   
   # colonnes 19:34 : nombre maximu d'individus
-  nbindmax <- 200 #Nombre maximum d'individus d'une espece releves sur un quadrat, a definir
-  # Les NAs sont acceptes : donnees manquantes/non relevees
   for(i in 19:34) {
-    checknumeric(dataset, i, "cont", c(0, nbindmax), integer = TRUE, possibleNA = TRUE)
+    checknumeric(dataset, i, "cont", c(0, 200), integer = TRUE, possibleNA = TRUE)
   }
   
   if (checkInd(dataset)) {
     #Partie a completer pour les fichiers individu
     # Hauteur : col 36
-    
+    checknumeric(dataset, 36, "cont", c(1.5, 36), possibleNA = FALSE)
     # Largeur : col 37
-    
+    checknumeric(dataset, 37, "cont", c(1.5, 21), possibleNA = FALSE)
     # Peristome : col 38
-    
+    checknumeric(dataset, 38, "cont", c(0.1, 15), possibleNA = TRUE)
     # Masse : col 43
-    
+    checknumeric(dataset, 43, "cont", c(0.001, 10), possibleNA = TRUE)
   }
   
   if (numeric_error_count == 0) {
