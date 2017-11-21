@@ -7,6 +7,7 @@ setwd("~/Documents/GitHub/PenvinsCup_2017")
 source("checkPenvins.R")
 
 #####################
+
 # Running a serie of checkPenvins over each file
 for (f in 1:length(list.files(path = "~/Documents/Github/PenvinsCup_2017/data"))) {
   tmp = read.table(paste("data/",list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f], sep = ""), header = TRUE)
