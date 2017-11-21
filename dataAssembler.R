@@ -4,6 +4,7 @@
 
 # Working directory
 setwd("~/Documents/GitHub/PenvinsCup_2017")
+
 source("checkPenvins.R")
 
 #####################
@@ -16,13 +17,13 @@ for (f in 1:length(list.files(path = "~/Documents/Github/PenvinsCup_2017/data"))
 }
 
 # Running only one checkPenvins at once
-f = 9 # index of file
+f = 23 # index of file
 print(list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f])
 tmp = read.table(paste("data/",list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f], sep = ""), header = TRUE)
 checkPenvins(tmp, bilan = FALSE)
 
 # Not working
-# 3, 4
+# 3, 4, 19 (s.flaq et d.flaq = 0 ?), 20
 
 ######################
 # Assembling Ind file

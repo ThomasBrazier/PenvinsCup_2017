@@ -1,0 +1,1239 @@
+transect	resp	date	coef	mode	d.chenal	d.mer	alt	surf	p.roc	p.moul	p.huit	p.bala	p.alg	p.encr	p.eau	s.fla	d.fla	sp	haut	larg	peri	pred	coul	text	Epizo	masse							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	gibsp	7.9	10.9	4.2	Non	sombre	li	oui	0.75							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	gibsp	4.6	10.3	3.8	non	sombre	li	non	0.44							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	gibsp	8.6	11.8	4.4	non	sombre	li	oui	0.99							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	gibsp	7.1	11	3.5	non	sombre	li	non	0.53							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	gibsp	7.6	10.9	3.4	oui	sombre	li	non	0.5							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	litlit	9.7	9.3	4.5	non	clair	ru	non	0.42							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	litlit	13.2	10.7	5.6	non	sombre	ru	non	0.85							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	litlit	14.5	11.9	5.3	non	sombre	li	non	01.08							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	litlit	11.3	9.7	4.2	non	sombre	ru	non	0.58							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	litlit	9.5	7.3	3	non	sombre	ru	non	0.32							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	thais	22.10	13.9	4	non	clair	ru	oui	02.02							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	thais	20.4	10.9	3.7	non	rayé	ru	non	1.51							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	thais	19.4	11	3.9	non	clair	ru	oui	1.31							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.21	100	1	25	50	0	30	1	NA	NA	thais	18.6	11.5	4.9	non	clair	ru	oui	1.55							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.20	100	5	10	40	NA	50	15	NA	NA	thais	23	10.6	9.4	non	clair	ru	oui	2.84							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.20	100	5	10	40	NA	50	15	NA	NA	thais	25.3	15	4.5	non	rayé	ru	oui	2.73							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.20	100	5	10	40	NA	50	15	NA	NA	thais	20.7	11.4	4	non	clair	ru	non	1.47							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.20	100	5	10	40	NA	50	15	NA	NA	litlit	15.1	13	6	non	sombre	li	oui	1.26							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.20	100	5	10	40	NA	50	15	NA	NA	litlit	13.9	12.3	4.8	non	sombre	li	non	0.93							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.20	100	5	10	40	NA	50	15	NA	NA	litlit	13.4	12	4.4	non	sombre	li	oui	0.89							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.20	100	5	10	40	NA	50	15	NA	NA	litlit	14.4	12.9	4.8	non	sombre	li	oui	1.17							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.20	100	5	10	40	NA	50	15	NA	NA	litlit	12.6	11.1	4.2	non	sombre	ru	non	0.79							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.20	100	5	10	40	NA	50	15	NA	NA	gibsp	11.4	15	8.9	non	sombre	ru	oui	2.51							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.20	100	5	10	40	NA	50	15	NA	NA	gibsp	10	15.5	6.2	non	sombre	ru	oui	1.81							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.20	100	5	10	40	NA	50	15	NA	NA	gibsp	10	15.7	6	non	sombre	ru	oui	1.66							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.20	100	5	10	40	NA	50	15	NA	NA	gibsp	6.5	10.7	4.5	non	sombre	ru	non	0.47							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.20	100	5	10	40	NA	50	15	NA	NA	gibsp	6	11.3	4	non	clair	li	non	0.66							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.22	0	1	1	0	0	20	100	0.4	1	gibsp	8.7	12.9	4.3	non	sombre	li	oui	0.88							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.22	0	1	1	0	0	20	100	0.4	1	gibsp	7.8	11.9	4	oui	clair	li	oui	0.78							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.22	0	1	1	0	0	20	100	0.4	1	gibsp	7.8	11	4.4	non	sombre	li	non	0.6							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.22	0	1	1	0	0	20	100	0.4	1	gibsp	7.5	11.4	4.9	non	sombre	ru	non	0.69							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.22	0	1	1	0	0	20	100	0.4	1	gibsp	6.7	11.1	4.5	non	clair	ru	non	0.68							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.22	0	1	1	0	0	20	100	0.4	1	litlit	14	11.8	4.4	non	sombre	li	non	0.97							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.22	0	1	1	0	0	20	100	0.4	1	litlit	14.1	12.7	5	non	sombre	li	oui	1.1							
+b20	nathan.viel	20September2017	97	b	20	45	NA	0.22	0	1	1	0	0	20	100	0.4	1	litlit	11.1	9	3.5	non	clair	ru	non	0.5							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.26	60	0	15	55	0	1	40	NA	NA	nasse	19.8	10.6	3.5	non	clair	ru	non	01.03							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.26	60	0	15	55	0	1	40	NA	NA	gibsp	9	13.6	4.4	oui	sombre	li	non	1.21							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.26	60	0	15	55	0	1	40	NA	NA	gibsp	7	10.9	3.2	oui	sombre	li	non	0.51							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.26	60	0	15	55	0	1	40	NA	NA	gibsp	7.2	11.5	4.3	non	sombre	ru	non	0.67							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.26	60	0	15	55	0	1	40	NA	NA	gibsp	6.5	11.3	4.8	non	sombre	li	non	0.44							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.26	60	0	15	55	0	1	40	NA	NA	gibsp	6.7	11.3	4	non	sombre	ru	non	0.55							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.26	60	0	15	55	0	1	40	NA	NA	litlit	10.1	8.4	3.2	oui	sombre	ru	non	0.41							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.26	60	0	15	55	0	1	40	NA	NA	litlit	12.6	10.7	3.7	non	sombre	ru	non	0.82							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.26	60	0	15	55	0	1	40	NA	NA	litlit	8.5	7.5	2.6	non	sombre	ru	non	0.28							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	8	12.5	4.2	non	clair	li	oui	0.87							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	9.9	13.8	5.2	non	sombre	li	non	1.17							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	14.1	14.6	7.2	non	sombre	li	oui	1.34							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	12.9	12.9	4.9	non	sombre	li	non	1.12							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	11.6	15.5	6.1	non	sombre	li	oui	1.85							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	litlit	13.8	11.2	4.5	non	sombre	ru	non	0.98							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	litlit	12.6	11.8	4.6	non	sombre	li	non	0.83							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	litlit	16.1	12.2	5.4	non	sombre	li	non	1.53							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	litlit	19.3	11.8	4.3	non	sombre	ru	non	01.05							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	litlit	9.9	8.8	2.8	non	sombre	ru	non	0.47							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	litlit	10.6	7.5	2.9	non	sombre	ru	non	0.44							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	litlit	12.5	10	3.9	non	sombre	ru	non	0.77							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	7	12	4.1	non	sombre	li	non	0.78							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	8.2	12.4	4.2	non	sombre	li	non	0.81							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	5.7	10.8	4.7	non	sombre	li	non	0.53							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	7	11.4	3.9	oui	sombre	li	oui	0.67							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	6	11.9	4	non	sombre	li	non	0.5							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	thais	19.6	12.5	3.5	non	clair	ru	oui	1.62							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	litlit	12.7	10.6	3.3	non	sombre	ru	oui	0.79							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	4.1	9.7	3.2	oui	sombre	ru	oui	0.35							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	4.2	5.4	3	non	sombre	li	oui	0.15							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	5.5	9.7	3.4	non	sombre	li	non	0.34							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	6.9	11.8	4.1	oui	sombre	ru	oui	0.92							
+b20	nathan.viel	20September2017	97	b	20	40	NA	0.20	100	0	35	70	NA	0	0	NA	NA	gibsp	6.5	11.8	3.6	oui	sombre	li	oui	0.66							
+b20	nathan.viel	20September2017	97	b	20	35	NA	0.202	100	0	50	100	0	1	0	NA	NA	mono	16.4	12.8	7.1	non	sombre	li	oui	2.41							
+b20	nathan.viel	20September2017	97	b	20	35	NA	0.202	100	0	50	100	0	1	0	NA	NA	gibsp	9.8	12.5	4.4	non	clair	li	oui	01.02							
+b20	nathan.viel	20September2017	97	b	20	35	NA	0.202	100	0	50	100	0	1	0	NA	NA	gibsp	9.5	11.3	4.1	non	sombre	li	non	0.81							
+b20	nathan.viel	20September2017	97	b	20	35	NA	0.202	100	0	50	100	0	1	0	NA	NA	gibsp	8.9	11.6	4.2	non	sombre	li	non	0.7							
+b20	nathan.viel	20September2017	97	b	20	35	NA	0.202	100	0	50	100	0	1	0	NA	NA	gibsp	6	10	3.2	non	sombre	li	non	0.42							
+b20	nathan.viel	20September2017	97	b	20	35	NA	0.202	100	0	50	100	0	1	0	NA	NA	gibsp	5.8	10.1	4.6	non	sombre	li	non	0.42							
+b20	nathan.viel	20September2017	97	b	20	35	NA	0.4	90	0	1	90	0	10	75	NA	NA	gibsp	5.7	10.3	3.7	oui	sombre	li	oui	0.5							
+b20	nathan.viel	20September2017	97	b	20	35	NA	0.4	90	0	1	90	0	10	75	NA	NA	gibsp	8.1	12	4.1	oui	clair	li	oui	0.84							
+b20	nathan.viel	20September2017	97	b	20	35	NA	0.4	90	0	1	90	0	10	75	NA	NA	gibsp	6.6	11.2	4	oui	sombre	ru	non	0.57							
+b20	nathan.viel	20September2017	97	b	20	35	NA	0.4	90	0	1	90	0	10	75	NA	NA	gibsp	7.2	12.4	4.6	non	sombre	ru	non	0.82							
+b20	nathan.viel	20September2017	97	b	20	35	NA	0.4	90	0	1	90	0	10	75	NA	NA	gibsp	8.3	13.3	4.3	non	sombre	ru	oui	01.02							
+b20	nathan.viel	20September2017	97	b	20	35	NA	0.4	90	0	1	90	0	10	75	NA	NA	thais	13	7.5	2	non	clair	ru	oui	0.32							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	100	0	95	80	NA	10	0	NA	NA	gibsp	7.3	11.8	4.3	non	sombre	li	non	0.69							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	100	0	95	80	NA	10	0	NA	NA	gibsp	6.2	9.7	3.4	non	sombre	li	non	0.35							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	100	0	95	80	NA	10	0	NA	NA	gibsp	5.2	9.7	2.5	non	sombre	li	non	0.26							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	100	0	95	80	NA	10	0	NA	NA	gibsp	7.7	12.2	4.2	non	sombre	li	non	0.84							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	100	0	95	80	NA	10	0	NA	NA	gibsp	7.8	11.6	3.8	non	sombre	li	non	0.87							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	100	0	95	80	NA	10	0	NA	NA	thais	21.6	13.7	3.5	non	clair	ru	oui	2.67							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	100	0	95	80	NA	10	0	NA	NA	litlit	9.7	8.8	2.8	non	sombre	ru	non	0.38							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	100	0	95	80	NA	10	0	NA	NA	litlit	12.7	11.7	4	non	sombre	ru	non	0.87							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	100	0	95	80	NA	10	0	NA	NA	litlit	11.4	10	2.5	oui	sombre	ru	non	0.56							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	100	0	95	80	NA	10	0	NA	NA	litlit	9.1	7.3	2.4	non	sombre	ru	non	0.26							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	100	0	95	80	NA	10	0	NA	NA	litlit	8.6	7.2	2.4	non	sombre	ru	non	0.26							
+b20	nathan.viel	20September2017	97	b	20	30	NA	0.22	100	0	90	90	0	10	0	NA	NA	gibsp	7.2	11.4	4.5	non	sombre	li	non	0.84							
+b20	nathan.viel	20September2017	97	b	20	30	NA	0.22	100	0	90	90	0	10	0	NA	NA	gibsp	4.7	9.4	3	oui	sombre	li	non	0.44							
+b20	nathan.viel	20September2017	97	b	20	30	NA	0.22	100	0	90	90	0	10	0	NA	NA	gibsp	7.1	11.1	3.6	non	sombre	li	non	0.9							
+b20	nathan.viel	20September2017	97	b	20	30	NA	0.22	100	0	90	90	0	10	0	NA	NA	gibsp	7.6	11.6	3.5	oui	sombre	li	oui	0.94							
+b20	nathan.viel	20September2017	97	b	20	30	NA	0.22	100	0	90	90	0	10	0	NA	NA	gibsp	7.6	11.1	4.2	non	sombre	ru	non	0.76							
+b20	nathan.viel	20September2017	97	b	20	30	NA	0.22	100	0	90	90	0	10	0	NA	NA	litlit	11.3	8.6	3.6	oui	sombre	ru	oui	0.59							
+b20	nathan.viel	20September2017	97	b	20	30	NA	0.22	100	0	90	90	0	10	0	NA	NA	thais 	12.7	7.9	2.4	non	clair	ru	oui	0.42							
+b20	nathan.viel	20September2017	97	b	20	30	NA	0.22	100	0	90	90	0	10	0	NA	NA	thais 	23.4	15.2	3.7	non	clair	ru	oui	2.7							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	90	0	90	20	0	20	0	NA	NA	gibsp	8.8	13.3	4.1	non	sombre	li	non	1.25							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	90	0	90	20	0	20	0	NA	NA	gibsp	8.9	10.9	3.7	non	sombre	li	non	0.55							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	90	0	90	20	0	20	0	NA	NA	gibsp	7.6	11.6	3.6	non	sombre	li	non	0.78							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	90	0	90	20	0	20	0	NA	NA	gibsp	8	12.4	3.7	non	sombre	li	non	0.89							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	90	0	90	20	0	20	0	NA	NA	gibsp	8.5	13.1	3.9	non	clair	li	oui	01.02							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	90	0	90	20	0	20	0	NA	NA	litlit	8.8	7.2	2.8	oui	sombre	ru	non	0.34							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	90	0	90	20	0	20	0	NA	NA	litlit	10.2	9.4	2.8	non	sombre	ru	non	0.47							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	90	0	90	20	0	20	0	NA	NA	thais	19	12	3.6	non	clair	ru	non	1.3							
+b20	nathan.viel	20September2017	6/4	b	20/1	30	NA	0.20	90	0	90	20	0	20	0	NA	NA	thais	20.8	13.9	3	non	clair	ru	oui	2.15							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.4	100	10	25	50	0	10	10	NA	NA	litlit	19.4	11.4	3.7	non	sombre	ru	non	01.09							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.4	100	10	25	50	0	10	10	NA	NA	litit	17.1	14	5.5	non	clair	ru	oui	1.73							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.4	100	10	25	50	0	10	10	NA	NA	litit	13.3	10.4	4.1	oui	sombre	ru	non	0.75							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.4	100	10	25	50	0	10	10	NA	NA	litit	12	10.1	3.1	non	sombre	ru	non	0.69							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.4	100	10	25	50	0	10	10	NA	NA	litit	9	6.9	3.3	non	sombre	ru	non	0.226							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.4	100	10	25	50	0	10	10	NA	NA	gibcin	6.3	9	3.3	non	clair	ru	oui	0.41							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.4	100	10	25	50	0	10	10	NA	NA	gibsp	10	12.7	5	non	sombre	li	oui	1.17							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.4	100	10	25	50	0	10	10	NA	NA	gibsp	8.8	11.9	5	non	sombre	ru	non	01.09							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.4	100	10	25	50	0	10	10	NA	NA	gibsp	8.5	12.4	5	oui	sombre	ru	non	1.2							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.4	100	10	25	50	0	10	10	NA	NA	gibsp	8	12.9	5	oui	sombre	li	non	1.17							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.4	100	10	25	50	0	10	10	NA	NA	gibsp	8.3	11	5.4	oui	sombre	li	non	0.97							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.24	100	0	50	50	0	0	0	NA	NA	gibsp	3.5	9.3	2.4	non	sombre	ru	oui	0.87							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.24	100	0	50	50	0	0	0	NA	NA	gibsp	5.2	9.3	2.9	non	sombre	ru	non	1							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.24	100	0	50	50	0	0	0	NA	NA	gibsp	6.8	9.5	4.6	non	sombre	ru	non	0.76							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.24	100	0	50	50	0	0	0	NA	NA	gibsp	6.4	11,6	4	non	sombre	ru	non	0.62							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.24	100	0	50	50	0	0	0	NA	NA	gibsp	9	11.3	4.5	non	sombre	ru	oui	0.96							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.20	100	0	90	10	0	0	10	NA	NA	gibsp	8.2	11.1	3.7	non	sombre	li	non	0.72							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.20	100	0	90	10	0	0	10	NA	NA	gibsp	8.5	11.9	4.2	non	sombre	li	oui	0.84							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.20	100	0	90	10	0	0	10	NA	NA	gibsp	7.9	11.3	3.8	non	sombre	li	oui	0.8							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.20	100	0	90	10	0	0	10	NA	NA	gibsp	8.1	12.4	4	non	sombre	li	non	0.91							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.20	100	0	90	10	0	0	10	NA	NA	gibsp	8.4	12.1	3.8	non	sombre	li	oui	0.85							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.20	100	0	90	10	0	0	10	NA	NA	gibcin	6.6	8.1	2.8	non	clair	li	non	0.42							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.20	100	0	90	10	0	0	10	NA	NA	thais	19.9	13.7	3.4	non	clair	ru	oui	1.84							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.20	100	0	90	10	0	0	10	NA	NA	thais	20.6	13.2	3.4	non	clair	ru	oui	02.06							
+b20	nathan.viel	20September2017	6/4	b	20/1	25	NA	0.20	100	0	90	10	0	0	10	NA	NA	thais	22	13.5	3.1	oui	clair	ru	oui	2.31							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	50	30	NA	30	0	NA	NA	gibsp	6.4	12	3.9	non	sombre	ru	non	0.66							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	50	30	NA	30	0	NA	NA	gibsp	7.4	12.2	4.8	non	sombre	ru	non	0.86							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	50	30	NA	30	0	NA	NA	gibsp	3.9	8.3	2.3	non	sombre	li	non	0.61							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	50	30	NA	30	0	NA	NA	gibsp	3.5	7.2	2.9	non	sombre	li	non	0.57							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	50	30	NA	30	0	NA	NA	gibsp	4.3	7.3	1.1	non	sombre	li	oui	0.75							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.3	100	0	90	10	0	1	0	NA	NA	thais 	13.2	7.7	2.9	oui	sombre	ru	non	1.57							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.3	100	0	90	10	0	1	0	NA	NA	thais 	14.3	5.9	1.5	non	clair	ru	non	1.31							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.3	100	0	90	10	0	1	0	NA	NA	litlit	17.5	13.5	5.5	oui	sombre	li	non	2.43							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.3	100	0	90	10	0	1	0	NA	NA	litlit	15	13.6	5	non	sombre	li	non	1.36							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.3	100	0	90	10	0	1	0	NA	NA	litlit	16.7	12.8	5	non	sombre	li	oui	02.03							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.3	100	0	90	10	0	1	0	NA	NA	litlit	10.9	7.9	3.4	oui	sombre	li	non	0.52							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.3	100	0	90	10	0	1	0	NA	NA	litlit	8.5	6.8	3	non	sombre	li	non	0.35							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.3	100	0	90	10	0	1	0	NA	NA	gibsp	7.3	10.4	4	non	sombre	ru	non	0.66							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.3	100	0	90	10	0	1	0	NA	NA	gibsp	5.3	9.6	3.4	non	sombre	ru	non	0.5							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.3	100	0	90	10	0	1	0	NA	NA	gibsp	3.6	8.3	2.3	non	sombre	li	non	0.81							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.3	100	0	90	10	0	1	0	NA	NA	gibsp	2.8	6.6		non	sombre	li	non	0.45							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.3	100	0	90	10	0	1	0	NA	NA	gibsp	3.4	7.5	1	non	sombre	li	non	0.6							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	20	80	NA	15	100	NA	NA	gibsp	5.7	10.5	3.5	non	sombre	li	non	0.51							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	20	80	NA	15	100	NA	NA	gibsp	8.8	12	3.9	non	sombre	li	oui	0.78							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	20	80	NA	15	100	NA	NA	gibsp	6.6	11.9	3	non	sombre	li	non	0.62							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	20	80	NA	15	100	NA	NA	gibsp	8.3	12.5	4.1	non	sombre	li	non	1							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	20	80	NA	15	100	NA	NA	gibsp	8.6	12.7	3.7	non	sombre	li	non	0.76							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	20	80	NA	15	100	NA	NA	litlit	16.3	13.4	4.5	non	sombre	ru	non	1.47							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	20	80	NA	15	100	NA	NA	litlit	13.3	10.5	3.6	non	clair	ru	oui	0.93							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	20	80	NA	15	100	NA	NA	litlit	15	13	5.1	non	sombre	ru	non	1.36							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	20	80	NA	15	100	NA	NA	litlit	11.3	10.6	3.4	non	sombre	ru	non	0.66							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	20	80	NA	15	100	NA	NA	litlit	12.6	11.3	3.3	non	sombre	ru	non	0.79							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	20	80	NA	15	100	NA	NA	thais	16.4	9.2	2.5	oui	clair	ru	non	0.78							
+b20	nathan.viel	20September2017	6/4	b	20/1	20	NA	0.20	100	0	20	80	NA	15	100	NA	NA	thais 	17	10.9	2.7	non	sombre	ru	oui	3.28							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.27	100	0	5	20	0	90	1	NA	NA	thais	21.2	14	3.9	non	clair	ru	oui	2.7							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.27	100	0	5	20	0	90	1	NA	NA	thais	15.4	7.8	2.7	non	clair	ru	oui	1.61							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.27	100	0	5	20	0	90	1	NA	NA	rocher	23.8	9.3	1.9	non	clair	bo	oui	2.54							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.27	100	0	5	20	0	90	1	NA	NA	rocher	23.1	8.1	1.5	non	clair	bo	oui	2.91							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.27	100	0	5	20	0	90	1	NA	NA	rocher	11.5	3.9	3	non	clair	bo	oui	0.31							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.27	100	0	5	20	0	90	1	NA	NA	gibsp	6.9	12.4	5	non	sombre	ru	non	0.73							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.27	100	0	5	20	0	90	1	NA	NA	gibsp	8.6	11.6	5	non	sombre	ru	non	0.84							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.27	100	0	5	20	0	90	1	NA	NA	gibsp	8.3	12	5	non	sombre	ru	non	1.11							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.27	100	0	5	20	0	90	1	NA	NA	gibsp	9	12.8	4	oui	sombre	ru	non	1.15							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.27	100	0	5	20	0	90	1	NA	NA	gibsp	6.2	11.7	4.5	non	sombre	li	nn	0.62							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.27	100	0	5	20	0	90	1	NA	NA	gibcin	7.5	10	4.3	oui	clair	li	oui	0.75							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.20	100	0	5	65	NA	65	0	NA	NA	thais	17.1	8.8	3.8	non	clair	ru	oui	02.07							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.20	100	0	5	65	NA	65	0	NA	NA	litlit	17.5	13.5	5.3	non	sombre	li	oui	2.55							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.20	100	0	5	65	NA	65	0	NA	NA	gibsp	8.1	11.9	4.9	non	sombre	li	non	0.96							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.20	100	0	5	65	NA	65	0	NA	NA	gibsp	8.7	12.7	4.1	non	sombre	ru	non	01.02							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.20	100	0	5	65	NA	65	0	NA	NA	gibsp	8.9	11.5	4.6	non	sombre	li	non	0.88							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.20	100	0	5	65	NA	65	0	NA	NA	gibsp	1.7	5.9	3	non	sombre	li	oui	0.29							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.20	100	0	5	65	NA	65	0	NA	NA	gibsp	4	8	2.3	non	clair	li	non	0.83							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.4	100	0	0	50	0	60	10	NA	NA	gibsp	8.5	11.9	3.7	non	sombre	li	non	0.84							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.4	100	0	0	50	0	60	10	NA	NA	gibsp	8.9	13.7	3.7	non	sombre	li	non	1.21							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.4	100	0	0	50	0	60	10	NA	NA	gibsp	7.2	12.4	4.2	non	sombre	li	non	0.83							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.4	100	0	0	50	0	60	10	NA	NA	gibsp	8.3	13.1	4.2	nons	sombre	li	non	1							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.4	100	0	0	50	0	60	10	NA	NA	gibsp	6.2	11.5	3.3	non	sombre	li	non	0.64							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.4	100	0	0	50	0	60	10	NA	NA	thais 	18.5	11.8	2.7	non	clair	ru	oui	1.38							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.4	100	0	0	50	0	60	10	NA	NA	thais 	21.3	12.9	2.3	non	clair	li	oui	1.97							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.4	100	0	0	50	0	60	10	NA	NA	thais 	20.6	13.8	3.1	non	clair	ru	oui	1.72							
+b20	nathan.viel	20September2017	6/4	b	20/1	15	NA	0.4	100	0	0	50	0	60	10	NA	NA	thais 	18.5	12.1	2.9	non	calir	ru	oui	1.62							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	thais 	18.7	12.2	2.9	non	sombre	ru	oui	1.59							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	nasse	12.5	6.9	1.8	non	clair	ru	non	0.26							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	nasse	13	7.7	2.2	non	clair	ru	oui	0.37							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	nasse	13.5	8.4	2.5	non	sombre	ru	oui	0.41							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	nasse	12	7.4	1.7	non	clair 	ru	oui	0.34							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	nasse	10.9	6.8	2	non	clair	ru	oui	0.24							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibobtu	6.1	8.7	2.9	non	sombre	li	non	0.23							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	rocher 	33.7	19.2	4.6	non	clair	bo	oui	5.38							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	rocher 	21.5	12.7	3.6	non	clair	bo	oui	1.34							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	rocher 	37.7	19.6	4.8	non	sombre	bo	oui	06.09							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	rocher 	32.7	18.8	4.5	non	sombre	bo	oui	5.25							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	nasse	23	10	4.2	non	sombre	ru	non	8598							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	rocher	23.8	7.6	3	non	sombre	bo	oui	2.25							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	litlit	15.3	13.5	5.5	oui	sombre	li	non	1.96							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	thais	20.3	9.9	3.5	oui	sombre	ru	oui	3.22							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibcin	1.7	4	1.9	non	clair	li	non	0.16							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	8.2	13.3	4.5	oui	sombre	ru	non	1.45							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	4.7	8.5	3	non	clair	li	oui	0.29							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	6.6	12.3	4.1	non	sombre	ru	non	0.72							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	4.5	10	4.6	non	clair	li	oui	0.29							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	rocher	21.7	7	3	non	sombre	bo	oui	1.96							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	nasse 	6.7	2.1	1.5	non	clair	ru	oui	0.14							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	1.2	6.9	3	non	sombre	li	oui	0.28							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	9	10.5	4.4	non	clair	li	oui	01.06							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	7.5	12.6	4.4	non	sombre	li	non	0.93							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	9	13	5	oui	sombre	ru	oui	1.2							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	8.2	13	4.4	non	sombre	ru	non	01.02							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	11.5	12.8	4.2	non	sombre	ru	oui	1.29							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	9	14.4	4.1	non	sombre	li	non	1.19							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	4.3	8.9	2.3	non	sombre	li	non	0.22							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	7.5	13.1	3.4	non	sombre	li	non	0.9							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	gibsp	8.6	13.1	3.7	non	sombre	li	non	01.05							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	rocher	26.8	11.3	4.7	non	sombre	bo	oui	0.61							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	rocher	28.3	15.7	4.3	non	clair	bo	oui	2.88							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	thais	20.5	13	3.2	non	clair	ru	non	02.06							
+b20	nathan.viel	20September2017	6/4	b	20/1	10	NA	0.3	100	0	0	85	NA	70	0	NA	NA	thais	19.2	12.4	13.1	non	sombre	li	oui	1.86							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	95	0	0	0	NA	10	5	NA	NA	gibsp	5.9	10.5	4	non	sombre	li	oui	1.4							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	95	0	0	0	NA	10	5	NA	NA	gibsp	5	8.6	4.2	non	sombre	li	non	1.32							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	95	0	0	0	NA	10	5	NA	NA	gibsp	5.9	10	4.5	non	sombre	li	non	1.68							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	95	0	0	0	NA	10	5	NA	NA	gibsp	5.3	9.8	3	non	sombre	li	non	0.33							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	95	0	0	0	NA	10	5	NA	NA	gibsp	8.9	14	5	non	sombre	li	non	1.13							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	95	0	0	0	NA	10	5	NA	NA	gibcin	9.4	1	3.6	non	sombre	li	oui	0.96							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	95	0	0	0	NA	10	5	NA	NA	gibcin	8.2	9.4	3.4	non	clair	li	oui	0.54							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	95	0	0	0	NA	10	5	NA	NA	gibcin	5.5	9.4	3.6	non	sombre	li	oui	0.34							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	70	0	0	1	0	90	0	NA	NA	litlit	19.3	15.5	5.1	non	sombre	li	non	2.66							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	70	0	0	1	0	90	0	NA	NA	gibsp	8.7	13.6	4.6	non	sombre	li	non	01.04							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	70	0	0	1	0	90	0	NA	NA	gibcin	8.1	10.3	2.7	oui	clair	li	non	0.58							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	70	0	0	1	0	90	0	NA	NA	gibcin	5	7.9	2	non	clair	li	non	0.2							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	70	0	0	1	0	90	0	NA	NA	gibcin	4.6	7.6	2.8	non	clair	li	non	0.166							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	70	0	0	1	0	90	0	NA	NA	gibcin	4.3	7.1	2.1	non	clair	li	non	0.12							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	70	0	0	1	0	90	0	NA	NA	gibcin	5	8	2.4	non	clair	li	non	0.16							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	10	0	0	10	0	20	100	1.2	1.5	gibsp	9.2	14.5	5	oui	sombre	li	non	1.6							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	10	0	0	10	0	20	100	1.2	1.5	gibsp	9.2	14.5	5.5	oui	sombre	li	oui	1.44							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	10	0	0	10	0	20	100	1.2	1.5	gibsp	9	14	4.9	oui	sombre	li	oui	1.3							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	10	0	0	10	0	20	100	1.2	1.5	gibsp	10	15	5.4	oui	sombre	li	oui	1.7							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	10	0	0	10	0	20	100	1.2	1.5	gibsp	7.9	13	4.1	oui	sombre	li	non	0.96							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	10	0	0	10	0	20	100	1.2	1.5	gibcin	3.7	5.6	2.2	non	clair	li	oui	0.38							
+b20	nathan.viel	20September2017	6/4	b	20/1	5	NA	0.20	10	0	0	10	0	20	100	1.2	1.5	gibcin	5	5.2	2.2	non	clair	li	oui	0.24							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	0	0	80	0	 	NA	gibsp	8.5	14	4	oui	sombre	li	non	1.26							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	0	0	80	0	 	NA	gibsp	8.5	13.4	4.4	non	sombre	li	non	01.04							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	0	0	80	0	 	NA	gibsp	7	12	4	oui	sombre	li	oui	0.56							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	0	0	80	0	 	NA	rocher	22.1	9	3	non	clair	bo	oui	2.36							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	0	0	80	0	 	NA	rocher	23.2	11.4	4	non	clair	bo	oui	03.08							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	rocher	21.3	7	3.5	non	sombre	bo	oui	1.76							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	rocher	20.7	8.5	4.2	non	sombre	bo	oui	1.52							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	gibsp 	8.5	13	4.9	non	sombre	li	non	0.74							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	gibsp 	9.2	14.1	4.6	non	sombre	li	non	1.3							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	gibsp 	9.3	14.6	4.2	oui	sombre	li	non	1.34							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	gibsp 	8.7	14.6	4.7	non	sombre	li	non	1.22							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	nasse	11	6	2.4	non	sombre	ru	non	0.2							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	nasse	11.9	6.3	2.3	non	clair	ru	non	2.23							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	nasse	9.8	5.9	2	non	clair	ru	non	0.17							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	nasse	12.1	5.5	1.7	non	clair	ru	non	0.39							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	gibsp	10.2	10.2	3.3	oui	sombre	ru	oui	01.08							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	gibsp	4.7	7.8	2.3	non	clair	li	non	0.2							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	gibsp	6	9.2	2.8	non	cmair	li	non	0.29							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	gibsp	6.1	8.7	2.8	non	cmair	li	non	0.28							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.22	100	0	0	95	5	90	0	NA	NA	gibsp	6.9	8.8	2.6	non	clair	li	non	0.27							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.20	40	0	0	5	NA	95	70	4.8	0.5	nasse	18	8.9	4.5	non	rayé	ru	non	1.62							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.20	40	0	0	5	NA	95	70	4.8	0.5	gibsp	5.4	4.4	4.4	non	clair	li	non	0.94							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.20	40	0	0	5	NA	95	70	4.8	0.5	gibcin	3.7	5.6	2	non	clair	li	non	0.1							
+b20	nathan.viel	20September2017	97	b	20	0	NA	0.20	40	0	0	5	NA	95	70	4.8	0.5	gibcin	4	7.5	2	non	clair	li	oui	0.11							
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
+																																	
