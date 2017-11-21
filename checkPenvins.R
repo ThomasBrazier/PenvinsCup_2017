@@ -337,9 +337,9 @@ checknumeric <- function(mydata, col, method, values, integer = FALSE, identical
           if (!mydata[i,col] %in% values) { #Si la valeur a la ligne i n'est pas comprise dans le vecteur values
             testok <- FALSE
             if (length(values) == 1) #Le message d'erreur s'adapte au nombre de valeurs
-              warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, " : la valeur  ", mydata[i,col], " ne correspond pas a la valeur attendue : ", values, "."), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+              warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ", la valeur  ", mydata[i,col], " ne correspond pas a la valeur attendue : ", values, "."), call. = FALSE, noBreaks. = TRUE, immediate. = T)
           } else {
-            warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, " : la valeur ", mydata[i,col], " ne correspond pas aux valeurs attendues : ", values, "."), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+            warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ", la valeur ", mydata[i,col], " ne correspond pas aux valeurs attendues : ", values, "."), call. = FALSE, noBreaks. = TRUE, immediate. = T)
           }
         }
       }
@@ -358,12 +358,12 @@ checknumeric <- function(mydata, col, method, values, integer = FALSE, identical
         if (integer & (as.integer(mydata[i,col]) != mydata[i,col])) { #Si des nombres entiers sont attendus, les nombres decimaux doivent etre signales
           testok <- FALSE
           count_warn <<- count_warn + 1
-          warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, " : la valeur  ", mydata[i,col], " devrait etre un nombre entier."), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+          warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ", la valeur  ", mydata[i,col], " devrait etre un nombre entier."), call. = FALSE, noBreaks. = TRUE, immediate. = T)
         }
         if (!(mydata[i,col]>=values[1] & mydata[i,col]<=values[2])) { #Si la valeur a la ligne i sort de l'intervalle attendu
           testok <- FALSE
           count_warn <<- count_warn + 1
-          warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, " : la valeur  ", mydata[i,col], " est en dehors de l'intervalle attendu : ", values[1], "-", values[2], "."), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+          warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ", la valeur  ", mydata[i,col], " est en dehors de l'intervalle attendu : ", values[1], "-", values[2], "."), call. = FALSE, noBreaks. = TRUE, immediate. = T)
         }
       }
     }
