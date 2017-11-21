@@ -58,11 +58,9 @@ checkPenvins <- function(dataset, bilan = FALSE){
     }
   }
 
-  #-----------------------------------------------------#
-  # Etape 6
-  #-----------------------------------------------------# 
-  
-  numeric_error_count <- 0 #variable GLOBALE comptant le nombre de colonnes numeriques contenant des erreurs
+  cat("\n\nETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans l'intervalle attendu :\n")  
+  # Tests en serie avec la fonction checknumeric() decrite plus bas
+  numeric_error_count <<- 0 #variable GLOBALE comptant le nombre de colonnes numeriques contenant des erreurs
   
   # colonne 4 : coefficient de maree
   checknumeric(dataset, 4, "disc", c(97, 99), identical = TRUE)
@@ -77,7 +75,7 @@ checkPenvins <- function(dataset, bilan = FALSE){
   checknumeric(dataset, 8, "cont", c(0, 7))
   
   # colonne 9 : surface en m2
-  checknumeric(dataset, 9, "cont", c(0.2, 0.6))
+  checknumeric(dataset, 9, "cont", c(0.1, 1))
   
   # colonnes 10:16 : nombre entier entre 0 et 100 (pourcentage)
   for(i in 10:16) {
@@ -85,26 +83,26 @@ checkPenvins <- function(dataset, bilan = FALSE){
   }
   
   # colonne 17 : surface de la flaque
-  checknumeric(dataset, 17, "cont", c(0.1, 45), possibleNA = TRUE)
+  checknumeric(dataset, 17, "cont", c(0.05, 45), possibleNA = TRUE)
   
   # colonne 18 : distance a la flaque la plus proche
-  checknumeric(dataset, 18, "cont", c(0.1, 20), possibleNA = TRUE)
+  checknumeric(dataset, 18, "cont", c(0.1, 40), possibleNA = TRUE)
   
   # colonnes 19:34 : nombre maximu d'individus
   for(i in 19:34) {
-    checknumeric(dataset, i, "cont", c(0, 200), integer = TRUE, possibleNA = TRUE)
+    checknumeric(dataset, i, "cont", c(0, 150), integer = TRUE, possibleNA = TRUE)
   }
   
   if (checkInd(dataset)) {
     #Partie a completer pour les fichiers individu
     # Hauteur : col 36
-    checknumeric(dataset, 36, "cont", c(1.5, 36), possibleNA = FALSE)
+    checknumeric(dataset, 36, "cont", c(1.5, 36), possibleNA = TRUE)    
     # Largeur : col 37
-    checknumeric(dataset, 37, "cont", c(1.5, 21), possibleNA = FALSE)
+    checknumeric(dataset, 37, "cont", c(1.5, 21), possibleNA = TRUE)    
     # Peristome : col 38
-    checknumeric(dataset, 38, "cont", c(0.1, 15), possibleNA = TRUE)
+    checknumeric(dataset, 38, "cont", c(0.1, 15), possibleNA = TRUE)    
     # Masse : col 43
-    checknumeric(dataset, 43, "cont", c(0.001, 10), possibleNA = TRUE)
+    checknumeric(dataset, 43, "cont", c(0.001, 10), possibleNA = TRUE)    
   }
   
   if (numeric_error_count == 0) {
@@ -116,6 +114,31 @@ checkPenvins <- function(dataset, bilan = FALSE){
       cat(numeric_error_count, " colonnes numeriques contiennent des erreurs.\nVerifiez les avertissements ci-dessus.\n\n")
     }
   }
+  #################
+  if (checkInd(dataset)){ # Verification du type de fichier : type Ind attendu uniquement
+    cat("\n\nETAPE 7 : Verification des ratios des mesures biometriques :\n")
+    checkRatio(dataset, 1)    # ratio larg/haut, option 1
+    checkRatio(dataset, 2)    # ratio peri/larg, option 2
+  }
+
+  if (count_warn == 0) { # Message de conclusion, en fonction de la conformite du fichier ou bien du nombre d'erreurs relevees
+    cat("\nCe fichier est conforme a ce qui etait attendu. Il est prêt a etre utilise pour le projet.\n")
+  } else {
+    if (count_warn == 1) {
+      cat("\nUne erreur a ete relevee pendant l'analyse. Veuillez proceder a sa correction...\n")
+    } else {
+    cat("\n", count_warn, " erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...\n")
+    }
+  }
+  cat("\nFin de l'analyse.\n")
+  if (bilan) { # fin du sink et affichage du bilan si l'option est activee
+    sink(type="output") # stop sinking des warnings
+    sink(type="message") # stop sinking des messages
+    file.show("tests_summary.txt") # affichage du fichier texte des messages et erreurs
+    close(testSummary) # ferme le fichier txt
+  }
+  #return(count_warn) # la fonction renvoie le nombre d'erreurs quand elle se termine
+}
 
 
 
@@ -301,14 +324,14 @@ checknumeric <- function(mydata, col, method, values, integer = FALSE, identical
       if (is.na(mydata[i,col])) {
         if (!possibleNA) { #Tout NA doit etre signale si les NA ne sont pas autorises
           testok <- FALSE
-          warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nValeur NA inattendue.\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+          warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, " : valeur NA inattendue !\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
         } else {
           if (!mydata[i,col] %in% values) { #Si la valeur a la ligne i n'est pas comprise dans le vecteur values
             testok <- FALSE
             if (length(values) == 1) #Le message d'erreur s'adapte au nombre de valeurs
-              warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur  ", mydata[i,col], " ne correspond pas a la valeur attendue : ", values, ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+              warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, " : la valeur  ", mydata[i,col], " ne correspond pas a la valeur attendue : ", values, ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
           } else {
-            warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur ", mydata[i,col], " ne correspond pas aux valeurs attendues : ", values, ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+            warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, " : la valeur ", mydata[i,col], " ne correspond pas aux valeurs attendues : ", values, ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
           }
         }
       }
@@ -320,16 +343,16 @@ checknumeric <- function(mydata, col, method, values, integer = FALSE, identical
       if (is.na(mydata[i,col])) {
         if (!possibleNA) { #Tout NA doit etre signale si les NA ne sont pas autorises
           testok <- FALSE
-          warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nValeur NA inattendue.\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+          warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, " : valeur NA inattendue !\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
         }
       } else {
         if (integer & (as.integer(mydata[i,col]) != mydata[i,col])) { #Si des nombres entiers sont attendus, les nombres decimaux doivent etre signales
           testok <- FALSE
-          warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur  ", mydata[i,col], " devrait etre un nombre entier.\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+          warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, " : la valeur  ", mydata[i,col], " devrait etre un nombre entier.\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
         }
         if (!(mydata[i,col]>=values[1] & mydata[i,col]<=values[2])) { #Si la valeur a la ligne i sort de l'intervalle attendu
           testok <- FALSE
-          warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, ".\nLa valeur  ", mydata[i,col], " est en dehors de l'intervalle attendu : ", values[1], "-", values[2], ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+          warning(c("Erreur dans la colonne ", names(mydata)[col], " a la ligne ", i, " : la valeur  ", mydata[i,col], " est en dehors de l'intervalle attendu : ", values[1], "-", values[2], ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
         }
       }
     }
@@ -341,7 +364,7 @@ checknumeric <- function(mydata, col, method, values, integer = FALSE, identical
       #un vecteur contenant une seule fois chaque valeur trouvee.
       #S'il est de taille superieure a 1, toutes les valeurs ne sont pas identiques !
       testok <- FALSE
-      warning(c("Erreur dans la colonne ", names(mydata)[col], ".\nToutes les valeurs devraient etre identiques.\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+      warning(c("Erreur dans la colonne ", names(mydata)[col], " : toutes les valeurs devraient etre identiques.\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
     }
   }		
   
@@ -389,10 +412,10 @@ checkRatio <- function(mydata, type = 1){
     } else{ #dans le cas ou l'une des valeurs est NA
       success = FALSE
       count_warn <<- count_warn + 1
-      warning(c("Ligne ", i, " pour l'espece ", as.character(mydata[i,35]), " : valeur NA !"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+      warning(c("Ligne ", i, " pour le ratio ", ty," sur l'espece ", as.character(mydata[i,35]), " : valeur NA !"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
     }
   }
   if (success == TRUE) { # si success est reste TRUE, message de reussite
-    cat("Tous les ratios ", ty, " sont corrects.")
+    cat("Tous les ratios ", ty, " sont corrects.\n")
   }
 }

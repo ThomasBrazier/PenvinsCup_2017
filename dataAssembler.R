@@ -16,7 +16,7 @@ for (f in 1:length(list.files(path = "~/Documents/Github/PenvinsCup_2017/data"))
 }
 
 # Running only one checkPenvins at once
-f = 6 # index of file
+f = 9 # index of file
 print(list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f])
 tmp = read.table(paste("data/",list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f], sep = ""), header = TRUE)
 checkPenvins(tmp, bilan = FALSE)
