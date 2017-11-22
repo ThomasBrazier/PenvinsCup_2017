@@ -1,6 +1,17 @@
 # Penvins-Cup-2017
 Université Rennes 1 - Master 1 EFCE
 
+## Note de version
+
+Le script checkPenvins est en version finale, et il fonctionne sans bug majeur.
+
+Les données rassemblées dans "data/" sont corrigées (pour les erreurs majeures qui stoppent la fonction checkPenvins) et peuvent être importées. Les données dans "dta/CORR" sont les derniers fichiers qui doivent être corrigés.
+
+Le script loader.R permet de charger un fichier et de lancer checkPenvins.R.
+
+Le script dataAssembler.R permet de lancer la fonction checkPenvins en masse sur TOUS les fichiers du répertoire "data/" et d'assembler TOUS ces fichiers en un SEUL data frame Ind ou Quad.
+
+
 ## Script de départ
 
 C’est le script préliminaire proposé par Geoffrey, qui peut servir de base et d’ossature à l’ensemble du script, mais chacun est libre de le conserver en partie ou de tout changer pour obtenir la fonction qui lui semble judicieuse.
