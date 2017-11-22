@@ -5,7 +5,7 @@
 # "Juste pour la gloire !"
 
 checkPenvins <- function(dataset, bilan = FALSE){
-  bilan <<- bilan 
+  bilan <<- bilan
   if (bilan == TRUE) { # creation d'un fichier txt d'erreur (optionnel), FALSE par defaut
     testSummary <- file("tests_summary.txt", open = "wt") # ouvre un fichier txt qui recueillera tous les messages, au lieu d'un affichage en consoles
     sink(file = testSummary, append = TRUE, type="output") # lance la recuperation des warnings dans un fichier txt
@@ -47,11 +47,11 @@ checkPenvins <- function(dataset, bilan = FALSE){
       warning("La colonne ne doit posseder qu'une seule modalite. Veuillez verifier et choisir une modalite unique pour l'ensemble de la colonne", p, ".\n", call. = FALSE, noBreaks. = TRUE, immediate. = T)
     }
   }
-  if (checkInd(dataset)) {  # uniquement sur fichiers Ind, 5 colonnes biometrie supplementaires
+  if (checkInd(dataset)) {  # uniquement sur fichiers Ind, 5 colonnes biometriques supplementaires
     for (p in c("sp", "pred", "text", "coul", "epizo")) {checkFactor(dataset, p)}
   }
 
-  cat("\n\nETAPE 6 : Verification des donnees numeriques qui doivent etre contenues dans un intervalle attendu :\n") # Tests en serie avec la fonction checknumeric() decrite plus bas
+  cat("\n\nETAPE 6 : Verification des donnees numeriques, qui doivent etre contenues dans un intervalle attendu :\n") # Tests en serie avec la fonction checknumeric() decrite plus bas
   numeric_error_count <<- 0 #variable GLOBALE comptant le nombre de colonnes numeriques contenant des erreurs
   # Quand nous n'avions pas de references connues pour l'intervalle attendu, les valeurs ont ete fixees apres etude de leur distribution et confirmation avec les responsables de groupe de la veracite des valeurs extremes
   checknumeric(dataset, 4, "disc", c(97, 99), identical = TRUE)  # colonne 4 : coefficient de maree
@@ -82,17 +82,19 @@ checkPenvins <- function(dataset, bilan = FALSE){
     checkRatio(dataset, "peristome/largeur")    # ratio peri/larg, option 2
     cat("Verification de l'erreur de mesure de la masse :\n")
     for (i in 1:length(dataset$masse)) { # verifie la masse mesuree et demande de compenser l'erreur de mesure si besoin
-      if (!is.na(dataset$masse[i]) & !is.na(dataset$larg[i]) & !is.na(dataset$larg[i]) & ((dataset$masse[i]/(((((dataset$larg[i]/2)^2)*pi)*dataset$haut[i])/3)) > 0.009)) {
-        count_warn <<- count_warn + 1
-        warning(c("Ligne ", i, " pour la mesure de la masse : le rapport etant superieur a 0.009, il faut diviser la masse par 10."), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+      if (!is.na(dataset$masse[i]) & !is.na(dataset$larg[i]) & !is.na(dataset$haut[i])) {
+        if ((dataset$masse[i]/(((((dataset$larg[i]/2)^2)*pi)*dataset$haut[i])/3)) > 0.009) {
+          count_warn <<- count_warn + 1
+          warning(c("Ligne ", i, " pour la mesure de la masse : le rapport etant superieur a 0.009, il faut diviser la masse par 10."), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+        }
       }
     }
   }
-  # Le temps du bilan : message de conclusion en fonction dunombre d'erreurs dans le fichier
+  # Le temps du bilan : message de conclusion en fonction du nombre d'erreurs dans le fichier "en tant que Tel"
   if (count_warn == 0) {cat("\nCe fichier est conforme a ce qui etait attendu. Il est pret a etre utilise pour le projet.\n")} # Message de conclusion, en fonction de la conformite du fichier ou bien du nombre d'erreurs relevees
   else {
     if (count_warn == 1) {cat("\nUne erreur a ete relevee pendant l'analyse. Veuillez proceder a sa correction...\n")}
-    else {cat("\n", count_warn, " erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...\n")}
+    else {cat("\n", count_warn, " erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...\n")} # "Des erreurs, des erreurs, des erreurs... ça m'énerve !", librement inspiré d'Attila le Hun (Kaamelott)
   }
   cat("\nLa verification du fichier", nm, "est terminee.\n")
   if (bilan) { # fin du sink et affichage du bilan si l'option est activee
