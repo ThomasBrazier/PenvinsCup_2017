@@ -90,11 +90,11 @@ checkPenvins <- function(dataset, bilan = FALSE){
       }
     }
   }
-  # Le temps du bilan : message de conclusion en fonction du nombre d'erreurs dans le fichier "en tant que Tel"
+  # Le temps du bilan : message de conclusion en fonction du nombre d'erreurs dans le fichier  ## (fichier en "tant que tel", Perceval le Gaulois) ##
   if (count_warn == 0) {cat("\nCe fichier est conforme a ce qui etait attendu. Il est pret a etre utilise pour le projet.\n")} # Message de conclusion, en fonction de la conformite du fichier ou bien du nombre d'erreurs relevees
   else {
     if (count_warn == 1) {cat("\nUne erreur a ete relevee pendant l'analyse. Veuillez proceder a sa correction...\n")}
-    else {cat("\n", count_warn, " erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...\n")} # "Des erreurs, des erreurs, des erreurs... ça m'énerve !", librement inspiré d'Attila le Hun (Kaamelott)
+    else {cat("\n", count_warn, " erreurs ont ete relevees pendant l'analyse. Veuillez proceder a leur correction...\n")} ## "Penvins, c'est zero ! Des erreurs, des erreurs, des erreurs, ça m'enerve !", librement inspire d'Attila le Hun (Kaamelott) ##
   }
   cat("\nLa verification du fichier", nm, "est terminee.\n")
   if (bilan) { # fin du sink et affichage du bilan si l'option est activee
