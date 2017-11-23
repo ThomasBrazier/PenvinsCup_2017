@@ -1,4 +1,5 @@
-ind <- read.table("data/b30indCORR2.txt", header = TRUE)
+setwd("~/Documents/GitHub/PenvinsCup_2017")
+ind <- read.table("data/a10ind.txt", header = TRUE)
 quad <- read.table("data/b30quadCORR2.txt", header = TRUE)
 head(quad)
 head(ind)
