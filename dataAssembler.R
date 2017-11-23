@@ -17,10 +17,12 @@ for (f in 1:length(list.files(path = "~/Documents/Github/PenvinsCup_2017/data"))
 }
 
 # Running only one checkPenvins at once
-f = 4 # index of file
-print(list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f])
-tmp = read.table(paste("data/",list.files(path = "~/Documents/Github/PenvinsCup_2017/data")[f], sep = ""), header = TRUE)
+f = 30 # index of file
+print(list.files(path = "~/Documents/Github/PenvinsCup_2017/data_ERREURS")[f])
+tmp = read.table(paste("data_ERREURS/",list.files(path = "~/Documents/Github/PenvinsCup_2017/data_ERREURS")[f], sep = ""), header = TRUE)
 checkPenvins(tmp, bilan = FALSE)
+print(list.files(path = "~/Documents/Github/PenvinsCup_2017/data_ERREURS")[f])
+
 
 # Not working
 # 3, 4, 19 (s.flaq et d.flaq = 0 ?), 20

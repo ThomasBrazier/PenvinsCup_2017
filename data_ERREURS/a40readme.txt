@@ -1,0 +1,1 @@
+#Pris de court par la marée, les flaques échantillonées des quadrats 11,14,17,20,23 et 26 étaient en connection directe avec la mer.

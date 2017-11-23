@@ -5,9 +5,9 @@
 # "Juste pour la gloire !"
 
 checkPenvins <- function(dataset, bilan = FALSE){
-  bilan <<- bilan # la variable globale "bilan", si elle est programmee à TRUE par l'utilisateur, active toutes les lignes pour la fabrication du fichier d'erreur summary.txt
+  bilan <<- bilan # la variable globale "bilan", si elle est programmee a TRUE par l'utilisateur, active toutes les lignes pour la fabrication du fichier d'erreur summary.txt
   if (bilan == TRUE) { # creation d'un fichier txt d'erreur (optionnel), FALSE par defaut
-    testSummary <- file("tests_summary.txt", open = "wt") # ouvre un fichier txt qui recueillera tous les messages, au lieu d'un affichage en consoles
+    testSummary <- file("tests_summary.txt", open = "wt") # ouvre un fichier txt qui recueillera tous les messages, au lieu d'un affichage en console
     sink(file = testSummary, append = TRUE, type="output") # lance la recuperation des warnings dans ce fichier txt
     sink(file = testSummary, append = TRUE, type="message") # lance la recuperation des messages dans ce fichier txt
   }
@@ -112,11 +112,11 @@ checkDataFrame <- function(mydata) { # ETAPE 1 : Verifier si mydata est bien de 
   if (is.data.frame(mydata)) {cat("Le fichier", nm, "est bien de type data.frame.\n")} # teste si le fichier est bien un data.frame
   else { # sinon affiche une erreur et stoppe la fonction
     if (bilan) { # extinction du sink avant fermeture de la fonction
-      cat("Erreur : le fichier n'est pas de type data.frame : ", nm, " est un ", class(mydata), ".\nVeuillez corriger le fichier avant de poursuivre...\n")
+      cat("Erreur : le fichier n'est pas de type data.frame, ", nm, " est un ", class(mydata), ".\nVeuillez corriger le fichier avant de poursuivre...\n")
       sink(type = "message")
       file.show("tests_summary.txt")
     }
-    stop("Le fichier n'est pas de type data.frame  : ", nm, " est un ", class(mydata), ".\nVeuillez corriger le fichier avant de poursuivre...\n") # fin prematuree de la fonction
+    stop("Le fichier n'est pas de type data.frame, ", nm, " est un ", class(mydata), ".\nVeuillez corriger le fichier avant de poursuivre...\n") # fin prematuree de la fonction
   }
 }
 
@@ -163,7 +163,7 @@ checkClass <- function(mydata) { # ETAPE 4 : Verifier que les colonnes sont bien
       sink(type = "message")
       file.show("tests_summary.txt")
     }
-    stop("Le fichier n'est pas conforme : certaines colonnes ne sont pas de la classe attendue.\nVeuillez corriger le fichier avant de poursuivre...\n", call. = FALSE)
+    stop("Le fichier n'est pas conforme, certaines colonnes ne sont pas de la classe attendue.\nVeuillez corriger le fichier avant de poursuivre...\n", call. = FALSE)
   }
 }
 
@@ -181,7 +181,7 @@ checkFactor <- function(mydata, nameCol) { # ETAPE 5 : Verifier dans les colonne
     for (i in 1:nrow(mydata[col])) { # pour chaque ligne de la colonne
       if (!(mydata[i, col] %in% ref[[nameCol]])) { # compare valeur observee et valeur attendue
         count_warn <<- count_warn + 1
-        warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ".\nLa modalite ", as.character(mydata[i, col]), " ne correspond pas aux modalites attendues : ", paste(ref[[nameCol]], collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
+        warning(c("Erreur dans la colonne ", colnames(mydata)[col], " a la ligne ", i, ". La modalite ", as.character(mydata[i, col]), " ne correspond pas aux modalites attendues :\n ", paste(ref[[nameCol]], collapse = ", "), ".\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
       }
     }
     warning(c("Erreur dans la colonne ", colnames(mydata)[col], ", une ou des modalites sont fausses.\n"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
@@ -259,7 +259,7 @@ checkRatio <- function(mydata, type = "largeur/hauteur"){ # ETAPE 7 : Verificati
         count_warn <<- count_warn + 1
         warning(c("Ligne ", i, " pour l'espece ", as.character(mydata[i,35]), " : Le ratio ", type, " = ", round(ratio, digits = 2), " sort de l'intervalle attendu [", MinMax[1], ",", MinMax[2], "]"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
       }
-    } else{ #dans le cas ou l'une des valeurs est NA
+    } else{ # dans le cas ou l'une des valeurs est NA
       success = FALSE
       count_warn <<- count_warn + 1
       warning(c("Ligne ", i, " pour le ratio ", type," sur l'espece ", as.character(mydata[i,35]), " : valeur NA !"), call. = FALSE, noBreaks. = TRUE, immediate. = T)
