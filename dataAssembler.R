@@ -44,6 +44,10 @@ for (f in 1:length(list.files(path = "~/Documents/Github/PenvinsCup_2017/data"))
     }
   }
 }
+nmCol = c("transect", "resp", "date", "coef", "mode", "d.chenal", "d.mer", "alt", "surf", "p.roc", "p.moul", "p.huit", "p.bala", "p.alg", "p.encr", "p.eau", "s.flaq", "d.flaq", "Bitret", "Gibcin", "Gibsp.", "Gibtum", "Litlit", "Litobt", "Litrud", "Litsax", "Monlin", "Nasinc", "Naspyg", "Nasret", "Oceeri", "Patsp.", "Rispar", "Thalap", "sp", "haut", "larg", "peri", "pred", "coul", "text", "epizo", "masse")
+indAll <- file("indAll.txt", open = "wt")
+write(nmCol, file = "indAll.txt", sep = "\t", ncolumns = 43)
+write(t(as.matrix(ind)), file = "indAll.txt", sep = "\t", ncolumns = 43, append = TRUE)
 cat("All Ind files in One")
 
 
@@ -64,8 +68,11 @@ for (f in 1:length(list.files(path = "~/Documents/Github/PenvinsCup_2017/data"))
     }
   }
 }
-
+quadAll <- file("quadAll.txt", open = "wt")
+write(nmCol[1:34], file = "quadAll.txt", sep = "\t", ncolumns = 34)
+write(t(as.matrix(quad)), file = "quadAll.txt", sep = "\t", ncolumns = 34, append = TRUE)
 cat("All Quad files in One")
+remove(tmp)
 
 ####################
 # Finishing
