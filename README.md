@@ -5,7 +5,7 @@ Université Rennes 1 - Master 1 EFCE
 
 Le script checkPenvins est en version finale, et il fonctionne sans bug majeur.
 
-Les données rassemblées dans "data/" sont corrigées (pour les erreurs majeures qui stoppent la fonction checkPenvins) et peuvent être importées. Les données dans "dta/CORR" sont les derniers fichiers qui doivent être corrigés.
+Les données rassemblées dans "data/" sont corrigées (pour les erreurs majeures qui stoppent la fonction checkPenvins) et peuvent être importées. Les données dans "data/CORR" sont les derniers fichiers qui doivent être corrigés.
 
 Le script loader.R permet de charger un fichier et de lancer checkPenvins.R.
 
